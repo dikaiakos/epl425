@@ -7,6 +7,8 @@
 		<title>EPL425: Internet Technologies</title>
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="epl425.css">
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -34,68 +36,64 @@
 	<body>
 		<div class="container">
 			<div class="row display-table" style="margin:5px; padding-top:5px; padding-bottom: 10px;">
-				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 display-cell">
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 display-cell hidden-print">
 					<img src="pics/CSUCYLogo.jpg" alt="CS UCY Logo" class="img-responsive">
 				</div>
 				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12  display-cell text-center">
 					<h2>ΕΠΛ425: Τεχνολογίες Διαδικτύου</h2>
 					<h4>Οικοσελίδα</h4>
 				</div>
-				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12  display-cell">
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12  display-cell hidden-print">
 					<h4 class="text-center">Φθινοπωρινό Εξάμηνο 2016</h4>
 				</div>
 			</div>
-			<div class="text-center" style="padding-bottom:10px">
-				<div class="btn-group btn-group-sm btn-group-justified" role="group">
-					<a href="index.html" class="btn btn-default btn-primary" role="button">EPL425</a>
-					<a href="contract.html" class="btn btn-default btn-primary" role="button">Συμβόλαιο</a>
-					<a href="schedule.html" class="btn btn-default btn-primary" role="button">Πρόγραμμα Μαθημάτων</a>
-					<a href="resources.html" class="btn btn-default btn-primary" role="button">Xρήσιμο Υλικό</a>
-					<a href="assignments.html" class="btn btn-default btn-primary" role="button">Εργασίες</a>
-					<a href="http://www.piazza.com" class="btn btn-default btn-primary" role="button" target="_new">Piazza</a>
+			<nav style="padding:40px 10px">
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="index.html">ΕΠΛ425</a></li>
+					<li><a href="contract.html">Συμβόλαιο</a></li>
+					<li><a href="schedule.html">Πρόγραμμα Μαθημάτων</a></li>
+					<li><a href="resources.html">Xρήσιμο Υλικό</a></li>
+					<li><a href="assignments.html">Εργασίες</a></li>
+					<li><a href="http://www.piazza.com" target="_new">Piazza</a></li>
+				</ul>
+			</nav>
+			<article>
+				<h2>ΕΠΛ425: Τεχνολογίες Διαδικτύου</h2>
+				<p><strong>Διδάσκων:</strong> Μάριος Δ. Δικαιάκος, Καθηγητής.
+					<input type="button" class="btn" data-toggle="collapse" data-target="#toggleDemo" value="Toggle Button">
+					<div id="toggleDemo" class="collapse"><p>This is a simple example of expanding and collapsing individual element via data attribute. Click on the <b>Toggle Button</b> button to see the effect.</div>
+					<br>
+					<strong>Προαπαιτούμενα:</strong> ΕΠΛ233 ή ΕΠΛ371 και ΕΠΛ 324, ή έγκριση του καθηγητή.<br>
+					<strong>Διαλέξεις:</strong> Τρίτη, Παρασκευή, 10:30-12:00, ΘΕΕ01, Αίθουσα 147.<br>
+					<strong>Φροντιστήριο:</strong> Τετάρτη, 15:00-16:00, ΘΕΕ01, Αίθουσα 147.<br>
+					<strong>Εργαστήριο:</strong> Τετάρτη, 16:00-18:00, Αίθουσα Β123.<br>
+					<strong>Hλεκτρονικό Φόρουμ:</strong> <a href="https://piazza.com/ucy.ac.cy/fall2016/425/home" target="_new">https://piazza.com/ucy.ac.cy/fall2016/425/home</a><br>				
+					<article>
+						<h2>Σύνοψη</h2>
+						<p class="lead">Το μάθημα αποτελεί μια εισαγωγή στις Τεχνολογίες Διαδικτύου και τον Προγραμματισμό Εφαρμογών στον Παγκόσμιο Ιστό - Παγκόσμιο Πληροφοριακό Περιβάλλον (Web programming).</p>
+					</article>
+					<article>
+						<h2>Περιεχόμενο</h2>
+						<ul>
+							<li>Ανασκόπηση Βασικών Τεχνολογιών Διαδικτύου (Internet Fundamentals).</li>
+							<li>Αρχές Συστημάτων Υπερκειμένου (Hypertext).</li>
+							<li>Σχεδιασμός και Ανάπτυξη Ιστιακών Τόπων (Web Design Fundamentals).</li>
+							<li>Γλώσσες Συγγραφής Περιεχομένου Ιστού - HTML (Mark-up Languages).</li>
+							<li>Γλώσσες Τεχνοτροπίας και Στοιχειοθεσίας Ιστοσελίδων - CSS (Cascading Style Sheets, Page Layouts).</li>
+							<li>Μεθοδολογίες Σχεδιασμού και Ανάπτυξης Ιστιακών Τόπων και Εφαρμογών (Web Design & Development).</li>
+							<li>Προγραμματισμός Εξυπηρετητών Ιστού με τη γλώσσα PhP (Server-side Programming).</li>
+							<li>Δυναμικό Περιεχόμενο και Φόρμες (Dynamic content and HTML Forms).</li>
+							<li>Εισαγωγή στη Javascript για Προγραμματισμό Πελατών Ιστού.</li>
+							<li>Αρχές Web 2.0 και Προγραμματισμός με Ασύγχρονη Javascript.</li>
+							<li>Διασύνδεση Βάσεων Δεδομένων με το Παγκόσμιο Πληροφοριακό Περιβάλλον.</li>
+						</ul>
+					</article>
+					<footer>
+						<hr/>
+						<p class="text-center">[<a href="index.html">EPL425</a>]</p>
+						<small>Marios Dikaiakos, &copy; 2000-2017 </small>
+					</footer>
 				</div>
 			</div>
-			
-			<h4>Σύνοψη</h4>
-			<p>Το μάθημα αποτελεί μια εισαγωγή στις Τεχνολογίες Διαδικτύου και τον Προγραμματισμό Εφαρμογών στον Παγκόσμιο Ιστό - Παγκόσμιο Πληροφοριακό Περιβάλλον (Web programming). Θα εξετασθούν τα ακόλουθα θέματα:</p>
-			<ul>
-				<li>Ανασκόπηση Βασικών Τεχνολογιών Διαδικτύου (Internet Fundamentals).</li>
-				<li>Αρχές Συστημάτων Υπερκειμένου (Hypertext).</li>
-				<li>Σχεδιασμός και Ανάπτυξη Ιστιακών Τόπων (Web Design Fundamentals).</li>
-				<li>Γλώσσες Συγγραφής Περιεχομένου Ιστού - HTML (Mark-up Languages).</li>
-				<li>Γλώσσες Τεχνοτροπίας και Στοιχειοθεσίας Ιστοσελίδων - CSS (Cascading Style Sheets, Page Layouts).</li>
-				<li>Μεθοδολογίες Σχεδιασμού και Ανάπτυξης Ιστιακών Τόπων και Εφαρμογών (Web Design & Development).</li>
-				<li>Προγραμματισμός Εξυπηρετητών Ιστού με τη γλώσσα PhP (Server-side Programming).</li>
-				<li>Δυναμικό Περιεχόμενο και Φόρμες (Dynamic content and HTML Forms).</li>
-				<li>Εισαγωγή στη Javascript για Προγραμματισμό Πελατών Ιστού.</li>
-				<li>Αρχές Web 2.0 και Προγραμματισμός με Ασύγχρονη Javascript.</li>
-				<li>Διασύνδεση Βάσεων Δεδομένων με το Παγκόσμιο Πληροφοριακό Περιβάλλον.</li>
-			</ul>
-			<h4>Προαπαιτούμενα</h4>
-			<p>ΕΠΛ233 ή ΕΠΛ371 και ΕΠΛ 324, ή έγκριση του καθηγητή.</p>
-			<h4>Διαδικαστικές Πληροφορίες</h4>
-			<dl class="dl-horizontal">
-				<dt>Διαλέξεις:</dt><dd>Τρίτη, Παρασκευή, 10:30-12:00, ΘΕΕ01, Αίθουσα 147.</dd>
-				<dt>Φροντιστήριο:</dt><dd>Τετάρτη, 15:00-16:00, ΘΕΕ01, Αίθουσα 147.</dd>
-				<dt>Εργαστήριο:</dt><dd>Τετάρτη, 16:00-18:00, Αίθουσα Β123.</dd>
-				<dt>Hλεκτρονικό Φόρουμ:</dt><dd>https://piazza.com/ucy.ac.cy/spring2016/425/home</dd>
-				<dt>Διδάσκων:</dt><dd>Μάριος Δ. Δικαιάκος, Καθηγητής<br>
-				Κτίριο ΘΕΕ01, 012.<br>
-				Τηλ: 22892700</dd>
-				<dt>Ώρες γραφείου:</dt><dd>Τρίτη 14:00 - 15:30 ή κατόπιν συννενοήσεως.</dd>
-				<dt>Εργαστήρια:</dt><dd>TBA</dd>
-			</dl>
-			<footer>
-				<hr/>
-				<p class="text-center">[<a href="index.html">EPL425</a>]</p>
-				<small>Marios Dikaiakos, &copy; 2000-2017 </small>
-			</footer>
-		</div>
-	</div>
-	<!-- jQuery -->
-	<script src="//code.jquery.com/jquery.js"></script>
-	<!-- Bootstrap JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-</body>
-</html>
+		</body>
+	</html>
