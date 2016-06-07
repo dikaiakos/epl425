@@ -42,6 +42,11 @@
      zoom:1; /* hasLayout ie7 trigger */
 }
 
-.navbar-header, .navbar-nav, .nav-tabs, .nav-pills {
-    text-align:center;
+.navbar, .navbar-header, .navbar-nav, .nav-tabs, .nav-pills {
+   text-align:center;
+}
+
+.nav-vertical > li {
+
+    
 }
