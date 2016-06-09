@@ -42,11 +42,8 @@
      zoom:1; /* hasLayout ie7 trigger */
 }
 
-.navbar, .navbar-header, .navbar-nav, .nav-tabs, .nav-pills {
+#epl425-nav {
    text-align:center;
-}
-
-.nav-vertical > li {
-
-    
+   width:auto;
+   white-space: nowrap;
 }
