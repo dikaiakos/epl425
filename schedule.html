@@ -8,6 +8,7 @@
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<link rel="stylesheet" href="epl425.css">
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -16,6 +17,19 @@
 		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->
+		<script>
+		$(document).ready(function(){
+		$(".btn-primary").click(function(){
+		$(".collapse").collapse('toggle');
+		});
+		$(".btn-success").click(function(){
+		$(".collapse").collapse('show');
+		});
+		$(".btn-warning").click(function(){
+		$(".collapse").collapse('hide');
+		});
+		});
+		</script>
 		<style>
 		.jumbotron{
 		background-color:white;
@@ -52,10 +66,10 @@
 					<nav class="collapse navbar-collapse" >
 						<ul class="nav nav-tabs" role="navigation" id=epl425-nav>
 							<li><a href="index.html">ΕΠΛ425</a></li>
-							<li><a href="contract.html">Συμβόλαιο</a></li>
 							<li class="active"><a href="schedule.html">Πρόγραμμα Μαθημάτων</a></li>
 							<li><a href="resources.html">Xρήσιμο Υλικό</a></li>
 							<li><a href="assignments.html">Εργασίες</a></li>
+							<li><a href="contract.html">Συμβόλαιο</a></li>
 							<li><a href="http://www.piazza.com" target="_new">Piazza</a></li>
 						</ul>
 					</nav>
@@ -74,19 +88,130 @@
 						</div>
 						<div id="myNavbar" class="navbar-collapse collapse">
 							<ul class="nav navbar-bar">
-								<li><a href="contract.html">Συμβόλαιο</a></li>
 								<li class="active"><a href="schedule.html">Πρόγραμμα Μαθημάτων</a></li>
 								<li><a href="resources.html">Xρήσιμο Υλικό</a></li>
 								<li><a href="assignments.html">Εργασίες</a></li>
+								<li><a href="contract.html">Συμβόλαιο</a></li>
 								<li><a href="http://www.piazza.com" target="_new">Piazza</a></li>
 							</ul>
 						</div>
 					</div>
 				</nav>
 			</div>
-			<article>
-				<h2>EPL425: Πρόγραμμα Μαθημάτων</h2>
-			</article>
+			
+			<h3>Πρόγραμμα Μαθημάτων <a target="_blank" onclick="javascript:$('.allshow').toggle();" class="btn btn-primary btn-success small">&raquo;</a></h3>
+			
+			
+			<table class="table table-responsive table-condensed table-hover ">
+				<thead>
+					
+				</thead>
+				<tbody>
+					<tr class="warning">
+						<th class="lead" colspan="2">Week 1: The Internet and the World-Wide Web</th>
+					</tr>
+					<tr>
+						<td scope="row">Lecture 1</td>
+						<td>History and Architecture of the Internet. TCP/IP Review.
+							<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#w1-1-learn">
+							<span class="fa fa-certificate"></span> Learning Outcome</button>
+							<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#w1-1-read">
+							<span class="glyphicon glyphicon-book"></span> Readings
+							</button>
+							<span id="w1-1-learn" class="collapse">
+								<strong>Learning outcome:</strong> Refresh knowledge on Internet architecture, protocols and evolution. Gain an understanding of the principles behind Internet's successful design and evolution. Gain a good working knowledge of the basic building blocks of and the main keywords related to the Internet infrastructure.
+							</span>
+							<span id="w1-1-read" class="collapse">
+								<strong>Readings:</strong>
+								Chapter 1, "Web Programming", Step, Miller & Kirst.
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td scope="row">Lecture 2</td>
+						<td><strong>History and Architecture of the World-Wide Web.</strong>
+							<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#w1-2-learn">
+							<span class="fa fa-certificate"></span></button>
+							<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#w1-2-read">
+							<span class="glyphicon glyphicon-book"></span> 
+							</button>
+							<span id="w1-2-learn" class="collapse">
+								<strong>Learning outcome:</strong>
+								<ul>
+									<li>Get acquainted with the Definition, History, Evolution, and Current Challenges of the World-Wide Web. Understand the main elements of the World-Wide Web.</li>
+									<li>The Web as a Distributed System. Overview of the HTTP Protocol. Components and Interactions of Web Applications.</li>
+								</ul>
+							</span>
+							<span id="w1-2-read" class="collapse">
+								<strong>Readings:</strong>
+								Chapter 1, "Web Programming", Step, Miller & Kirst.
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td scope="row">Precept 1</td>
+						<td><strong>HTTP Protocol.</strong>
+							<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#w1-p-learn">
+							<span class="fa fa-certificate"></span> </button>
+							<button type="button" class="btn btn-default btn-xs" data-toggle="collapse" data-target="#w1-p-read">
+							<span class="glyphicon glyphicon-book"></span>
+							</button>
+							<span id="w1-p-learn" class="collapse">
+								<strong>Learning outcome:</strong>
+								<ul>
+									<li>Understand the basic syntax and structure of HTTP messages.</li>
+									<li>Learn the basics of HTTP transactions.</li>
+								</ul>
+							</span>
+							<span id="w1-p-read" class="collapse">
+								<strong>Readings:</strong> The <a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol" target="_new">HTTP Protocol (Wikipedia).</a>
+							</span>
+						</td>
+					</tr>
+					<tr class="warning">
+						<th class="lead" colspan="2">Week 2: Introduction to Hypertext and Hypermedia</th>
+					</tr>
+					<tr>
+						<td scope="row">Lecture 3</td>
+						<td><strong>Introduction to HyperText.</strong>
+							<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#w2-1-learn">
+							<span class="fa fa-certificate"></span></button>
+							<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#w2-1-read">
+							<span class="glyphicon glyphicon-book"></span>
+							</button>
+							<span id="w2-1-learn" class="collapse">
+								<strong>Learning outcome:</strong> Understand the key principles of hypertext (nodes, hyperlinks, navigation) and the properties that hypertext systems need to abide to.
+							</span>
+							<span id="w2-1-read" class="collapse">
+								<strong>Readings:</strong>
+								<i>Multimedia and Hypertext: The Internet and Beyond.</i> J. Nielsen, AP Professional, 1995, chapters 1-5.
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td scope="row">Lecture 4</td>
+						<td><strong>Introduction to HyperText.</strong>
+							<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#w2-2-learn">
+							<span class="fa fa-certificate"></span></button>
+							<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#w2-2-read">
+							<span class="glyphicon glyphicon-book"></span>
+							</button>
+							<span id="w2-2-learn" class="collapse">
+								<strong>Learning outcome:</strong>
+								<ul>
+									<li>Overview of Usability. Usability of hypertext systems.</li>
+									<li>Understand the notion of information overloading, network disorientation. Definition of information retrieval and information filtering. Navigation support mechanisms: backtracking, bookmarking, history mechanisms, milestones.</li>
+								</ul>
+							</span>
+							<span id="w2-2-read" class="collapse">
+								<strong>Readings:</strong>
+								<i>Multimedia and Hypertext: The Internet and Beyond.</i> J. Nielsen, AP Professional, 1995, chapters 8-10.
+							</span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			
 			<footer class="hidden-print">
 				<hr/>
 				<p class="text-center">[<a href="index.html">EPL425</a>]</p>
