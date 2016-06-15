@@ -118,19 +118,21 @@
 							<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#w1-1-learn">
 							<span class="fa fa-certificate"></span> Learning Outcome</button>
 							<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#w1-1-read">
-							<span class="glyphicon glyphicon-book"></span> Readings
+							<span class="glyphicon glyphicon-book"></span> Readings and Videos
 							</button>
 							<button type="button" class="btn btn-default btn-xs hidden-print">
 							<span class="fi-clipboard-pencil"></span> Notes
 							</button>
 							<span id="w1-1-learn" class="collapse epl425-learnout">
-								<strong>Learning outcome:</strong> Refresh knowledge on Internet architecture, protocols and evolution. Gain an understanding of the principles behind Internet's successful design and evolution. Gain a good working knowledge of the basic building blocks of and the main keywords related to the Internet infrastructure.
+								<strong>Learning outcome:</strong> Refresh knowledge on Internet architecture, protocols and evolution. Gain an understanding of the principles behind Internet's successful design and evolution. Gain a good working knowledge of the basic building blocks of and the main keywords related to the Internet infrastructure. Internet as a federation of Autonomous Systems. Understand the concept of <emph>Net Neutrality</emph>.
 							</span>
 							<span id="w1-1-read" class="collapse">
 								<strong>Readings:</strong>
 								<ul>
 									<li>Chapter 1. <i>"Web Programming"</i>, Step, Miller & Kirst.</li>
 									<li>A video on the history of Arpanet, Internet's precursor: <a href="https://archive.org/details/ComputerNetworks_TheHeraldsOfResourceSharing" target="_new">Computer Networks - The Heralds Of Resource Sharing (Arpanet, 1972)</a></li>
+									<li>Internet Society's Policy Brief on <a href="http://www.internetsociety.org/policybriefs/networkneutrality?gclid=Cj0KEQjw-YO7BRDwi6Stp7T296ABEiQAD6iWMY2JLhirWIE3HGvMOEXvlOpyaA3lVYWKz2otN3K1JqgaAixB8P8HAQ" target="_new">Net Neutrality</a>.</li>
+									<li>Professor Nicholas Economides of NYU Stern School of Business <a href="http://www.stern.nyu.edu/experience-stern/faculty-research/economides-net-neutrality-hearing" target="_new">testimony before Congress on Net Neutrality.</a></li>
 								</ul>
 							</span>
 						</td>
@@ -143,16 +145,20 @@
 							<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#w1-2-read">
 							<span class="glyphicon glyphicon-book"></span>
 							</button>
-							<span id="w1-2-learn" class="collapse epl425-learnout">
+							<button type="button" class="btn btn-default btn-xs hidden-print">
+							<span class="fi-clipboard-pencil"></span>
+							</button>
+							<div id="w1-2-learn" class="collapse epl425-learnout">
 								<strong>Learning outcome:</strong>
 								<ul>
 									<li>Get acquainted with the Definition, History, Evolution, and Current Challenges of the World-Wide Web. Understand the main elements of the World-Wide Web.</li>
 									<li><a href="http://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/" target="_new">"As we
 									may think,"</a> by Vannevar Bush, <i>The Antlantic</i> (July 1945).</li>
 									<li>The Web as a Distributed System. Overview of the HTTP Protocol. Components and Interactions of Web Applications.</li>
+									<li>Understand the function of Naming Services and the Domain Name Service.</li>
 								</ul>
-							</span>
-							<span id="w1-2-read" class="collapse">
+							</div>
+							<div id="w1-2-read" class="collapse">
 								<strong>Readings:</strong>
 								<ul>
 									<li>Chapter 1. <i>"Web Programming"</i>, Step, Miller & Kirst.</li>
@@ -161,7 +167,7 @@
 										<a href="https://www.youtube.com/watch?v=334Gfug5OL0" target="_new" class="fa fa-youtube fa-lg" aria-hidden="true"></a>).
 									</li>
 								</li>
-							</span>
+							</div>
 						</td>
 					</tr>
 					<tr>
@@ -171,6 +177,9 @@
 							<span class="fa fa-certificate"></span> </button>
 							<button type="button" class="btn btn-default btn-xs" data-toggle="collapse" data-target="#w1-p-read">
 							<span class="glyphicon glyphicon-book"></span>
+							</button>
+							<button type="button" class="btn btn-default btn-xs hidden-print">
+							<span class="fi-clipboard-pencil"></span>
 							</button>
 							<div id="w1-p-learn" class="collapse epl425-learnout">
 								<strong>Learning outcome:</strong>
@@ -183,7 +192,8 @@
 							<div id="w1-p-read" class="collapse">
 								<strong>Readings:</strong>
 								<ul>
-									<li>The <a href="https://en.wikipedia.org/wiki/Client%E2%80%93server_model" target="_new">Client-Server Model</a> (Wikipedia).</li><li><a href="http://people.eecs.berkeley.edu/~brewer/papers/GiantScale-IEEE.pdf" target="_new">"Lessons from Giant-Scale Services"</a> by Eric Brewer, <i>IEEE Internet Computing</i> (July/August 2001) (available in pdf from author's web site).</li>
+									<li>The <a href="https://en.wikipedia.org/wiki/Client%E2%80%93server_model" target="_new">Client-Server Model</a> (Wikipedia).</li>
+									<li><a href="http://people.eecs.berkeley.edu/~brewer/papers/GiantScale-IEEE.pdf" target="_new">"Lessons from Giant-Scale Services"</a> by Eric Brewer, <i>IEEE Internet Computing</i> (July/August 2001) (available in pdf from author's web site).</li>
 								</ul>
 							</div>
 						</td>
@@ -202,21 +212,15 @@
 							<div id="w1-l-learn" class="collapse epl425-learnout">
 								<strong>Learning outcome:</strong>
 								<ul>
-									<li>Understand the notion of virtual Linux servers.</li>
-									<li>Obtain hands-on familiarization with Virtualization concepts (physical vs virtual host, image vs instance)
-									Brief overview of the Virtualization / Cloud Provider landscape (IaaS vs PaaS vs SaaS)</li>
+									<li>Understand the notion of virtual Linux servers and obtain hands-on familiarization with Virtualization concepts (physical vs virtual host, image vs instance).</li>
+									<li>Brief overview of the Virtualization / Cloud Provider landscape (IaaS vs PaaS vs SaaS)</li>
 									<li>Introduction and focus on Amazon Web Services (AWS)</li>
-									<li>Registering a GitHub Student Developer pack and getting AWS free-usage credits</li>
-									<li>Create an Amazon Web Services (AWS) account.</li>
-									<li>Launch your own virtual server instance on Amazon.</li>
-									<li>Learn about Amazon Machine Images (AMI's) and the Image Marketplace.</li>
-									<li>Identify and select an existing AMI based on prefereneces such as Linux distribution, installed software packages and libraries.</li>
-									<li>Configure the AMI resources (CPU, memory, storage, network) and deployment region.</li>
+									<li>Registering a GitHub Student Developer pack and getting AWS free-usage credits and learn how to Create an Amazon Web Services (AWS) account.</li>
+									<li>Launch your own virtual server instance on Amazon and learn about Amazon Machine Images (AMI's) and the Image Marketplace.</li>
+									<li>Identify and select an existing AMI based on prefereneces such as Linux distribution, installed software packages and libraries and learn how to configure the AMI resources (CPU, memory, storage, network) and deployment region.</li>
 									<li>Learn what is public/private key authentication. Create and upload an SSH key to your instance.</li>
-									<li>Launch and monitor your instance status.</li>
-									<li>Save your launched instance preferences.</li>
-									<li>Access your instance through an SSH client.</li>
-									<li>Terminate your Instance.</li>
+									<li>Launch and monitor your instance status, save your launched instance preferences,
+									access your instance through an SSH client, and terminate your Instance.</li>
 								</ul>
 							</ul>
 						</div>
@@ -231,6 +235,7 @@
 						</div>
 					</td>
 				</tr>
+				
 				<tr class="warning">
 					<th class="lead" colspan="2">Week 2: Introduction to Hypertext and Hypermedia</th>
 				</tr>
@@ -242,13 +247,16 @@
 						<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#w2-1-read">
 						<span class="glyphicon glyphicon-book"></span>
 						</button>
-						<span id="w2-1-learn" class="collapse epl425-learnout">
+						<button type="button" class="btn btn-default btn-xs hidden-print">
+						<span class="fi-clipboard-pencil"></span>
+						</button>
+						<div id="w2-1-learn" class="collapse epl425-learnout">
 							<strong>Learning outcome:</strong>
 							<ul>
 								<li>Review the basic principles of Hypertext and its History.</li>
 								<li>Understand the key principles of hypertext (nodes, hyperlinks, navigation) and the properties that hypertext systems need to abide to.</li>
 							</ul>
-						</span>
+						</div>
 						<span id="w2-1-read" class="collapse">
 							<strong>Readings:</strong>
 							Chapters 1-5. <i>Multimedia and Hypertext: The Internet and Beyond.</i> J. Nielsen, AP Professional, 1995.
@@ -262,6 +270,9 @@
 						<span class="fa fa-certificate"></span></button>
 						<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#w2-2-read">
 						<span class="glyphicon glyphicon-book"></span>
+						</button>
+						<button type="button" class="btn btn-default btn-xs hidden-print">
+						<span class="fi-clipboard-pencil"></span>
 						</button>
 						<span id="w2-2-learn" class="collapse epl425-learnout">
 							<strong>Learning outcome:</strong>
@@ -277,12 +288,15 @@
 					</td>
 				</tr>
 				<tr>
-					<td scope="row" style="white-space:nowrap">Lab 1</td>
+					<td scope="row" style="white-space:nowrap">Precept 2</td>
 					<td><strong>Introduction to GitHub.</strong>
 						<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#w2-l-learn">
 						<span class="fa fa-certificate"></span> </button>
 						<button type="button" class="btn btn-default btn-xs  hidden-print" data-toggle="collapse" data-target="#w2-l-read">
 						<span class="glyphicon glyphicon-book"></span>
+						</button>
+						<button type="button" class="btn btn-default btn-xs hidden-print">
+						<span class="fi-clipboard-pencil"></span>
 						</button>
 						<div id="w2-l-learn" class="collapse epl425-learnout">
 							<strong>Learning outcome:</strong>
@@ -302,18 +316,21 @@
 						</div>
 					</td>
 				</tr>
-				<tr>
-					<td scope="row" style="white-space:nowrap">Lab 1</td>
+				<tr class="danger">
+					<td scope="row" style="white-space:nowrap">Lab 2</td>
 					<td><strong>Using GitHub.</strong>
-						<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#w1-l-learn">
+						<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#w2-p-learn">
 						<span class="fa fa-certificate"></span> </button>
-						<button type="button" class="btn btn-default btn-xs" data-toggle="collapse" data-target="#w1-l-read">
+						<button type="button" class="btn btn-default btn-xs" data-toggle="collapse" data-target="#w2-p-read">
 						<span class="glyphicon glyphicon-book"></span>
 						</button>
-						<div id="w2-l-learn" class="collapse epl425-learnout">
+						<button type="button" class="btn btn-default btn-xs hidden-print">
+						<span class="fi-clipboard-pencil"></span>
+						</button>
+						<div id="w2-p-learn" class="collapse epl425-learnout">
 							<strong>Learning outcome:</strong>
 							<ul>
-								<li>Create a Git repository on <a href="http://github.com" target="_new">GitHub</a> and attach
+								<li>Learn how to create a Git repository on <a href="http://github.com" target="_new">GitHub</a> and attach
 								it to <a href="https://github.com/UCY-CS-EPL425" target="_new">EPL425 repository</a>.</li>
 								<li>Familiarize with the Git Dashboard and creating / adding teams.</li>
 								<li>Install <a href="https://www.sourcetreeapp.com/" target="_new">SourceTree Git client</a> on your development environment.</li>
@@ -321,13 +338,114 @@
 								<li>Make the first commit to your Git repository. Make additional changes, commit them and understand the revision tree.</li>
 							</ul>
 						</div>
-						<div id="w1-l-read" class="collapse">
+						<div id="w2-p-read" class="collapse">
 							<strong>Readings and References:</strong>
 							<ul>
 								<li><a href="http://ftp.newartisans.com/pub/git.from.bottom.up.pdf" target="_new">"Git from the bottom up"</a> by John Wiegley (2009).</li>
 								<li><i class="fa fa-youtube fa-lg" aria-hidden="true"></i><a href="https://www.youtube.com/watch?v=U8GBXvdmHT4" target="_new">"The basics of Git and GitHub"</a> (2013).</li>
 								<li><a href="https://education.github.com/" target="_new">GitHub Education Resources.</a></li>
 							</ul>
+						</div>
+					</td>
+				</tr>
+				
+				
+				<!-- WEEK 3 -->
+				<tr class="warning">
+					<th class="lead" colspan="2">Week 3: Introduction to HTML</th>
+				</tr>
+				<tr>
+					<td scope="row">Lecture 5</td>
+					<td><strong>Basic HTML.</strong>
+						<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#w3-1-learn">
+						<span class="fa fa-certificate"></span></button>
+						<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#w3-1-read">
+						<span class="glyphicon glyphicon-book"></span>
+						</button>
+						<button type="button" class="btn btn-default btn-xs hidden-print">
+						<span class="fi-clipboard-pencil"></span>
+						</button>
+						<div id="w3-1-learn" class="collapse epl425-learnout">
+							<strong>Learning outcome:</strong> History of HTML. Become familiar with page structure, block and
+							inline elements, header and metadata information.
+						</div>
+						<span id="w3-1-read" class="collapse">
+							<strong>Readings:</strong>
+							Chapter 2. <i>Web Programming Step by Step (Second edition)</i> M. Stepp, J. Miller and V. Kirst, Lulu 2012.
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td scope="row">Lecture 6</td>
+					<td><strong>More HTML Elements.</strong>
+						<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#w3-2-learn">
+						<span class="fa fa-certificate"></span></button>
+						<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#w3-2-read">
+						<span class="glyphicon glyphicon-book"></span>
+						</button>
+						<button type="button" class="btn btn-default btn-xs hidden-print">
+						<span class="fi-clipboard-pencil"></span>
+						</button>
+						<span id="w3-2-learn" class="collapse epl425-learnout">
+							<strong>Learning outcome:</strong> Familiarize with HTML Lists, Tables, Quotations, Pre-formatted
+							text, advanced elements, audio and video.
+						</span>
+						<span id="w3-2-read" class="collapse">
+							<strong>Readings:</strong>
+							Chapter 2. <i>Web Programming Step by Step (Second edition)</i> M. Stepp, J. Miller and V. Kirst, Lulu 2012.
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td scope="row" style="white-space:nowrap">Precept 3</td>
+					<td><strong>HTML Publishing.</strong>
+						<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#w3-p-learn">
+						<span class="fa fa-certificate"></span> </button>
+						<button type="button" class="btn btn-default btn-xs" data-toggle="collapse" data-target="#w3-p-read">
+						<span class="glyphicon glyphicon-book"></span>
+						</button>
+						<button type="button" class="btn btn-default btn-xs hidden-print">
+						<span class="fi-clipboard-pencil"></span>
+						</button>
+						<div id="w3-p-learn" class="collapse epl425-learnout">
+							<strong>Learning outcome:</strong>
+							<ul>
+								<li>Create a simple, HTML personal web page using a text editor. Upload it on GitHub.</li>
+								<li>Upload your web page using an SCP client to your AWS instance.</li>
+								<li>Verify HTML source file permissions in Apache document root folder.</li>
+								<li>Publish and access your web page from the browser.</li>
+							</ul>
+						</div>
+						<div id="w3-p-read" class="collapse">
+							<strong>Readings and References:</strong> <a href="https://en.wikipedia.org/wiki/LAMP_(software_bundle)" target="_new">LAMP software bundle</a> (Wikipedia).
+						</div>
+					</td>
+				</tr>
+				<tr class="danger">
+					<td scope="row" style="white-space:nowrap">Lab 3</td>
+					<td><strong>LAMP</strong>
+						<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#w3-l-learn">
+						<span class="fa fa-certificate"></span> </button>
+						<button type="button" class="btn btn-default btn-xs  hidden-print" data-toggle="collapse" data-target="#w3-l-read">
+						<span class="glyphicon glyphicon-book"></span>
+						</button>
+						<button type="button" class="btn btn-default btn-xs hidden-print">
+						<span class="fi-clipboard-pencil"></span>
+						</button>
+						<div id="w3-l-learn" class="collapse epl425-learnout">
+							<strong>Learning outcome:</strong>
+							<ul>
+								<li>Learn how to Install and launch a LAMP stack on your virtual web server. Upload and publish your first web page on your vitual server.</li>
+								<li>Install and Launch a LAMP stack on your virtual web server.</li>
+								<li>Launch a new AWS instance from your saved preferences and connect via the SSH client.</li>
+								<li>Familiarize with the system package manager, update and install necessary sofware dependencies.</li>
+								<li>Install the <a href="https://httpd.apache.org" target="_new">Apache web server</a>, the <a href="https://www.mysql.com" target="_new">MySQL database server</a>, and the latest
+								<a href="http://php.net" target="_new">PHP</a> software packages.</li>
+								<li>Set web directory ownership and permissions, secure MySQL installation, and test your LAMP stack installation.</li>
+							</ul>
+						</div>
+						<div id="w3-l-read" class="collapse">
+							<strong>Readings and References:</strong>
 						</div>
 					</td>
 				</tr>
@@ -343,21 +461,21 @@
 	<!--
 							<td scope="row" style="white-space:nowrap">Precept 1</td>
 							<td><strong>HTTP Protocol.</strong>
-																																				<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#w1-p-learn">
-																																				<span class="fa fa-certificate"></span> </button>
-																																				<button type="button" class="btn btn-default btn-xs" data-toggle="collapse" data-target="#w1-p-read">
-																																				<span class="glyphicon glyphicon-book"></span>
-																																				</button>
-																																				<span id="w1-p-learn" class="collapse">
-																																																																	<strong>Learning outcome:</stro  dng>
-																																																																	<ul>
-																																																																																														<li>Understand the basic syntax and structure of HTTP messages.</li>
-																																																																																														<li>Learn the basics of HTTP transactions.</li>
-																																																																	</ul>
-																																				</span>
-																																				<span id="w1-p-read" class="collapse">
-																																																																	<strong>Readings:</strong> The <a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol" target="_new">HTTP Protocol (Wikipedia).</a>
-																																				</span>
+																																																		<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#w1-p-learn">
+																																																		<span class="fa fa-certificate"></span> </button>
+																																																		<button type="button" class="btn btn-default btn-xs" data-toggle="collapse" data-target="#w1-p-read">
+																																																		<span class="glyphicon glyphicon-book"></span>
+																																																		</button>
+																																																		<span id="w1-p-learn" class="collapse">
+																																																																																													<strong>Learning outcome:</stro  dng>
+																																																																																													<ul>
+																																																																																																																																								<li>Understand the basic syntax and structure of HTTP messages.</li>
+																																																																																																																																								<li>Learn the basics of HTTP transactions.</li>
+																																																																																													</ul>
+																																																		</span>
+																																																		<span id="w1-p-read" class="collapse">
+																																																																																													<strong>Readings:</strong> The <a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol" target="_new">HTTP Protocol (Wikipedia).</a>
+																																																		</span>
 							</td>
 	-->
 </body>
