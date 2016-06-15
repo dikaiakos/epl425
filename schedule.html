@@ -112,19 +112,22 @@
 						<th class="lead" colspan="2">Week 1: The Internet and the World-Wide Web</th>
 					</tr>
 					<tr>
-						<td scope="row">Lecture 1</td>
+						<td scope="row" style="white-space:nowrap">Lecture 1</td>
 						<td><strong>History and Architecture of the Internet. TCP/IP Review.</strong>
 							<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#w1-1-learn">
 							<span class="fa fa-certificate"></span> Learning Outcome</button>
 							<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#w1-1-read">
 							<span class="glyphicon glyphicon-book"></span> Readings
 							</button>
-							<span id="w1-1-learn" class="collapse">
+							<span id="w1-1-learn" class="collapse epl425-learnout">
 								<strong>Learning outcome:</strong> Refresh knowledge on Internet architecture, protocols and evolution. Gain an understanding of the principles behind Internet's successful design and evolution. Gain a good working knowledge of the basic building blocks of and the main keywords related to the Internet infrastructure.
 							</span>
 							<span id="w1-1-read" class="collapse">
 								<strong>Readings:</strong>
-								Chapter 1, "Web Programming", Step, Miller & Kirst.
+								<ul>
+									<li>Chapter 1. <i>"Web Programming"</i>, Step, Miller & Kirst.</li>
+									<li>A video on the history of Arpanet, Internet's precursor: <a href="https://archive.org/details/ComputerNetworks_TheHeraldsOfResourceSharing" target="_new">Computer Networks - The Heralds Of Resource Sharing (Arpanet, 1972)</a></li>
+								</ul>
 							</span>
 						</td>
 					</tr>
@@ -136,92 +139,222 @@
 							<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#w1-2-read">
 							<span class="glyphicon glyphicon-book"></span>
 							</button>
-							<span id="w1-2-learn" class="collapse">
+							<span id="w1-2-learn" class="collapse epl425-learnout">
 								<strong>Learning outcome:</strong>
 								<ul>
 									<li>Get acquainted with the Definition, History, Evolution, and Current Challenges of the World-Wide Web. Understand the main elements of the World-Wide Web.</li>
+									<li><a href="http://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/" target="_new">"As we
+									may think,"</a> by Vannevar Bush, <i>The Antlantic</i> (July 1945).</li>
 									<li>The Web as a Distributed System. Overview of the HTTP Protocol. Components and Interactions of Web Applications.</li>
 								</ul>
 							</span>
 							<span id="w1-2-read" class="collapse">
 								<strong>Readings:</strong>
-								Chapter 1, "Web Programming", Step, Miller & Kirst.
+								<ul>
+									<li>Chapter 1. <i>"Web Programming"</i>, Step, Miller & Kirst.</li>
+									<li>Internet Trends Report 2016	by Mary Meeker of Kleiner, Perkins, Caufield, Byers
+										(<a href="http://www.kpcb.com/internet-trends" target="_new">Slides</a>,
+										<a href="https://www.youtube.com/watch?v=334Gfug5OL0" target="_new" class="fa fa-youtube fa-lg" aria-hidden="true"></a>).
+									</li>
+								</li>
 							</span>
 						</td>
 					</tr>
 					<tr>
-						<td scope="row">Precept 1</td>
-						<td><strong>HTTP Protocol.</strong>
+						<td scope="row" style="white-space:nowrap">Precept 1</td>
+						<td><strong>Introduction to the basics of the Web Infrastructure.</strong>
 							<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#w1-p-learn">
 							<span class="fa fa-certificate"></span> </button>
 							<button type="button" class="btn btn-default btn-xs" data-toggle="collapse" data-target="#w1-p-read">
 							<span class="glyphicon glyphicon-book"></span>
 							</button>
-							<span id="w1-p-learn" class="collapse">
+							<div id="w1-p-learn" class="collapse epl425-learnout">
 								<strong>Learning outcome:</strong>
 								<ul>
-									<li>Understand the basic syntax and structure of HTTP messages.</li>
-									<li>Learn the basics of HTTP transactions.</li>
+									<li>Learn the principles of the Client-Server computing model.</li>
+									<li>Learn the architecture and main components of Web application infrastructures.</li>
+									<li>Understand the key notions of Cloud Computing.</li>
 								</ul>
-							</span>
-							<span id="w1-p-read" class="collapse">
-								<strong>Readings:</strong> The <a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol" target="_new">HTTP Protocol (Wikipedia).</a>
-							</span>
-						</td>
-					</tr>
-					<tr class="warning">
-						<th class="lead" colspan="2">Week 2: Introduction to Hypertext and Hypermedia</th>
-					</tr>
-					<tr>
-						<td scope="row">Lecture 3</td>
-						<td><strong>Introduction to HyperText.</strong>
-							<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#w2-1-learn">
-							<span class="fa fa-certificate"></span></button>
-							<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#w2-1-read">
-							<span class="glyphicon glyphicon-book"></span>
-							</button>
-							<span id="w2-1-learn" class="collapse">
-								<strong>Learning outcome:</strong>
-								<ul>
-									<li>Definition and History of Hypertext.</li>
-									<li>Understand the key principles of hypertext (nodes, hyperlinks, navigation) and the properties that hypertext systems need to abide to.</li>
-								</ul>
-							</span>
-							<span id="w2-1-read" class="collapse">
+							</div>
+							<div id="w1-p-read" class="collapse">
 								<strong>Readings:</strong>
-								<i>Multimedia and Hypertext: The Internet and Beyond.</i> J. Nielsen, AP Professional, 1995, chapters 1-5.
-							</span>
+								<ul>
+									<li>The <a href="https://en.wikipedia.org/wiki/Client%E2%80%93server_model" target="_new">Client-Server Model</a> (Wikipedia).</li><li><a href="http://people.eecs.berkeley.edu/~brewer/papers/GiantScale-IEEE.pdf" target="_new">"Lessons from Giant-Scale Services"</a> by Eric Brewer, <i>IEEE Internet Computing</i> (July/August 2001) (available in pdf from author's web site).</li>
+								</ul>
+							</div>
 						</td>
 					</tr>
 					<tr>
-						<td scope="row">Lecture 4</td>
-						<td><strong>Advanced HyperText Concepts.</strong>
-							<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#w2-2-learn">
-							<span class="fa fa-certificate"></span></button>
-							<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#w2-2-read">
+						<td scope="row" style="white-space:nowrap">Lab 1</td>
+						<td><strong>Introduction to Cloud Computing and Amazon Elastic Compute Cloud.</strong>
+							<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#w1-l-learn">
+							<span class="fa fa-certificate"></span> </button>
+							<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#w1-l-read">
 							<span class="glyphicon glyphicon-book"></span>
 							</button>
-							<span id="w2-2-learn" class="collapse">
+							<button type="button" class="btn btn-default btn-xs hidden-print">
+							<span class="comoon icon-notebook"></span>
+							</button>
+							<div id="w1-l-learn" class="collapse epl425-learnout">
 								<strong>Learning outcome:</strong>
 								<ul>
-									<li>Overview of Usability. Usability of hypertext systems.</li>
-									<li>Understand the notion of information overloading, network disorientation. Definition of information retrieval and information filtering. Navigation support mechanisms: backtracking, bookmarking, history mechanisms, milestones.</li>
+									<li>Understand the notion of virtual Linux servers.</li>
+									<li>Obtain hands-on familiarization with Virtualization concepts (physical vs virtual host, image vs instance)
+									Brief overview of the Virtualization / Cloud Provider landscape (IaaS vs PaaS vs SaaS)</li>
+									<li>Introduction and focus on Amazon Web Services (AWS)</li>
+									<li>Registering a GitHub Student Developer pack and getting AWS free-usage credits</li>
+									<li>Create an Amazon Web Services (AWS) account.</li>
+									<li>Launch your own virtual server instance on Amazon.</li>
+									<li>Learn about Amazon Machine Images (AMI's) and the Image Marketplace.</li>
+									<li>Identify and select an existing AMI based on prefereneces such as Linux distribution, installed software packages and libraries.</li>
+									<li>Configure the AMI resources (CPU, memory, storage, network) and deployment region.</li>
+									<li>Learn what is public/private key authentication. Create and upload an SSH key to your instance.</li>
+									<li>Launch and monitor your instance status.</li>
+									<li>Save your launched instance preferences.</li>
+									<li>Access your instance through an SSH client.</li>
+									<li>Terminate your Instance.</li>
 								</ul>
-							</span>
-							<span id="w2-2-read" class="collapse">
-								<strong>Readings:</strong>
-								<i>Multimedia and Hypertext: The Internet and Beyond.</i> J. Nielsen, AP Professional, 1995, chapters 8-10.
-							</span>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-			
-			<footer class="hidden-print">
-				<hr/>
-				<p class="text-center">[<a href="index.html">EPL425</a>]</p>
-				<small>Marios Dikaiakos, &copy; 2000-2017 </small>
-			</footer>
-		</div>
-	</body>
+							</ul>
+						</div>
+						<div id="w1-l-read" class="collapse">
+							<strong>Readings and References:</strong>
+							<ul>
+								<li><a href="https://aws.amazon.com/training/intro_series/" target="_new">"Introduction to Amazon Elastic Compute Cloud (EC2)</a> by Amazon.</li>
+								<li><a href="http://docs.aws.amazon.com/gettingstarted/latest/awsgsg-intro/gsg-aws-tutorials.html" target="_new">"Amazon
+								WS Tutorials"</a>.</li>
+								<li><a href="https://education.github.com/" target="_new">GitHub Education Resources.</a></li>
+							</ul>
+						</div>
+					</td>
+				</tr>
+				<tr class="warning">
+					<th class="lead" colspan="2">Week 2: Introduction to Hypertext and Hypermedia</th>
+				</tr>
+				<tr>
+					<td scope="row">Lecture 3</td>
+					<td><strong>Introduction to HyperText.</strong>
+						<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#w2-1-learn">
+						<span class="fa fa-certificate"></span></button>
+						<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#w2-1-read">
+						<span class="glyphicon glyphicon-book"></span>
+						</button>
+						<span id="w2-1-learn" class="collapse epl425-learnout">
+							<strong>Learning outcome:</strong>
+							<ul>
+								<li>Review the basic principles of Hypertext and its History.</li>
+								<li>Understand the key principles of hypertext (nodes, hyperlinks, navigation) and the properties that hypertext systems need to abide to.</li>
+							</ul>
+						</span>
+						<span id="w2-1-read" class="collapse">
+							<strong>Readings:</strong>
+							Chapters 1-5. <i>Multimedia and Hypertext: The Internet and Beyond.</i> J. Nielsen, AP Professional, 1995.
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td scope="row">Lecture 4</td>
+					<td><strong>Advanced HyperText Concepts.</strong>
+						<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#w2-2-learn">
+						<span class="fa fa-certificate"></span></button>
+						<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#w2-2-read">
+						<span class="glyphicon glyphicon-book"></span>
+						</button>
+						<span id="w2-2-learn" class="collapse epl425-learnout">
+							<strong>Learning outcome:</strong>
+							<ul>
+								<li>Overview of Usability. Usability of hypertext systems.</li>
+								<li>Understand the notion of information overloading, network disorientation. Definition of information retrieval and information filtering. Navigation support mechanisms: backtracking, bookmarking, history mechanisms, milestones.</li>
+							</ul>
+						</span>
+						<span id="w2-2-read" class="collapse">
+							<strong>Readings:</strong>
+							Chapters 8-10. <i>Multimedia and Hypertext: The Internet and Beyond.</i> J. Nielsen, AP Professional, 1995.
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td scope="row" style="white-space:nowrap">Lab 1</td>
+					<td><strong>Introduction to GitHub.</strong>
+						<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#w2-l-learn">
+						<span class="fa fa-certificate"></span> </button>
+						<button type="button" class="btn btn-default btn-xs  hidden-print" data-toggle="collapse" data-target="#w2-l-read">
+						<span class="glyphicon glyphicon-book"></span>
+						</button>
+						<div id="w2-l-learn" class="collapse epl425-learnout">
+							<strong>Learning outcome:</strong>
+							<ul>
+								<li>Learn the basics of <a href="https://git-scm.com/" target="_new">Git</a> and
+								<a href="http://github.com" target="_new">GitHub</a>.</li>
+								<li>Learn how to setup and use your Github account and GitHub Education Resources.</li>
+							</ul>
+						</div>
+						<div id="w2-l-read" class="collapse">
+							<strong>Readings and References:</strong>
+							<ul>
+								<li><a href="http://ftp.newartisans.com/pub/git.from.bottom.up.pdf" target="_new">"Git from the bottom up"</a> by John Wiegley (2009).</li>
+								<li><i class="fa fa-youtube fa-lg" aria-hidden="true"></i><a href="https://www.youtube.com/watch?v=U8GBXvdmHT4" target="_new">"The basics of Git and GitHub"</a> (2013).</li>
+								<li><a href="https://education.github.com/" target="_new">GitHub Education Resources.</a></li>
+							</ul>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td scope="row" style="white-space:nowrap">Lab 1</td>
+					<td><strong>Using GitHub.</strong>
+						<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#w1-l-learn">
+						<span class="fa fa-certificate"></span> </button>
+						<button type="button" class="btn btn-default btn-xs" data-toggle="collapse" data-target="#w1-l-read">
+						<span class="glyphicon glyphicon-book"></span>
+						</button>
+						<div id="w2-l-learn" class="collapse epl425-learnout">
+							<strong>Learning outcome:</strong>
+							<ul>
+								<li>Create a Git repository on <a href="http://github.com" target="_new">GitHub</a> and attach
+								it to <a href="https://github.com/UCY-CS-EPL425" target="_new">EPL425 repository</a>.</li>
+								<li>Familiarize with the Git Dashboard and creating / adding teams.</li>
+								<li>Install <a href="https://www.sourcetreeapp.com/" target="_new">SourceTree Git client</a> on your development environment.</li>
+								<li>Configure your development workspace, add your personal webpage HTML source to it.</li>
+								<li>Make the first commit to your Git repository. Make additional changes, commit them and understand the revision tree.</li>
+							</ul>
+						</div>
+						<div id="w1-l-read" class="collapse">
+							<strong>Readings and References:</strong>
+							<ul>
+								<li><a href="http://ftp.newartisans.com/pub/git.from.bottom.up.pdf" target="_new">"Git from the bottom up"</a> by John Wiegley (2009).</li>
+								<li><i class="fa fa-youtube fa-lg" aria-hidden="true"></i><a href="https://www.youtube.com/watch?v=U8GBXvdmHT4" target="_new">"The basics of Git and GitHub"</a> (2013).</li>
+								<li><a href="https://education.github.com/" target="_new">GitHub Education Resources.</a></li>
+							</ul>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<footer class="hidden-print">
+			<hr/>
+			<p class="text-center">[<a href="index.html">EPL425</a>]</p>
+			<small>Marios Dikaiakos, &copy; 2000-2017 </small>
+		</footer>
+	</div>
+	<!--
+							<td scope="row" style="white-space:nowrap">Precept 1</td>
+							<td><strong>HTTP Protocol.</strong>
+																																			<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#w1-p-learn">
+																																			<span class="fa fa-certificate"></span> </button>
+																																			<button type="button" class="btn btn-default btn-xs" data-toggle="collapse" data-target="#w1-p-read">
+																																			<span class="glyphicon glyphicon-book"></span>
+																																			</button>
+																																			<span id="w1-p-learn" class="collapse">
+																																																															<strong>Learning outcome:</stro  dng>
+																																																															<ul>
+																																																																																											<li>Understand the basic syntax and structure of HTTP messages.</li>
+																																																																																											<li>Learn the basics of HTTP transactions.</li>
+																																																															</ul>
+																																			</span>
+																																			<span id="w1-p-read" class="collapse">
+																																																															<strong>Readings:</strong> The <a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol" target="_new">HTTP Protocol (Wikipedia).</a>
+																																			</span>
+							</td>
+	-->
+</body>
 </html>
