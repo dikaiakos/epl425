@@ -104,7 +104,7 @@
 			<h3>Πρόγραμμα Μαθημάτων <a target="_blank" onclick="javascript:$('.allshow').toggle();" class="btn btn-primary btn-success small">&raquo;</a></h3>
 			
 			
-			<table class="table table-responsive table-condensed table-hover ">
+			<table class="table table-responsive table-condensed table-hover" style="border-top, border-bottom: solid 1px grey">
 				<thead>
 					
 				</thead>
@@ -151,10 +151,8 @@
 							<div id="w1-2-learn" class="collapse epl425-learnout">
 								<strong>Learning outcome:</strong>
 								<ul>
-									<li>Get acquainted with the Definition, History, Evolution, and Current Challenges of the World-Wide Web. Understand the main elements of the World-Wide Web.</li>
-									<li><a href="http://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/" target="_new">"As we
-									may think,"</a> by Vannevar Bush, <i>The Antlantic</i> (July 1945).</li>
-									<li>The Web as a Distributed System. Overview of the HTTP Protocol. Components and Interactions of Web Applications.</li>
+									<li>Get acquainted with the Definition, History, Evolution, and Current Challenges of the World-Wide Web. Understand the main elements of the World-Wide Web. Become familiar with the HTTP protocol.</li>
+									<li>Understand the Web as a Distributed System. Overview of the HTTP Protocol. Components and Interactions of Web Applications.</li>
 									<li>Understand the function of Naming Services and the Domain Name Service.</li>
 								</ul>
 							</div>
@@ -162,6 +160,9 @@
 								<strong>Readings:</strong>
 								<ul>
 									<li>Chapter 1. <i>"Web Programming"</i>, Step, Miller & Kirst.</li>
+									<li><a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol" target="_new">The HTTP Protocol.</a></li>
+									<li><a href="http://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/" target="_new">"As we
+									may think,"</a> by Vannevar Bush, <i>The Antlantic</i> (July 1945).</li>
 									<li>Internet Trends Report 2016	by Mary Meeker of Kleiner, Perkins, Caufield, Byers
 										(<a href="http://www.kpcb.com/internet-trends" target="_new">Slides</a>,
 										<a href="https://www.youtube.com/watch?v=334Gfug5OL0" target="_new" class="fa fa-youtube fa-lg" aria-hidden="true"></a>).
@@ -171,7 +172,7 @@
 						</td>
 					</tr>
 					<tr>
-						<td scope="row" style="white-space:nowrap">Precept 1</td>
+						<td class="active" scope="row" style="white-space:nowrap">Precept 1</td>
 						<td><strong>Introduction to the basics of the Web Infrastructure.</strong>
 							<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#w1-p-learn">
 							<span class="fa fa-certificate"></span> </button>
@@ -198,8 +199,8 @@
 							</div>
 						</td>
 					</tr>
-					<tr class="danger">
-						<td scope="row" style="white-space:nowrap">Lab 1</td>
+					<tr>
+						<td class="danger" scope="row" style="white-space:nowrap">Lab 1</td>
 						<td><strong>Introduction to Cloud Computing and Amazon Elastic Compute Cloud.</strong>
 							<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#w1-l-learn">
 							<span class="fa fa-certificate"></span> </button>
@@ -288,7 +289,7 @@
 					</td>
 				</tr>
 				<tr>
-					<td scope="row" style="white-space:nowrap">Precept 2</td>
+					<td class="active" scope="row" style="white-space:nowrap">Precept 2</td>
 					<td><strong>Introduction to GitHub.</strong>
 						<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#w2-l-learn">
 						<span class="fa fa-certificate"></span> </button>
@@ -316,8 +317,8 @@
 						</div>
 					</td>
 				</tr>
-				<tr class="danger">
-					<td scope="row" style="white-space:nowrap">Lab 2</td>
+				<tr>
+					<td class="danger" scope="row" style="white-space:nowrap">Lab 2</td>
 					<td><strong>Using GitHub.</strong>
 						<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#w2-p-learn">
 						<span class="fa fa-certificate"></span> </button>
@@ -366,12 +367,18 @@
 						<span class="fi-clipboard-pencil"></span>
 						</button>
 						<div id="w3-1-learn" class="collapse epl425-learnout">
-							<strong>Learning outcome:</strong> History of HTML. Become familiar with page structure, block and
+							<strong>Learning outcome:</strong> History of HTML. Get familiar with Principles of tagging languages, SGML,
+							Document Type Definitions (DTD). Introduction to HTML: History, Syntax. Understand and familiarize with the Structure of HTML Documents. Become familiar with page structure, block and
 							inline elements, header and metadata information.
 						</div>
 						<span id="w3-1-read" class="collapse">
 							<strong>Readings:</strong>
-							Chapter 2. <i>Web Programming Step by Step (Second edition)</i> M. Stepp, J. Miller and V. Kirst, Lulu 2012.
+							<ul>
+								<li>Chapter 2. <i>Web Programming Step by Step (Second edition)</i> M. Stepp, J. Miller and V. Kirst, Lulu 2012.</li>
+								<li><a href="http://www.w3.org/wiki/The_basics_of_HTML" target="_new">http://www.w3.org/wiki/The_basics_of_HTML</a></li>
+								<li><a href="http://www.w3.org/wiki/Doctypes_and_markup_styles" target="_new">http://www.w3.org/wiki/Doctypes_and_markup_styles</a></li>
+								<li>Chapter 10. <i>Interact with Web Standards. A Holistic Approach to Web Design.</i> E. Anderson , V. DeVolt et al., New Riders 2010.</li>
+							</ul>
 						</span>
 					</td>
 				</tr>
@@ -392,91 +399,198 @@
 						</span>
 						<span id="w3-2-read" class="collapse">
 							<strong>Readings:</strong>
-							Chapter 2. <i>Web Programming Step by Step (Second edition)</i> M. Stepp, J. Miller and V. Kirst, Lulu 2012.
-						</span>
-					</td>
-				</tr>
-				<tr>
-					<td scope="row" style="white-space:nowrap">Precept 3</td>
-					<td><strong>HTML Publishing.</strong>
-						<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#w3-p-learn">
-						<span class="fa fa-certificate"></span> </button>
-						<button type="button" class="btn btn-default btn-xs" data-toggle="collapse" data-target="#w3-p-read">
-						<span class="glyphicon glyphicon-book"></span>
-						</button>
-						<button type="button" class="btn btn-default btn-xs hidden-print">
-						<span class="fi-clipboard-pencil"></span>
-						</button>
-						<div id="w3-p-learn" class="collapse epl425-learnout">
-							<strong>Learning outcome:</strong>
 							<ul>
-								<li>Create a simple, HTML personal web page using a text editor. Upload it on GitHub.</li>
-								<li>Upload your web page using an SCP client to your AWS instance.</li>
-								<li>Verify HTML source file permissions in Apache document root folder.</li>
-								<li>Publish and access your web page from the browser.</li>
-							</ul>
-						</div>
-						<div id="w3-p-read" class="collapse">
-							<strong>Readings and References:</strong> <a href="https://en.wikipedia.org/wiki/LAMP_(software_bundle)" target="_new">LAMP software bundle</a> (Wikipedia).
-						</div>
-					</td>
-				</tr>
-				<tr class="danger">
-					<td scope="row" style="white-space:nowrap">Lab 3</td>
-					<td><strong>LAMP</strong>
-						<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#w3-l-learn">
-						<span class="fa fa-certificate"></span> </button>
-						<button type="button" class="btn btn-default btn-xs  hidden-print" data-toggle="collapse" data-target="#w3-l-read">
-						<span class="glyphicon glyphicon-book"></span>
-						</button>
-						<button type="button" class="btn btn-default btn-xs hidden-print">
-						<span class="fi-clipboard-pencil"></span>
-						</button>
-						<div id="w3-l-learn" class="collapse epl425-learnout">
-							<strong>Learning outcome:</strong>
-							<ul>
-								<li>Learn how to Install and launch a LAMP stack on your virtual web server. Upload and publish your first web page on your vitual server.</li>
-								<li>Install and Launch a LAMP stack on your virtual web server.</li>
-								<li>Launch a new AWS instance from your saved preferences and connect via the SSH client.</li>
-								<li>Familiarize with the system package manager, update and install necessary sofware dependencies.</li>
-								<li>Install the <a href="https://httpd.apache.org" target="_new">Apache web server</a>, the <a href="https://www.mysql.com" target="_new">MySQL database server</a>, and the latest
-								<a href="http://php.net" target="_new">PHP</a> software packages.</li>
-								<li>Set web directory ownership and permissions, secure MySQL installation, and test your LAMP stack installation.</li>
-							</ul>
-						</div>
-						<div id="w3-l-read" class="collapse">
-							<strong>Readings and References:</strong>
-						</div>
-					</td>
-				</tr>
-			</tbody>
-		</table>
-		
-		<footer class="hidden-print">
-			<hr/>
-			<p class="text-center">[<a href="index.html">EPL425</a>]</p>
-			<small>Marios Dikaiakos, &copy; 2000-2017 </small>
-		</footer>
-	</div>
-	<!--
-							<td scope="row" style="white-space:nowrap">Precept 1</td>
-							<td><strong>HTTP Protocol.</strong>
-																																																		<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#w1-p-learn">
-																																																		<span class="fa fa-certificate"></span> </button>
-																																																		<button type="button" class="btn btn-default btn-xs" data-toggle="collapse" data-target="#w1-p-read">
-																																																		<span class="glyphicon glyphicon-book"></span>
-																																																		</button>
-																																																		<span id="w1-p-learn" class="collapse">
-																																																																																													<strong>Learning outcome:</stro  dng>
-																																																																																													<ul>
-																																																																																																																																								<li>Understand the basic syntax and structure of HTTP messages.</li>
-																																																																																																																																								<li>Learn the basics of HTTP transactions.</li>
-																																																																																													</ul>
-																																																		</span>
-																																																		<span id="w1-p-read" class="collapse">
-																																																																																													<strong>Readings:</strong> The <a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol" target="_new">HTTP Protocol (Wikipedia).</a>
-																																																		</span>
+								<li>Chapter 2. <i>Web Programming Step by Step (Second edition)</i> M. Stepp, J. Miller and V. Kirst, Lulu 2012.</li>
+								<li>
+								</span>
 							</td>
-	-->
-</body>
+						</tr>
+						<tr>
+							<td class="active" scope="row" style="white-space:nowrap">Precept 3</td>
+							<td><strong>HTML 5.</strong>
+								<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#w3-p-learn">
+								<span class="fa fa-certificate"></span> </button>
+								<button type="button" class="btn btn-default btn-xs" data-toggle="collapse" data-target="#w3-p-read">
+								<span class="glyphicon glyphicon-book"></span>
+								</button>
+								<button type="button" class="btn btn-default btn-xs hidden-print">
+								<span class="fi-clipboard-pencil"></span>
+								</button>
+								<div id="w3-p-learn" class="collapse epl425-learnout">
+									<strong>Learning outcome:</strong> Explore the new features brought to HTML with the HTML5.0 standard.
+								</div>
+								<div id="w3-p-read" class="collapse">
+									<strong>Readings and References:</strong> <i class="fa fa-youtube fa-lg" aria-hidden="true"></i><a href="https://www.youtube.com/watch?v=siOHh0uzcuY&feature=channel" target="_new">Introduction to HTML5</a> Brad Neuberg,
+									YouTube's <a href="https://www.youtube.com/channel/UC_x5XG1OV2P6uZZ5FSM9Ttw" target="_new">Google Developpers Channel</a> (2009).
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td  class="danger" scope="row" style="white-space:nowrap">Lab 3</td>
+							<td><strong>Installing the LAMP stack on AMI and deploy your first HTML page</strong>
+								<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#w3-l-learn">
+								<span class="fa fa-certificate"></span> </button>
+								<button type="button" class="btn btn-default btn-xs  hidden-print" data-toggle="collapse" data-target="#w3-l-read">
+								<span class="glyphicon glyphicon-book"></span>
+								</button>
+								<button type="button" class="btn btn-default btn-xs hidden-print">
+								<span class="fi-clipboard-pencil"></span>
+								</button>
+								<div id="w3-l-learn" class="collapse epl425-learnout">
+									<strong>Learning outcomes:</strong>
+									<ul>
+										<li><emph>Learn how to Install and launch a LAMP stack on your virtual web server</emph></li>
+										<ul type="square">
+											<li>Install and Launch a LAMP stack on your virtual web server.</li>
+											<li>Launch a new AWS instance from your saved preferences and connect via the SSH client.</li>
+											<li>Familiarize with the system package manager, update and install necessary sofware dependencies.</li>
+											<li>Install the <a href="https://httpd.apache.org" target="_new">Apache web server</a>, the <a href="https://www.mysql.com" target="_new">MySQL database server</a>, and the latest
+											<a href="http://php.net" target="_new">PHP</a> software packages.</li>
+											<li>Set web directory ownership and permissions, secure MySQL installation, and test your LAMP stack installation.</li>
+										</ul>
+										<li><emph>Deploy your first Web page on your AWS instance</emph></li>
+										<ul type="square">
+											<li>Create a simple, HTML personal web page using a text editor like <a href="https://www.sublimetext.com/" target="_new">Sublime</a>. Upload it on GitHub.</li>
+											<li>Upload your web page using an SCP client to your AWS instance.</li>
+											<li>Verify HTML source file permissions in Apache document root folder.</li>
+											<li>Publish and access your web page from the browser.</li>
+											<li>Upload and publish your first web page on your vitual server.</li>
+										</ul>
+									</ul>
+								</div>
+								<div id="w3-l-read" class="collapse">
+									<strong>Readings and References:</strong> <a href="https://en.wikipedia.org/wiki/LAMP_(software_bundle)" target="_new">LAMP software bundle</a> (Wikipedia).
+								</div>
+							</td>
+						</tr>
+						
+						<!-- WEEK 4 -->
+						<tr class="warning">
+							<th class="lead" colspan="2">Week 4: Cascading Style Sheets (CSS)</th>
+						</tr>
+						<tr>
+							<td scope="row">Lecture 7</td>
+							<td><strong>Basic CSS.</strong>
+								<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#w4-1-learn">
+								<span class="fa fa-certificate"></span></button>
+								<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#w4-1-read">
+								<span class="glyphicon glyphicon-book"></span>
+								</button>
+								<button type="button" class="btn btn-default btn-xs hidden-print">
+								<span class="fi-clipboard-pencil"></span>
+								</button>
+								<div id="w4-1-learn" class="collapse epl425-learnout">
+									<strong>Learning outcome:</strong> Introduction to CSS concept, syntax and properties.
+								</div>
+								<div id="w4-1-read" class="collapse">
+									<strong>Readings:</strong>
+									<ul>
+										<li>Chapter 3. <i>Web Programming Step by Step (Second edition)</i> M. Stepp, J. Miller and V. Kirst, Lulu 2012.</li>
+										<li><a href="http://www.w3.org/wiki/CSS_basics" target="_new">http://www.w3.org/wiki/CSS_basics</a></li>
+										<li>Chapter 11. <i>Interact with Web Standards. A Holistic Approach to Web Design.</i> E. Anderson , V. DeVolt et al., New Riders 2010.</li>
+									</ul>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td scope="row">Lecture 8</td>
+							<td><strong>More CSS Syntax.</strong>
+								<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#w4-2-learn">
+								<span class="fa fa-certificate"></span></button>
+								<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#w4-2-read">
+								<span class="glyphicon glyphicon-book"></span>
+								</button>
+								<button type="button" class="btn btn-default btn-xs hidden-print">
+								<span class="fi-clipboard-pencil"></span>
+								</button>
+								<span id="w4-2-learn" class="collapse epl425-learnout">
+									<strong>Learning outcome:</strong> Learning advanced CSS syntax. Linking CSS files with HTML. CSS Shorthand.
+									The Box Model and white space. CSS Measurement Units. Cascading Rules and Conflict Resolution.
+								</span>
+								<span id="w4-2-read" class="collapse">
+									<strong>Readings:</strong>
+									<ul>
+										<li>Chapter 3. <i>Web Programming Step by Step (Second edition)</i> M. Stepp, J. Miller and V. Kirst, Lulu 2012.</li>
+										<li>Chapter 11. <i>Interact with Web Standards. A Holistic Approach to Web Design.</i> E. Anderson , V. DeVolt et al., New Riders 2010.</li>
+										<li><a href="http://www.w3schools.com/css/default.asp" target="_new">CSS Tutorial</a> from w3schools.</li>
+										<li><a href="https://www.w3.org/wiki/Web_Standards_Curriculum#CSS" target="_new">CSS Tutorial</a> from
+										<a href="http://www.w3.org" target="_new">W3C</a>.</li>
+									</ul>
+								</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="active" scope="row" style="white-space:nowrap">Precept 4</td>
+							<td><strong>Semantic Web</strong>
+								<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#w4-p-learn">
+								<span class="fa fa-certificate"></span> </button>
+								<button type="button" class="btn btn-default btn-xs" data-toggle="collapse" data-target="#w4-p-read">
+								<span class="glyphicon glyphicon-book"></span>
+								</button>
+								<button type="button" class="btn btn-default btn-xs hidden-print">
+								<span class="fi-clipboard-pencil"></span>
+								</button>
+								<div id="w4-p-learn" class="collapse epl425-learnout">
+									<strong>Learning outcome:</strong> Understand the concept of Semantics and
+									become familiar with the notion of the Semantic Web, Semantic Web
+									standards (<a href="https://www.w3.org/RDF/" trget="_new">RDF</a>
+									and <a href="http://microformats.org/" target="_new">Microformats</a>.
+								</div>
+								<div id="w4-p-read" class="collapse">
+									<strong>Readings and References:</strong>
+									<ul>
+										<li><a href="https://en.wikipedia.org/wiki/Microformat" target="_new">Microformats</a> (Wikipedia).</li>
+										<li><a href="https://en.wikipedia.org/wiki/RDFa" target="_new">RDFa: RDF in Attributes</a> (Wikipedia).</li>
+									</ul>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td  class="danger" scope="row" style="white-space:nowrap">Lab 4</td>
+							<td><strong>HTML / CSS Playgrounds</strong>
+								<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#w4-l-learn">
+								<span class="fa fa-certificate"></span> </button>
+								<button type="button" class="btn btn-default btn-xs  hidden-print" data-toggle="collapse" data-target="#w4-l-read">
+								<span class="glyphicon glyphicon-book"></span>
+								</button>
+								<button type="button" class="btn btn-default btn-xs hidden-print">
+								<span class="fi-clipboard-pencil"></span>
+								</button>
+								<div id="w4-l-learn" class="collapse epl425-learnout">
+									<strong>Learning outcomes:</strong>
+									Become familiar with HTML/CSS development and testing using online
+									and offline tools. Students will:
+									<ul type="square">
+										<li>Test their HTML code and CSS (front-end code) straight away through online playgrounds.</li>
+										<li>Separate functional blocks to different members of their team. Share front-end code and get feedback.</li>
+										<li>Track down bugs in their code.</li>
+										<li>Explore the code behind existing webpages and how they are layout using CSS.</li>
+										<li>Set breakpoints like a desktop IDE.</li>
+										<li>Use developer tools to obtain code optimization tips.</li>
+										<li>Inspect DOM and identify styles.</li>
+										<li>Use analytics tool to observe and record site loading performance (network & rendering).</li>
+										<li>Receive insights on which functional blocks need improvement.</li>
+										<li>Receive actionable recommendation on optimizing your website.</li>
+									</ul>
+								</div>
+								<div id="w4-l-read" class="collapse">
+									<strong>Readings and References:</strong>
+									<ul>
+										<li><a href="http://codepen.io/" target="_new">CodePen.io</a></li>
+										<li><a href="https://developers.google.com/chrome-developer-tools/" target="_new">Google Chrome Developer Tools</a></li>
+										<li><a href="https://getfirebug.com/whatisfirebug" target="_new">Firefox Firebug</a></li>
+									</ul>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<footer class="hidden-print">
+					<hr/>
+					<p class="text-center">[<a href="index.html">EPL425</a>]</p>
+					<small>Marios Dikaiakos, &copy; 2000-2017 </small>
+				</footer>
+		</div>
+	</body>
 </html>
