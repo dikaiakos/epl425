@@ -427,9 +427,6 @@
 								<button type="button" class="btn btn-default btn-xs  hidden-print" data-toggle="collapse" data-target="#mod4-lab3-read">
 								<span class="glyphicon glyphicon-book"></span>
 								</button>
-								<button type="button" class="btn btn-default btn-xs hidden-print">
-								<span class="fi-clipboard-pencil"></span>
-								</button>
 								<div id="mod4-lab3-learn" class="collapse epl425-learnout">
 									<strong>Learning outcomes:</strong>
 									<ul>
@@ -465,6 +462,9 @@
 								<button type="button" class="btn btn-default btn-xs  hidden-print" data-toggle="collapse" data-target="#mod4-p-read">
 								<span class="glyphicon glyphicon-book"></span>
 								</button>
+								<button type="button" class="btn btn-default btn-xs hidden-print">
+								<span class="fi-clipboard-pencil"></span>
+								</button>
 								<span id="mod4-p-learn" class="collapse epl425-learnout">
 									<strong>Learning outcome:</strong>
 									Get introduced to the Design Thinking methodology.
@@ -473,10 +473,8 @@
 									<strong>Readings, Videos and References:</strong>
 									<ul>
 										<li>"Design Thinking" by Tim Brown, <i>Harvard Business Review</i>, June 2008.</li>
-										<li><a href="https://www.youtube.com/watch?v=a7sEoEvT8l8" target="_new">"Why Design Thinking?"</a> A  short video by Sean VanGenderen with a quick overview of what Design Thinking is.</li>
+										<li>"Why Design Thinking?" A <a href="https://www.youtube.com/watch?v=a7sEoEvT8l8" target="_new">video by Sean VanGenderen</a> explaining what Design Thinking is.</li>
 										<li><a href="https://www.youtube.com/watch?v=pXtN4y3O35M" target="_new">Design Thinking: How it Works?</a> by IBM.</li>
-										<li><a href="https://www.youtube.com/watch?v=IzNv3CXSE9I" target="_new">"Design Thinking is About Doing."</a> An 8-min video by Stefanos Zenios, Stanford Graduate School of Business.</li>
-										<li><a href="https://www.youtube.com/watch?v=WrdSkqRypsg" target="_new">"Complex Systems Design and Design Thinking."</a> An 8-min video by IBM.</li>
 										<li><a href="https://www.youtube.com/watch?v=-FzFk3E5nxM" target="_new">Stanford Design Thinking Virtual Crash Course (80 min video)</a> explaining the Design Thinking process with a hands-on example from <a href="http://dschool.stanford.edu" target="_new">Hasso Platner Institute of Design</a> at Stanford University.</li>
 									</ul>
 								</div>
