@@ -171,7 +171,6 @@
 								<a class="btn btn-default btn-xs hidden-print" href="https://piazza.com/ucy.ac.cy/fall2017/cs425/resources" target="_new">
 									<span class="fi-clipboard-pencil"></span> Notes
 								</a>
-
 								<div id="lab1-l-learn" class="collapse epl425-learnout">
 									<strong>Learning outcome:</strong>
 									<ul>
@@ -326,8 +325,6 @@
 									<ul>
 										<li>Get acquainted with the Definition, History, Evolution, Impact and Key Ideas behind the World-Wide Web.</li>
 										<li>Learn the main elements of the Web.</li>
-										<li>Overview the concept of Web Science and Understand the unique challenges of developing applications for the Web.</li>
-										<li>Introduction to Modeling of the Web graph; understand the challenges of Web scale analysis.</li>
 									</ul>
 								</div>
 								<div id="lect3-read" class="collapse">
@@ -335,7 +332,6 @@
 									<ul>
 										<li>Chapter 1. <i>"Web Programming"</i>, Step, Miller & Kirst.</li>
 										<li><a href="http://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/" target="_new">"As we may think,"</a> by Vannevar Bush, <i>The Antlantic</i> (July 1945).</li>
-										<li>"Web Science: An Interdisciplinary Approach to Understanding the Web." James Hendler, Nigel Shadbolt, Wendy Hall, Tim Berners-Lee, and Daniel Weitzner. <i>Communications of the ACM.</i> Vol. 51, No. 7, July 2008. pp. 60-69.</li>
 										<li><a href="https://youtu.be/bpdDtK5bVKk" target="_new">"First thought, best thought.”</a> J. Lanier talks about Ted Nelson at Chapman University, 2014.</li>
 									</ul>
 								</div>
@@ -364,8 +360,8 @@
 										<li>Overview of the Web system architecture.</li>
 										<li>Web servers, web clients, three-tier Web-site architecture.</li>
 										<li>Understand the concept and principles of Web caching.</li>
-										<li>Review the concepts of <i><a href="https://en.wikipedia.org/wiki/Latency_(engineering)" target="_new">latency</a></i>, 
-											<i> <a href="https://en.wikipedia.org/wiki/Bandwidth_(computing)" target="_new">bandwidth</a></i> and <i><a href="https://en.wikipedia.org/wiki/Load_balancing_(computing)" target="_new">load banacing</a></i>.</li>
+										<li>Review the concepts of <i><a href="https://en.wikipedia.org/wiki/Latency_(engineering)" target="_new">latency</a></i>,
+										<i> <a href="https://en.wikipedia.org/wiki/Bandwidth_(computing)" target="_new">bandwidth</a></i> and <i><a href="https://en.wikipedia.org/wiki/Load_balancing_(computing)" target="_new">load banacing</a></i>.</li>
 									</ul>
 								</div>
 								<div id="lect4-read" class="collapse">
@@ -434,7 +430,7 @@
 						<! -- LECTURE 5-->
 						<tr>
 							<td scope="row" style="white-space:nowrap">Lecture 5: Fri. 22/9</td>
-							<td><strong>Web Infrastructure Fundamentals.</strong>
+							<td><strong>Web Infrastructure Fundamentals: Cluster Architecture and Metrics.</strong>
 								<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#lect5-learn">
 								<span class="fa fa-certificate"></span> </button>
 								<button type="button" class="btn btn-default btn-xs" data-toggle="collapse" data-target="#lect5-read">
@@ -446,9 +442,9 @@
 								<div id="lect5-learn" class="collapse epl425-learnout">
 									<strong>Learning outcome:</strong>
 									<ul>
-										<li>Understand the architecture and key components of Web service infrastructures.</li>
-										<li>Learn the concepts of Load Balancing, Availability, Replication, Partitioning, Failover.</li>
-										<li>Overview of availability metrics.</li>
+										<li>Understand the architecture and key components of Web service infrastructures: Clusters, Load Balancers.</li>
+										<li>Learn the concepts of Load Balancing.</li>
+										<li>Overview of availability metrics: uptime, yield, harvest.</li>
 									</ul>
 								</div>
 								<div id="lect5-read" class="collapse">
@@ -459,39 +455,34 @@
 								</div>
 							</td>
 						</tr>
+
 						<! -- LECTURE 6-->
 						<tr>
-							<td scope="row" style="white-space:nowrap">Lecture 6: Tu. 26/9</td>
-							<td><strong>Names on the Internet and the Web: DNS and URIs.</strong>
+							<td scope="row" style="white-space:nowrap">Lecture 6: Tue. 26/9</td>
+							<td><strong>Web Infrastructure Fundamentals: Partitioning, Replication and Availability.</strong>
 								<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#lect6-learn">
 								<span class="fa fa-certificate"></span> </button>
 								<button type="button" class="btn btn-default btn-xs" data-toggle="collapse" data-target="#lect6-read">
 								<span class="glyphicon glyphicon-book"></span>
 								</button>
-								<a href="" target="_new" type="button" class="btn btn-default btn-xs hidden-print">
+								<a href="http://www.piazza.com/class_profile/get_resource/j66n84kq5fw63q/j7vsvi6myudtg" target="_new" type="button" class="btn btn-default btn-xs hidden-print">
 									<span class="fi-clipboard-pencil"></span>
 								</a>
 								<div id="lect6-learn" class="collapse epl425-learnout">
-									<strong>Learning outcome:</strong>
-									<ul>
-										<li>Introduction to the concept of Naming Services.</li>
-										<li>Overview of the Domain Name System (DNS) and its operation.</li>
-										<li>Understand the principles of naming for the Web,the function of Naming Services and the Domain Name Service.</li>
-									</ul>
+									<strong>Learning outcome:</strong> Introduction to concepts of QD Metric, Partioning, Replication, Availability under failure, Admission control.
 								</div>
 								<div id="lect6-read" class="collapse">
 									<strong>Readings:</strong>
 									<ul>
-										<li><a href="https://en.wikipedia.org/wiki/Domain_Name_System" target="_new">Domain Name System</a> on Wikipedia.</li>
-										<li><a href="http://www.w3.org/Addressing/" target="_new">Naming and Addressing</a>, an overview of W3C materials related to Addressing.</li>
+										<li><a href="http://people.eecs.berkeley.edu/~brewer/papers/GiantScale-IEEE.pdf" target="_new">"Lessons from Giant-Scale Services"</a> by Eric Brewer, <i>IEEE Internet Computing</i> (July/August 2001) (available in pdf from author's web site).</li>
 									</ul>
 								</div>
 							</td>
 						</tr>
 						<! -- PRECEPT 4-->
 						<tr>
-							<td class="active" scope="row" style="white-space:nowrap">Precept 4: Tu. 26/9</td>
-							<td><strong>Overview of Open-source Version Control through Github.</strong>
+							<td class="active" scope="row" style="white-space:nowrap">Precept 4: Tue. 26/9</td>
+							<td><strong>Web Science.</strong>
 								<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#prec4-learn">
 								<span class="fa fa-certificate"></span> </button>
 								<button type="button" class="btn btn-default btn-xs  hidden-print" data-toggle="collapse" data-target="#prec4-read">
@@ -500,21 +491,12 @@
 								<div id="prec4-learn" class="collapse epl425-learnout">
 									<strong>Learning outcome:</strong>
 									<ul>
-										<li>Learn the basics of <a href="https://git-scm.com/" target="_new">Git</a> and
-										<a href="http://github.com" target="_new">GitHub</a>.</li>
-										<li>Learn how to setup and use your Github account and GitHub Education Resources.</li>
-										<li>Learn how to create a Git repository on <a href="http://github.com" target="_new">GitHub</a> and attach
-										it to <a href="https://github.com/UCY-CS-EPL425" target="_new">EPL425 repository</a>.</li>
+										<li>Understand what is Web Science and discuss the unique challenges of developing applications for the Web.</li>
+										<li>Introduction to Modeling of the Web graph; understand the challenges of Web scale analysis.</li>
 									</ul>
 								</div>
 								<div id="prec4-read" class="collapse">
-									<strong>Readings, Videos and References:</strong>
-									<ul>
-										<li><a href="https://youtu.be/DVDLoe_2MBc?list=PL9KVIdeJ2K8MEMoZH5wzrHa4prGvrhHJA" target="_new">"Getting Started with GitHub + Git,"</a> a video from the Google Tools for Entrepreneurs.</li>
-										<li><a href="http://ftp.newartisans.com/pub/git.from.bottom.up.pdf" target="_new">"Git from the bottom up"</a> by John Wiegley (2009).</li>
-										<li><a href="https://git-scm.com/book/en/v2" target="_new">"Pro Git"</a> by Scott Chacon and Ben Straub, Apress, 2nd edition, 2014.</li>
-										<li><i class="fa fa-youtube fa-lg" aria-hen="true"></i><a href="https://www.youtube.com/watch?v=U8GBXvdmHT4" target="_new">"The basics of Git and GitHub"</a> (2013).</li>
-									</ul>
+									<strong>Reading:</strong> "Web Science: An Interdisciplinary Approach to Understanding the Web." James Hendler, Nigel Shadbolt, Wendy Hall, Tim Berners-Lee, and Daniel Weitzner. <i>Communications of the ACM.</i> Vol. 51, No. 7, July 2008. pp. 60-69.
 								</div>
 							</td>
 						</tr>
@@ -546,10 +528,39 @@
 								</div>
 							</td>
 						</tr>
-						
 						<! -- LECTURE 7-->
 						<tr>
-							<td scope="row">Lecture 7: Fri. 29/9</td>
+							<td scope="row" style="white-space:nowrap">Lecture 7: Tue. 29/9</td>
+							<td><strong>Names on the Internet and the Web: DNS and URIs.</strong>
+								<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#lect7-learn">
+								<span class="fa fa-certificate"></span> </button>
+								<button type="button" class="btn btn-default btn-xs" data-toggle="collapse" data-target="#lect7-read">
+								<span class="glyphicon glyphicon-book"></span>
+								</button>
+								<a href="" target="_new" type="button" class="btn btn-default btn-xs hidden-print">
+									<span class="fi-clipboard-pencil"></span>
+								</a>
+								<div id="lect7-learn" class="collapse epl425-learnout">
+									<strong>Learning outcome:</strong>
+									<ul>
+										<li>Introduction to the concept of Naming Services.</li>
+										<li>Overview of the Domain Name System (DNS) and its operation.</li>
+										<li>Understand the principles of naming for the Web,the function of Naming Services and the Domain Name Service.</li>
+									</ul>
+								</div>
+								<div id="lect7-read" class="collapse">
+									<strong>Readings:</strong>
+									<ul>
+										<li><a href="https://en.wikipedia.org/wiki/Domain_Name_System" target="_new">Domain Name System</a> on Wikipedia.</li>
+										<li><a href="http://www.w3.org/Addressing/" target="_new">Naming and Addressing</a>, an overview of W3C materials related to Addressing.</li>
+									</ul>
+								</div>
+							</td>
+						</tr>
+						
+						<! -- LECTURE 8-->
+						<tr>
+							<td scope="row">Lecture 8: Tue. 3/10</td>
 							<td><strong>The HTTP Protocol.</strong>
 								<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#lect7-learn">
 								<span class="fa fa-certificate"></span></button>
@@ -572,6 +583,37 @@
 									<ul>
 										<li><a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol" target="_new">The HTTP Protocol.</a></li>
 										<li>"HTTP: The Definitive Guide" by D. Gourney, B. Totty et al., <i>O'Reilly</i>, 2002.</li>
+									</ul>
+								</div>
+							</td>
+						</tr>
+						
+						<! -- PRECEPT 5-->
+						<tr>
+							<td class="active" scope="row" style="white-space:nowrap">Precept 5: Tue. 29/9</td>
+							<td><strong>Overview of Open-source Version Control through Github.</strong>
+								<button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#prec5-learn">
+								<span class="fa fa-certificate"></span> </button>
+								<button type="button" class="btn btn-default btn-xs  hidden-print" data-toggle="collapse" data-target="#prec5-read">
+								<span class="glyphicon glyphicon-book"></span>
+								</button>
+								<div id="prec5-learn" class="collapse epl425-learnout">
+									<strong>Learning outcome:</strong>
+									<ul>
+										<li>Learn the basics of <a href="https://git-scm.com/" target="_new">Git</a> and
+										<a href="http://github.com" target="_new">GitHub</a>.</li>
+										<li>Learn how to setup and use your Github account and GitHub Education Resources.</li>
+										<li>Learn how to create a Git repository on <a href="http://github.com" target="_new">GitHub</a> and attach
+										it to <a href="https://github.com/UCY-CS-EPL425" target="_new">EPL425 repository</a>.</li>
+									</ul>
+								</div>
+								<div id="prec5-read" class="collapse">
+									<strong>Readings, Videos and References:</strong>
+									<ul>
+										<li><a href="https://youtu.be/DVDLoe_2MBc?list=PL9KVIdeJ2K8MEMoZH5wzrHa4prGvrhHJA" target="_new">"Getting Started with GitHub + Git,"</a> a video from the Google Tools for Entrepreneurs.</li>
+										<li><a href="http://ftp.newartisans.com/pub/git.from.bottom.up.pdf" target="_new">"Git from the bottom up"</a> by John Wiegley (2009).</li>
+										<li><a href="https://git-scm.com/book/en/v2" target="_new">"Pro Git"</a> by Scott Chacon and Ben Straub, Apress, 2nd edition, 2014.</li>
+										<li><i class="fa fa-youtube fa-lg" aria-hen="true"></i><a href="https://www.youtube.com/watch?v=U8GBXvdmHT4" target="_new">"The basics of Git and GitHub"</a> (2013).</li>
 									</ul>
 								</div>
 							</td>
