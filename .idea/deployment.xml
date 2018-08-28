@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="ada.in.cs.ucy.ac.cy:/WebData/courses/EPL425" />
+  <component name="PublishConfigData" serverName="ada.in.cs.ucy.ac.cy">
+    <serverData>
+      <paths name="ada.in.cs.ucy.ac.cy">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/WebData/courses/EPL425/" local="$PROJECT_DIR$" web="/courses/EPL425/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
 </project>
