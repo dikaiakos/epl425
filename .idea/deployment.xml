@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="ada.in.cs.ucy.ac.cy">
+  <component name="PublishConfigData" serverName="localview" uploadOnCheckin="c055334a-94ae-43fd-a61b-8afc2de86d94">
     <serverData>
       <paths name="ada.in.cs.ucy.ac.cy">
         <serverdata>
@@ -10,5 +10,6 @@
         </serverdata>
       </paths>
     </serverData>
+    <option name="myUploadOnCheckinName" value="ada.in.cs.ucy.ac.cy" />
   </component>
 </project>

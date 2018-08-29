@@ -10,6 +10,9 @@
           <option name="port" value="22" />
         </fileTransfer>
       </webServer>
+      <webServer id="98888aa3-43b2-46de-8f32-9f9072b21180" name="localview" url="http://localhost:63342/epl425/">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
     </option>
   </component>
 </project>
