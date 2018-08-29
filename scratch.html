@@ -1,844 +1,1451 @@
+<! -- LAB 1 -->
+<tr>
+  <td class="danger" scope="row" style="white-space:nowrap">Lab 1: We. 4/9</td>
+  <td><strong>Cloud Computing and the Google Cloud.</strong>
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#lab1-learn">
+      <span class="fa fa-certificate"></span></button>
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#lab1-read">
+      <span class="glyphicon glyphicon-book"></span>
+    </button>
+    <a class="btn btn-default btn-xs hidden-print" href="" target="_new">
+      <span class="fi-clipboard-pencil"></span>
+    </a>
+    </button>
+    <div id="lab1-learn" class="collapse epl425-learnout">
+      <strong>Learning outcome:</strong>
+      <ul>
+        <li>Understand the notion of virtual Linux servers and obtain hands-on familiarization with Virtualization
+          concepts (physical vs virtual host, image vs instance).
+        </li>
+        <li>Introduction and focus on Google Cloud Services</li>
+        <li>Launch your own virtual server instance on Google Cloud Engine.</li>
+        <li>Identify and select an existing Virtual Machine based on prefereneces such as Linux distribution, installed
+          software packages and libraries and learn how to configure the AMI resources (CPU, memory, storage, network)
+          and deployment region.
+        </li>
+        <li>Learn what is public/private key authentication. Create and upload an SSH key to your instance.</li>
+        <li>Launch and monitor your instance status, save your launched instance preferences, access your instance
+          through an SSH client, and terminate your Instance.
+        </li>
+      </ul>
+    </div>
+    <div id="lab1-read" class="collapse">
+      <strong>Readings and References:</strong>
+      <ul>
+        <li><a href="https://cloud.google.com/compute/docs/" target="_new">"Google Compute Engine"</a> documentation.
+        </li>
+      </ul>
+    </div>
+  </td>
+</tr>
 
 
-            
-            <!-- -----------Module 6------------- -->
-            <tr class="warning">
-              <th class="lead" colspan="2">Module 6: Project Methodologies and Tools</th>
-            </tr>
+<tr>
+  <td scope="row" style="white-space:nowrap">Lecture 2: Fri. 7/9</td>
+  <td><strong>Introduction to CS425. Internet History and TCP/IP Review.</strong>
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#lect2-learn">
+      <span class="fa fa-certificate"></span> Learning Outcome
+    </button>
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#lect2-read">
+      <span class="glyphicon glyphicon-book"></span> Readings and Videos
+    </button>
+    <a class="btn btn-default btn-xs hidden-print" href="" target="_new">
+      <span class="fi-clipboard-pencil"></span> Notes
+    </a>
+    <span id="lect2-learn" class="collapse epl425-learnout">
+									<strong>Learning outcome:</strong> Explore Internet history and evolution. Overview and basic principles of TCP/IP</emph>
+      .
+								</span>
+    <div id="lect2-read" class="collapse">
+      <strong>Readings and Videos:</strong>
+      <ul>
+        <li><a href="contract.html" target="_new">CS425 contract</a>.</li>
+        <li>Chapter 1. <i>"Web Programming"</i>, Step, Miller & Kirst.</li>
+        <li><i class="fa fa-youtube fa-lg" aria-hidden="true"></i><a
+          href="https://youtu.be/Dxcc6ycZ73M?list=PLzdnOPI1iJNfMRZm5DDxco3UdsFegvuB7" target="_new">What is the
+          Internet?</a> A 3:5min video with <a href="https://en.wikipedia.org/wiki/Vint_Cerf" target="_new">Vint
+          Cerf</a></li>
+        <li><i class="fa fa-youtube fa-lg" aria-hidden="true"></i><a href="https://youtu.be/ZhEf7e4kopM" target="_new">Wires,
+          Cables and WIFI</a> A 6:41min video.
+        </li>
+        <li>A 30:22min video on the history of Arpanet, Internet's precursor: <a
+          href="https://archive.org/details/ComputerNetworks_TheHeraldsOfResourceSharing" target="_new">Computer
+          Networks - The Heralds Of Resource Sharing (Arpanet, 1972)</a></li>
+      </ul>
+    </div>
+  </td>
+</tr>
 
-            <!-- ---Module 8---- -->
-            <tr class="warning">
-              <th class="lead" colspan="2">Module 8:  Principles of Web Design</th>
-            </tr>
-            
-            <!-- ----MODULE 10----- -->
-            <tr class="warning">
-              <th class="lead" colspan="2">Module 7:  Introduction to Javascript</th>
-            </tr>
-            <!-- ----MODULE 11----- -->
-            <tr class="warning">
-              <th class="lead" colspan="2">Module 11: Event handling in Javascript, Introduction to AJAX, XML and JSON</th>
-            </tr>
-            <!-- ----MODULE 12----- -->
-            <tr class="warning">
-              <th class="lead" colspan="2">Module: Web Databases</th>
-            </tr>
-            <!-- ----MODULE 13----- -->
-            <tr class="warning">
-              <th class="lead" colspan="2">Module: Cookies and Sessions</th>
-            </tr>
+<! -- LECTURE 2-->
+<tr>
+  <td scope="row" style="white-space:nowrap">Lecture 2: Tu. 12/9</td>
+  <td><strong>Internet Architecture.</strong>
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#lect2-learn">
+      <span class="fa fa-certificate"></span> Learning Outcome
+    </button>
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#lect2-read">
+      <span class="glyphicon glyphicon-book"></span> Readings and Videos
+    </button>
+    <a class="btn btn-default btn-xs hidden-print"
+       href="http://www.piazza.com/class_profile/get_resource/j66n84kq5fw63q/j7q2h1bejh24b0" target="_new">
+      <span class="fi-clipboard-pencil"></span> Notes
+    </a>
+    <span id="lect2-learn" class="collapse epl425-learnout">
+									<strong>Learning outcome:</strong> Introduction to the Internet architecture: protocol layers and end-to-end design. Gain an understanding of the principles behind Internet's successful design and evolution. Gain a good working knowledge of the basic building blocks of and the main keywords related to the Internet infrastructure. Internet as a federation of Autonomous Systems.
+								</span>
+    <div id="lect2-read" class="collapse">
+      <strong>Readings and Videos:</strong>
+      <ul>
+        <li>Chapter 1. <i>"Web Programming"</i>, Step, Miller & Kirst.</li>
+        <li><i class="fa fa-youtube fa-lg" aria-hidden="true"></i><a
+          href="https://youtu.be/Dxcc6ycZ73M?list=PLzdnOPI1iJNfMRZm5DDxco3UdsFegvuB7" target="_new">What is the
+          Internet?</a> A 3:5min video with <a href="https://en.wikipedia.org/wiki/Vint_Cerf" target="_new">Vint
+          Cerf</a></li>
+        <li><i class="fa fa-youtube fa-lg" aria-hidden="true"></i><a href="https://youtu.be/ZhEf7e4kopM" target="_new">Wires,
+          Cables and WIFI</a> A 6:41min video.
+        </li>
+        <li>A 30:22min video on the history of Arpanet, Internet's precursor: <a
+          href="https://archive.org/details/ComputerNetworks_TheHeraldsOfResourceSharing" target="_new">Computer
+          Networks - The Heralds Of Resource Sharing (Arpanet, 1972)</a></li>
+      </ul>
+    </div>
+  </td>
+</tr>
+
+<! -- PRECEPT 1-->
+<tr>
+  <td class="active" scope="row" style="white-space:nowrap">Precept 1: Tu. 11/9</td>
+  <td><strong>Focus and Learning in the Internet era.</strong>
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#prec1-learn">
+      <span class="fa fa-certificate"></span></button>
+    <button type="button" class="btn btn-default btn-xs  hidden-print" data-toggle="collapse" data-target="#prec1-read">
+      <span class="glyphicon glyphicon-book"></span>
+    </button>
+    <span id="prec1-learn" class="collapse epl425-learnout">
+									<strong>Learning outcome:</strong>
+									Understand the implications of the Internet on cognitive capabilities and social practices of humans. How are human learning and focus affected in the Internet era.
+								</span>
+    <div id="prec1-read" class="collapse">
+      <strong>Readings, Videos and References:</strong>
+      <ul>
+        <li><a
+          href="https://www.theatlantic.com/magazine/archive/2017/09/has-the-smartphone-destroyed-a-generation/534198/"
+          target="_new">"Have Smartphones Destroyed a Generation?"</a><i> The Atlantic, September 2017</i>, Jean Twenge.
+        </li>
+        <li><a href="http://www.chronicle.com/article/The-Benefits-of-No-Tech-Note/228089" target="_new">"The Benefits
+          of No-Tech Note Taking."</a> <i>The Chronicle of Higher Education, 4/3/2015</i>, Carol Holstead.
+        </li>
+      </ul>
+    </div>
+  </td>
+</tr>
+
+<! -- LAB 2-->
+<tr>
+  <td class="danger" scope="row" style="white-space:nowrap">Lab 1: Wed. 6/9</td>
+  <td><strong>Cloud Computing and the Amazon Elastic Compute Cloud.</strong>
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
+            data-target="#lab1-l-learn">
+      <span class="fa fa-certificate"></span></button>
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#lab1-l-read">
+      <span class="glyphicon glyphicon-book"></span>
+    </button>
+    <a class="btn btn-default btn-xs hidden-print" href="https://piazza.com/ucy.ac.cy/fall2017/cs425/resources"
+       target="_new">
+      <span class="fi-clipboard-pencil"></span> Notes
+    </a>
+    <div id="lab1-l-learn" class="collapse epl425-learnout">
+      <strong>Learning outcome:</strong>
+      <ul>
+        <li>Understand the notion of virtual Linux servers and obtain hands-on familiarization with Virtualization
+          concepts (physical vs virtual host, image vs instance).
+        </li>
+        <li>Brief overview of the Virtualization / Cloud Provider landscape (IaaS vs PaaS vs SaaS)</li>
+        <li>Introduction and focus on Amazon Web Services (AWS)</li>
+        <li>Launch your own virtual server instance on Amazon and learn about Amazon Machine Images (AMI's) and the
+          Image Marketplace.
+        </li>
+        <li>Identify and select an existing AMI based on prefereneces such as Linux distribution, installed software
+          packages and libraries and learn how to configure the AMI resources (CPU, memory, storage, network) and
+          deployment region.
+        </li>
+        <li>Learn what is public/private key authentication. Create and upload an SSH key to your instance.</li>
+        <li>Launch and monitor your instance status, save your launched instance preferences, access your instance
+          through an SSH client, and terminate your Instance.
+        </li>
+      </ul>
+    </div>
+    <div id="lab1-l-read" class="collapse">
+      <strong>Readings and References:</strong>
+      <ul>
+        <li><a href="https://aws.amazon.com/training/intro_series/" target="_new">"Introduction to Amazon Elastic
+          Compute Cloud (EC2)</a> by Amazon.
+        </li>
+        <li><a href="http://docs.aws.amazon.com/gettingstarted/latest/awsgsg-intro/gsg-aws-tutorials.html"
+               target="_new">"Amazon WS Tutorials"</a>.
+        </li>
+      </ul>
+    </div>
+  </td>
+</tr>
 
 
-<!-- --MODULE 3-->
-            <tr>
-              <td scope="row">Lecture 7: We. 21/9</td>
-              <td><strong>Introduction to HyperText.</strong>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print" data-toggle="collapse" data-target="#mod3-1-learn">
-                <span class="fa fa-certificate"></span></button>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print" data-toggle="collapse" data-target="#mod3-1-read">
-                <span class="glyphicon glyphicon-book"></span>
-                </button>
-                <a href="http://www.piazza.com/class_profile/get_resource/ip3nhl2dp3z2rc/itg8it5v2sx7oo" target="_new" type="button" class
-                ="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print">
-                  <span class="fi-clipboard-pencil"></span>
-                </a>
-                <div id="mod3-1-learn" class="collapse epl425-learnout">
-                  <strong>Learning outcome:</strong>
-                  <ul>
-                    <li>Review the basic principles of Hypertext and its History.</li>
-                    <li>Understand the key principles of hypertext (nodes, hyperlinks, navigation) and the properties that hypertext systems need to abide to.</li>
-                  </ul>
-                </div>
-                <span id="mod3-1-read" class="collapse">
-                  <strong>Readings:</strong>
-                  Chapters 1-5. <i>Multimedia and Hypertext: The Internet and Beyond.</i> J. Nielsen, AP Professional, 1995.
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <td scope="row" style="white-space:nowrap">Lecture 8: Fri. 23/9</td>
-              <td><strong>Advanced HyperText Concepts.</strong>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print" data-toggle="collapse" data-target="#mod3-2-learn">
-                <span class="fa fa-certificate"></span></button>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print" data-toggle="collapse" data-target="#mod3-2-read">
-                <span class="glyphicon glyphicon-book"></span>
-                </button>
-                <a href="http://www.piazza.com/class_profile/get_resource/ip3nhl2dp3z2rc/itg8it5v2sx7oo" target="_new" type="button" class
-                ="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print">
-                  <span class="fi-clipboard-pencil"></span>
-                </a>
-                <span id="mod3-2-learn" class="collapse epl425-learnout">
-                  <strong>Learning outcome:</strong>
-                  <ul>
-                    <li>Overview of Usability. Usability of hypertext systems.</li>
-                    <li>Understand the notion of information overloading, network disorientation. Definition of information retrieval and information filtering. Navigation support mechanisms: backtracking, bookmarking, history mechanisms, milestones.</li>
-                  </ul>
-                </span>
-                <span id="mod3-2-read" class="collapse">
-                  <strong>Readings:</strong>
-                  Chapters 8-10. <i>Multimedia and Hypertext: The Internet and Beyond.</i> J. Nielsen, AP Professional, 1995.
-                </span>
-              </td>
-            </tr>
+<! -- PRECEPT 2 -->
+<tr>
+  <td class="active" scope="row" style="white-space:nowrap">Precept 2: Tu. 12/9</td>
+  <td><strong>Net Neutrality.</strong>
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#prec2-learn">
+      <span class="fa fa-certificate"></span></button>
+    <button type="button" class="btn btn-default btn-xs  hidden-print" data-toggle="collapse" data-target="#prec2-read">
+      <span class="glyphicon glyphicon-book"></span>
+    </button>
+    <span id="prec2-learn" class="collapse epl425-learnout">
+									<strong>Learning outcome:</strong>
+									Understand the concept of <emph>Net Neutrality</emph> and key challenges pertinent to this issue.
+								</span>
+    <div id="prec2-read" class="collapse">
+      <strong>Readings:</strong>
+      <ul>
+        <li>Internet Society's Policy Brief on <a
+          href="http://www.internetsociety.org/policybriefs/networkneutrality?gclid=Cj0KEQjw-YO7BRDwi6Stp7T296ABEiQAD6iWMY2JLhirWIE3HGvMOEXvlOpyaA3lVYWKz2otN3K1JqgaAixB8P8HAQ"
+          target="_new">Net Neutrality</a>.
+        </li>
+      </ul>
+      <strong>Additional References and Videos:</strong>
+      <ul>
+        <li><a href="https://ec.europa.eu/digital-single-market/en/open-internet-net-neutrality" target="_new">The
+          European Commission on Net Neutrality.</a></li>
+        <li><a href="http://eur-lex.europa.eu/legal-content/EL/TXT/HTML/?uri=CELEX:52011DC0222&from=EN" target="_new">Open
+          Internet and Net Neutrality in Europe</a> European Commission (2011).
+        </li>
+        <li>Professor Nicholas Economides of NYU Stern School of Business <a
+          href="http://www.stern.nyu.edu/experience-stern/faculty-research/economides-net-neutrality-hearing"
+          target="_new">testimony before Congress on Net Neutrality</a> (5min video and text).
+        </li>
+        <li><a href="https://www.wired.com/story/why-net-neutrality-matters-even-in-the-age-of-oligopoly" target="_new">"Why
+          Net Neutrality matters even in the age of oligopoly"</a> <i>WIRED, 22/6/2017</i> Klint Finley.
+        </li>
+      </ul>
+    </div>
+  </td>
+</tr>
+<! -- LAB 3 -->
+<tr>
+  <td class="danger" scope="row" style="white-space:nowrap">Lab 3: We. 13/9</td>
+  <td><strong>Installing and Running Web Servers on Amazon and Google Cloud.</strong>
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
+            data-target="#lab3-l-learn">
+      <span class="fa fa-certificate"></span></button>
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#lab3-l-read">
+      <span class="glyphicon glyphicon-book"></span>
+    </button>
+    <a class="btn btn-default btn-xs hidden-print" href="https://piazza.com/ucy.ac.cy/fall2017/cs425/resources"
+       target="_new">
+      <span class="fi-clipboard-pencil"></span>
+    </a>
+    <div id="lab3-l-learn" class="collapse epl425-learnout">
+      <strong>Learning outcome:</strong>
+      <ul>
+        <li>Launch your own virtual server instance on Amazon Elastic Cloud and Google Cloud Engine.</li>
+        <li>Install, run and test two popular open source Web servers on your virtual server: APACHE and NGINX.</li>
+        <li>Launch and monitor your instance status, save your launched instance preferences, access your instance
+          through an SSH client, and terminate your Instance.
+        </li>
+      </ul>
+    </div>
+    <div id="lab3-l-read" class="collapse">
+      <strong>Readings and References:</strong>
+      <ul>
+        <li><a href="https://httpd.apache.org/" target="_new">"Apache Web server"</a>.</li>
+        <li><a href="http://nginx.org/en/" target="_new">"NGINX"</a>.</li>
+      </ul>
+    </div>
+  </td>
+</tr>
+
+<! -- LECTURE 3-->
+<tr>
+  <td scope="row" style="white-space:nowrap">Lecture 3</td>
+  <td><strong>History and Architecture of the World-Wide Web.</strong>
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#lect3-learn">
+      <span class="fa fa-certificate"></span></button>
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#lect3-read">
+      <span class="glyphicon glyphicon-book"></span>
+    </button>
+    <a class="btn btn-default btn-xs hidden-print"
+       href="http://www.piazza.com/class_profile/get_resource/j66n84kq5fw63q/j7rojsn5xwh1qx" target="_new">
+      <span class="fi-clipboard-pencil"></span>
+    </a>
+    <div id="lect3-learn" class="collapse epl425-learnout">
+      <strong>Learning outcome:</strong>
+      <ul>
+        <li>Get acquainted with the Definition, History, Evolution, Impact and Key Ideas behind the World-Wide Web.</li>
+        <li>Learn the main elements of the Web.</li>
+      </ul>
+    </div>
+    <div id="lect3-read" class="collapse">
+      <strong>Readings:</strong>
+      <ul>
+        <li>Chapter 1. <i>"Web Programming"</i>, Step, Miller & Kirst.</li>
+        <li><a href="http://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/" target="_new">"As we
+          may think,"</a> by Vannevar Bush, <i>The Antlantic</i> (July 1945).
+        </li>
+        <li><a href="https://youtu.be/bpdDtK5bVKk" target="_new">"First thought, best thought.”</a> J. Lanier talks
+          about Ted Nelson at Chapman University, 2014.
+        </li>
+      </ul>
+    </div>
+  </td>
+</tr>
+
+<!-- -----------Module 2------------- -->
+<tr class="warning">
+  <th class="lead" colspan="2">Module 2: World-Wide Web Architecture and Infrastructure</th>
+</tr>
+<! -- LECTURE 4-->
+<tr>
+  <td scope="row" style="white-space:nowrap">Lecture 4: Tu. 19/9</td>
+  <td><strong>Client-Server Architecture and the Web.</strong>
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#lect4-learn">
+      <span class="fa fa-certificate"></span></button>
+    <button type="button" class="btn btn-default btn-xs" data-toggle="collapse" data-target="#lect4-read">
+      <span class="glyphicon glyphicon-book"></span>
+    </button>
+    <a href="http://www.piazza.com/class_profile/get_resource/j66n84kq5fw63q/j7rokipu7u62hn" target="_new" type="button"
+       class="btn btn-default btn-xs hidden-print">
+      <span class="fi-clipboard-pencil"></span>
+    </a>
+    <div id="lect4-learn" class="collapse epl425-learnout">
+      <strong>Learning outcome:</strong>
+      <ul>
+        <li>Introduce the principles of the Client-Server computing model.</li>
+        <li>Overview of the Web system architecture.</li>
+        <li>Web servers, web clients, three-tier Web-site architecture.</li>
+        <li>Understand the concept and principles of Web caching.</li>
+        <li>Review the concepts of <i><a href="https://en.wikipedia.org/wiki/Latency_(engineering)" target="_new">latency</a></i>,
+          <i> <a href="https://en.wikipedia.org/wiki/Bandwidth_(computing)" target="_new">bandwidth</a></i> and <i><a
+            href="https://en.wikipedia.org/wiki/Load_balancing_(computing)" target="_new">load banacing</a></i>.
+        </li>
+      </ul>
+    </div>
+    <div id="lect4-read" class="collapse">
+      <strong>Readings:</strong>
+      <ul>
+        <li><a href="http://dl.acm.org/citation.cfm?id=253236" target="_new">"Designing distributed applications with
+          mobile code paradigms"</a> by A. Carzaniga, G. Pietro Picco and G. Vigna, <i>Proceeding ICSE '97 Proceedings
+          of the 19th international conference on Software engineering</i>, 1997.
+        </li>
+        <li>The <a href="https://en.wikipedia.org/wiki/Client%E2%80%93server_model" target="_new">Client-Server
+          Model</a> (Wikipedia).
+        </li>
+        <li><a href="http://people.eecs.berkeley.edu/~brewer/papers/GiantScale-IEEE.pdf" target="_new">"Lessons from
+          Giant-Scale Services"</a> by Eric Brewer, <i>IEEE Internet Computing</i> (July/August 2001) (available in pdf
+          from author's web site).
+        </li>
+      </ul>
+    </div>
+  </td>
+</tr>
+<! -- PRECEPT 3 -->
+<tr>
+  <td class="active" scope="row" style="white-space:nowrap">Precept 3: Tu. 19/9</td>
+  <td><strong>Internet Trends in 2017.</strong>
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#prec3-learn">
+      <span class="fa fa-certificate"></span></button>
+    <button type="button" class="btn btn-default btn-xs  hidden-print" data-toggle="collapse" data-target="#prec3-read">
+      <span class="glyphicon glyphicon-book"></span>
+    </button>
+    <span id="prec3-learn" class="collapse epl425-learnout">
+									<strong>Learning outcome:</strong>
+									Understand the how the industry perceives the evolution of the Internet in 2017.
+								</span>
+    <div id="prec3-read" class="collapse">
+      <strong>Readings, Videos and References:</strong>
+      <ul>
+        <li>Internet Trends Report 2017 by Mary Meeker of Kleiner, Perkins, Caufield, Byers (<a
+          href="http://www.kpcb.com/internet-trends" target="_new">Slides</a>, <a
+          href="https://www.youtube.com/watch?v=UC8GwG6srqs" target="_new" class="fa fa-youtube fa-lg"
+          aria-hidden="true"></a>).
+        </li>
+        <li><a href="http://www.pewinternet.org" target="_new">Pew Internet Surveys.</a></li>
+        <li><a href="https://www.1843magazine.com/features/the-scientists-who-make-apps-addictive" target="_new">"The
+          Scientists who make apps Addictive"</a> by Ian Leslie, <i>1843 Magazine. The Economist Group</i>,
+          October/November 2016.
+        </li>
+      </ul>
+    </div>
+  </td>
+</tr>
+<! -- LAB 4 -->
+<tr>
+  <td class="danger" scope="row" style="white-space:nowrap">Lab 4: We. 20/9</td>
+  <td><strong>Client-Server Programming in JAVA.</strong>
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
+            data-target="#lab4-l-learn">
+      <span class="fa fa-certificate"></span></button>
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#lab4-l-read">
+      <span class="glyphicon glyphicon-book"></span>
+    </button>
+    <button type="button" class="btn btn-default btn-xs hidden-print">
+      <span class="fi-clipboard-pencil"></span>
+    </button>
+    <div id="lab4-l-learn" class="collapse epl425-learnout">
+      <strong>Learning outcome:</strong>
+      <ul>
+        <li>Learn how to write a simple multithreaded server and a simple client program in JAVA.</li>
+        <li>Learn how to implement client-server communication through TCP sockets.</li>
+        <li>Deploy a simple Java-based server program on the Cloud and interact with it through a client program.</li>
+      </ul>
+    </div>
+    <div id="lab4-l-read" class="collapse">
+      <strong>Readings and References:</strong>
+      <ul>
+        <li><a href="https://docs.oracle.com/javase/tutorial/essential/concurrency/" target="_new">Java Concurrency and
+          Multithreading Tutorial</a>.
+        </li>
+        <li><a href="https://docs.oracle.com/javase/tutorial/networking/sockets/index.html" target="_new">Java Socket
+          Programming Tutorial</a>.
+        </li>
+      </ul>
+    </div>
+  </td>
+</tr>
+
+<! -- LECTURE 5-->
+<tr>
+  <td scope="row" style="white-space:nowrap">Lecture 5: Fri. 22/9</td>
+  <td><strong>Web Infrastructure Fundamentals: Cluster Architecture and Metrics.</strong>
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#lect5-learn">
+      <span class="fa fa-certificate"></span></button>
+    <button type="button" class="btn btn-default btn-xs" data-toggle="collapse" data-target="#lect5-read">
+      <span class="glyphicon glyphicon-book"></span>
+    </button>
+    <a href="http://www.piazza.com/class_profile/get_resource/j66n84kq5fw63q/j7vsvi6myudtg" target="_new" type="button"
+       class="btn btn-default btn-xs hidden-print">
+      <span class="fi-clipboard-pencil"></span>
+    </a>
+    <div id="lect5-learn" class="collapse epl425-learnout">
+      <strong>Learning outcome:</strong>
+      <ul>
+        <li>Understand the architecture and key components of Web service infrastructures: Clusters, Load Balancers.
+        </li>
+        <li>Learn the concepts of Load Balancing.</li>
+        <li>Overview of availability metrics: uptime, yield, harvest.</li>
+      </ul>
+    </div>
+    <div id="lect5-read" class="collapse">
+      <strong>Readings:</strong>
+      <ul>
+        <li><a href="http://people.eecs.berkeley.edu/~brewer/papers/GiantScale-IEEE.pdf" target="_new">"Lessons from
+          Giant-Scale Services"</a> by Eric Brewer, <i>IEEE Internet Computing</i> (July/August 2001) (available in pdf
+          from author's web site).
+        </li>
+      </ul>
+    </div>
+  </td>
+</tr>
+<! -- LECTURE 6-->
+<tr>
+  <td scope="row" style="white-space:nowrap">Lecture 6: Tue. 26/9</td>
+  <td><strong>Web Infrastructure Fundamentals: Partitioning, Replication and Availability.</strong>
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#lect6-learn">
+      <span class="fa fa-certificate"></span></button>
+    <button type="button" class="btn btn-default btn-xs" data-toggle="collapse" data-target="#lect6-read">
+      <span class="glyphicon glyphicon-book"></span>
+    </button>
+    <a href="http://www.piazza.com/class_profile/get_resource/j66n84kq5fw63q/j7vsvi6myudtg" target="_new" type="button"
+       class="btn btn-default btn-xs hidden-print">
+      <span class="fi-clipboard-pencil"></span>
+    </a>
+    <div id="lect6-learn" class="collapse epl425-learnout">
+      <strong>Learning outcome:</strong> Introduction to concepts of QD Metric, Partioning, Replication, Availability
+      under failure, Admission control.
+    </div>
+    <div id="lect6-read" class="collapse">
+      <strong>Readings:</strong>
+      <ul>
+        <li><a href="http://people.eecs.berkeley.edu/~brewer/papers/GiantScale-IEEE.pdf" target="_new">"Lessons from
+          Giant-Scale Services"</a> by Eric Brewer, <i>IEEE Internet Computing</i> (July/August 2001) (available in pdf
+          from author's web site).
+        </li>
+      </ul>
+    </div>
+  </td>
+</tr>
+<! -- PRECEPT 4-->
+<tr>
+  <td class="active" scope="row" style="white-space:nowrap">Precept 4: Tue. 26/9</td>
+  <td><strong>What is Web Science?</strong>
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#prec4-learn">
+      <span class="fa fa-certificate"></span></button>
+    <button type="button" class="btn btn-default btn-xs  hidden-print" data-toggle="collapse" data-target="#prec4-read">
+      <span class="glyphicon glyphicon-book"></span>
+    </button>
+    <a href="http://www.piazza.com/class_profile/get_resource/j66n84kq5fw63q/j81olv8y62a3lb" target="_new" type="button"
+       class="btn btn-default btn-xs hidden-print">
+      <span class="fi-clipboard-pencil"></span>
+    </a>
+    <div id="prec4-learn" class="collapse epl425-learnout">
+      <strong>Learning outcome:</strong>
+      <ul>
+        <li>Understand what is Web Science and discuss the unique challenges of developing applications for the Web.
+        </li>
+        <li>Introduction to Modeling of the Web graph; understand the challenges of Web scale analysis.</li>
+      </ul>
+    </div>
+    <div id="prec4-read" class="collapse">
+      <strong>Reading:</strong> "Web Science: An Interdisciplinary Approach to Understanding the Web." James Hendler,
+      Nigel Shadbolt, Wendy Hall, Tim Berners-Lee, and Daniel Weitzner. <i>Communications of the ACM.</i> Vol. 51, No.
+      7, July 2008. pp. 60-69.
+    </div>
+  </td>
+</tr>
+
+<! -- LAB 5 -->
+<tr>
+  <td class="danger" scope="row" style="white-space:nowrap">Lab 5: We. 27/9</td>
+  <td><strong>Overview of Open-source Version Control through Github.</strong>
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
+            data-target="#lab5-l-learn">
+      <span class="fa fa-certificate"></span></button>
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#lab5-l-read">
+      <span class="glyphicon glyphicon-book"></span>
+    </button>
+    <button type="button" class="btn btn-default btn-xs hidden-print">
+      <span class="fi-clipboard-pencil"></span>
+    </button>
+    <div id="lab5-l-learn" class="collapse epl425-learnout">
+      <strong>Learning outcome:</strong>
+      <ul>
+        <li>Learn the basics of <a href="https://git-scm.com/" target="_new">Git</a> and
+          <a href="http://github.com" target="_new">GitHub</a>.
+        </li>
+        <li>Learn how to setup and use your Github account and GitHub Education Resources.</li>
+        <li>Learn how to create a Git repository on <a href="http://github.com" target="_new">GitHub</a> and attach
+          it to <a href="https://github.com/UCY-CS-EPL425" target="_new">EPL425 repository</a>.
+        </li>
+      </ul>
+    </div>
+    <div id="lab5-l-read" class="collapse">
+      <strong>Readings and References:</strong>
+      <ul>
+        <li><a href="https://youtu.be/DVDLoe_2MBc?list=PL9KVIdeJ2K8MEMoZH5wzrHa4prGvrhHJA" target="_new">"Getting
+          Started with GitHub + Git,"</a> a video from the Google Tools for Entrepreneurs.
+        </li>
+        <li><a href="http://ftp.newartisans.com/pub/git.from.bottom.up.pdf" target="_new">"Git from the bottom up"</a>
+          by John Wiegley (2009).
+        </li>
+        <li><a href="https://git-scm.com/book/en/v2" target="_new">"Pro Git"</a> by Scott Chacon and Ben Straub, Apress,
+          2nd edition, 2014.
+        </li>
+        <li><i class="fa fa-youtube fa-lg" aria-hen="true"></i><a href="https://www.youtube.com/watch?v=U8GBXvdmHT4"
+                                                                  target="_new">"The basics of Git and GitHub"</a>
+          (2013).
+        </li>
+      </ul>
+    </div>
+  </td>
+</tr>
+<! -- LECTURE 7-->
+<tr>
+  <td scope="row" style="white-space:nowrap">Lecture 7: Tue. 29/9</td>
+  <td><strong>Names on the Internet and the Web: DNS and URIs.</strong>
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#lect7-learn">
+      <span class="fa fa-certificate"></span></button>
+    <button type="button" class="btn btn-default btn-xs" data-toggle="collapse" data-target="#lect7-read">
+      <span class="glyphicon glyphicon-book"></span>
+    </button>
+    <a href="http://www.piazza.com/class_profile/get_resource/j66n84kq5fw63q/j8fxq1b13vn1j1" target="_new" type="button"
+       class="btn btn-default btn-xs hidden-print">
+      <span class="fi-clipboard-pencil"></span>
+    </a>
+    <div id="lect7-learn" class="collapse epl425-learnout">
+      <strong>Learning outcome:</strong>
+      <ul>
+        <li>Introduction to the concept of Naming Services.</li>
+        <li>Overview of the Domain Name System (DNS) and its operation.</li>
+        <li>Understand the principles of naming for the Web,the function of Naming Services and the Domain Name
+          Service.
+        </li>
+      </ul>
+    </div>
+    <div id="lect7-read" class="collapse">
+      <strong>Readings:</strong>
+      <ul>
+        <li><a href="https://en.wikipedia.org/wiki/Domain_Name_System" target="_new">Domain Name System</a> on
+          Wikipedia.
+        </li>
+        <li><a href="http://www.w3.org/Addressing/" target="_new">Naming and Addressing</a>, an overview of W3C
+          materials related to Addressing.
+        </li>
+      </ul>
+    </div>
+  </td>
+</tr>
+
+<! -- LECTURE 8-->
+<tr>
+  <td scope="row">Lecture 8: Tue. 3/10</td>
+  <td><strong>The HTTP Protocol.</strong>
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#lect8-learn">
+      <span class="fa fa-certificate"></span></button>
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#lect8-read">
+      <span class="glyphicon glyphicon-book"></span>
+    </button>
+    <a href="http://www.piazza.com/class_profile/get_resource/j66n84kq5fw63q/j8fxrfrgy7627v" target="_new" type="button"
+       class="btn btn-default btn-xs hidden-print">
+      <span class="fi-clipboard-pencil"></span>
+    </a>
+    <div id="lect8-learn" class="collapse epl425-learnout">
+      <strong>Learning outcome:</strong>
+      <ul>
+        <li>History and Overview of the HTTP Protocol.</li>
+        <li>Gain basic familiarity of the HTTP Protocol, its functionality and syntax.</li>
+        <li>Basic Caching support in HTTP.</li>
+      </ul>
+    </div>
+    <div id="lect8-read" class="collapse">
+      <strong>Readings:</strong>
+      <ul>
+        <li><a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol" target="_new">The HTTP Protocol.</a>
+        </li>
+        <li>"HTTP: The Definitive Guide" by D. Gourney, B. Totty et al., <i>O'Reilly</i>, 2002.</li>
+      </ul>
+    </div>
+  </td>
+</tr>
 
 
-<!-- --MODULE 4-->
-            <tr>
-              <td class="danger" scope="row" style="white-space:nowrap">Lab 2: Tu. 27/9</td>
-              <td><strong>Introduction to GitHub.</strong>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print" data-toggle="collapse" data-target="#mod4-lab2-learn">
-                <span class="fa fa-certificate"></span> </button>
-                <button type="button" class="btn btn-default btn-xs" data-toggle="collapse" data-target="#mod4-lab2-read">
-                <span class="glyphicon glyphicon-book"></span>
-                </button>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print">
-                <span class="fi-clipboard-pencil"></span>
-                </button>
-                <div id="mod4-lab2-learn" class="collapse epl425-learnout">
-                  <strong>Learning outcome:</strong>
-                  <ul>
-                    <li>Learn the basics of <a href="https://git-scm.com/" target="_new">Git</a> and
-                    <a href="http://github.com" target="_new">GitHub</a>.</li>
-                    <li>Learn how to setup and use your Github account and GitHub Education Resources.</li>
-                    <li>Learn how to create a Git repository on <a href="http://github.com" target="_new">GitHub</a> and attach
-                    it to <a href="https://github.com/UCY-CS-EPL425" target="_new">EPL425 repository</a>.</li>
-                    
-                    <li>Familiarize with the Git Dashboard and creating / <!-- ---MODULE 13 -->ing teams.</li>
-                    <li>Install <a href="https://www.sourcetreeapp.com/" target="_new">SourceTree Git client</a> on your development environment.</li>
-                    
-                    <li>Configure your development workspace, <!-- ---MODULE 13 --> your personal webpage HTML source to it.</li>
-                    
-                    <li>Make the first commit to your Git repository. Make <!-- ---MODULE 13 -->itional changes, commit them and understand the revision tree.</li>
-                  </ul>
-                </div>
-                <div id="mod4-lab2-read" class="collapse">
-                  <strong>Videos, Readings and References:</strong>
-                  <ul>
-                    <li><a href="https://youtu.be/DVDLoe_2MBc?list=PL9KVIdeJ2K8MEMoZH5wzrHa4prGvrhHJA" target="_new">"Getting Started with GitHub + Git,"</a> a video from the Google Tools for Entrepreneurs.</li>
-                    <li><a href="http://ftp.newartisans.com/pub/git.from.bottom.up.pdf" target="_new">"Git from the bottom up"</a> by John Wiegley (2009).</li>
-                    <li><a href="https://git-scm.com/book/en/v2" target="_new">"Pro Git"</a> by Scott Chacon and Ben Straub, Apress, 2nd edition, 2014.</li>
-                    
-                    <li><i class="fa fa-youtube fa-lg" aria-hen="true"></i><a href="https://www.youtube.com/watch?v=U8GBXvdmHT4" target="_new">"The basics of Git and GitHub"</a> (2013).</li>
-                    <li><a href="https://education.github.com/" target="_new">GitHub Education Resources.</a></li>
-                  </ul>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td  class="danger" scope="row" style="white-space:nowrap">Lab 3: We. 28/9</td>
-              <td><strong>Installing the LAMP stack on AMI and deploy your first HTML page</strong>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print" data-toggle="collapse" data-target="#mod4-lab3-learn">
-                <span class="fa fa-certificate"></span> </button>
-                
-                <button type="button" class="btn btn-default btn-xs  h<!-- ---MODULE 13 -->en-print" data-toggle="collapse" data-target="#mod4-lab3-read">
-                <span class="glyphicon glyphicon-book"></span>
-                </button>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print">
-                <span class="fi-clipboard-pencil"></span>
-                </button>
-                <div id="mod4-lab3-learn" class="collapse epl425-learnout">
-                  <strong>Learning outcomes:</strong>
-                  <ul>
-                    <li><emph>Learn how to Install and launch a LAMP stack on your virtual web server</emph></li>
-                    <ul type="square">
-                      <li>Install and Launch a LAMP stack on your virtual web server.</li>
-                      <li>Launch a new AWS instance from your saved preferences and connect via the SSH client.</li>
-                      <li>Familiarize with the system package manager, update and install necessary sofware dependencies.</li>
-                      <li>Install the <a href="https://httpd.apache.org" target="_new">Apache web server</a>, the <a href="https://www.mysql.com" target="_new">MySQL database server</a>, and the latest
-                      <a href="http://php.net" target="_new">PHP</a> software packages.</li>
-                      <li>Set web directory ownership and permissions, secure MySQL installation, and test your LAMP stack installation.</li>
-                    </ul>
-                    <li><emph>Deploy your first Web page on your AWS instance</emph></li>
-                    <ul type="square">
-                      <li>Create a simple, HTML personal web page using a text editor like <a href="https://www.sublimetext.com/" target="_new">Sublime</a>. Upload it on GitHub.</li>
-                      <li>Upload your web page using an SCP client to your AWS instance.</li>
-                      <li>Verify HTML source file permissions in Apache document root folder.</li>
-                      <li>Publish and access your web page from the browser.</li>
-                      <li>Upload and publish your first web page on your vitual server.</li>
-                    </ul>
-                  </ul>
-                </div>
-                <div id="mod4-lab3-read" class="collapse">
-                  <strong>Readings and References:</strong> <a href="https://en.wikipedia.org/wiki/LAMP_(software_bundle)" target="_new">LAMP software bundle</a> (Wikipedia).
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="active" scope="row" style="white-space:nowrap">Precept: Tu. 4/10</td>
-              <td><strong>Introduction to Design Thinking.</strong>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print" data-toggle="collapse" data-target="#mod4-p-learn">
-                <span class="fa fa-certificate"></span> </button>
-                
-                <button type="button" class="btn btn-default btn-xs  h<!-- ---MODULE 13 -->en-print" data-toggle="collapse" data-target="#mod4-p-read">
-                <span class="glyphicon glyphicon-book"></span>
-                </button>
-                <span id="mod4-p-learn" class="collapse epl425-learnout">
-                  <strong>Learning outcome:</strong>
-                  Get introduced to the Design Thinking methodology.
-                </span>
-                <div id="mod4-p-read" class="collapse">
-                  <strong>Readings, Videos and References:</strong>
-                  <ul>
-                    <li>"Design Thinking" by Tim Brown, <i>Harvard Business Review</i>, June 2008.</li>
-                    <li><a href="https://www.youtube.com/watch?v=a7sEoEvT8l8" target="_new">"Why Design Thinking?"</a> A  short video by Sean VanGenderen with a quick overview of what Design Thinking is.</li>
-                    <li><a href="https://www.youtube.com/watch?v=pXtN4y3O35M" target="_new">Design Thinking: How it Works?</a> by IBM.</li>
-                    <li><a href="https://www.youtube.com/watch?v=IzNv3CXSE9I" target="_new">"Design Thinking is About Doing."</a> An 8-min video by Stefanos Zenios, Stanford Graduate School of Business.</li>
-                    <li><a href="https://www.youtube.com/watch?v=WrdSkqRypsg" target="_new">"Complex Systems Design and Design Thinking."</a> An 8-min video by IBM.</li>
-                    <li><a href="https://www.youtube.com/watch?v=-FzFk3E5nxM" target="_new">Stanford Design Thinking Virtual Crash Course (80 min video)</a> explaining the Design Thinking process with a hands-on example from <a href="http://dschool.stanford.edu" target="_new">Hasso Platner Institute of Design</a> at Stanford University.</li>
-                  </ul>
-                </div>
-              </td>
-            </tr>
+<!-- -----------Module 3------------- -->
+<tr class="warning">
+  <th class="lead" colspan="2">Module 3: Introduction to Hypertext and Hypermedia</th>
+</tr>
+<! -- LECTURE 9 -->
+<tr>
+  <td scope="row">Lecture 9: Fri. 6/10</td>
+  <td><strong>Introduction to HyperText.</strong>
+    <button type="button" class="btn btn-default btn-xs btn-xs hidden-print" data-toggle="collapse"
+            data-target="#lect9-learn">
+      <span class="fa fa-certificate"></span></button>
 
-<!-- --MODULE 5 -->
-            <tr>
-              <td scope="row">Lecture 9: Fri. 30/9</td>
-              <td><strong>Basic HTML.</strong>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print" data-toggle="collapse" data-target="#mod5-1-learn">
-                <span class="fa fa-certificate"></span></button>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print" data-toggle="collapse" data-target="#mod5-1-read">
-                <span class="glyphicon glyphicon-book"></span>
-                </button>
-                <a href="http://www.piazza.com/class_profile/get_resource/ip3nhl2dp3z2rc/itprm7dj3w42oi" target="_new" type="button" class
-                ="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print">
-                  <span class="fi-clipboard-pencil"></span>
-                </a>
-                <div id="mod5-1-learn" class="collapse epl425-learnout">
-                  <strong>Learning outcome:</strong> History of HTML. Get familiar with Principles of tagging languages, SGML, Document Type Definitions (DTD). Introduction to HTML: History, Syntax. Understand and familiarize with the Structure of HTML Documents. Become familiar with page structure, block and inline elements, header and metadata information.
-                </div>
-                <span id="mod5-1-read" class="collapse">
-                  <strong>Readings:</strong>
-                  <ul>
-                    <li>Chapter 2. <i>Web Programming Step by Step (Second edition)</i> M. Stepp, J. Miller and V. Kirst, Lulu 2012.</li>
-                    <li><a href="http://www.w3.org/wiki/The_basics_of_HTML" target="_new">http://www.w3.org/wiki/The_basics_of_HTML</a></li>
-                    <li><a href="http://www.w3.org/wiki/Doctypes_and_markup_styles" target="_new">http://www.w3.org/wiki/Doctypes_and_markup_styles</a></li>
-                    <li>Chapter 10. <i>Interact with Web Standards. A Holistic Approach to Web Design.</i> E. Anderson , V. DeVolt et al., New Riders 2010.</li>
-                  </ul>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <td scope="row">Lecture 10: Tu. 4/10</td>
-              <td><strong>More HTML Elements.</strong>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print" data-toggle="collapse" data-target="#mod5-2-learn">
-                <span class="fa fa-certificate"></span></button>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print" data-toggle="collapse" data-target="#mod5-2-read">
-                <span class="glyphicon glyphicon-book"></span>
-                </button>
-                <a href="http://www.piazza.com/class_profile/get_resource/ip3nhl2dp3z2rc/iu3v7qwo7xsia" target="_new" type="button" class=
-                "btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print">
-                  <span class="fi-clipboard-pencil"></span>
-                </a>
-                <span id="mod5-2-learn" class="collapse epl425-learnout">
-                  <strong>Learning outcome:</strong> Familiarize with HTML Lists, Tables, Quotations, Pre-formattedtext, advanced elements, audio and video.
-                </span>
-                <div id="mod5-2-read" class="collapse">
-                  <strong>Readings:</strong>
-                  <ul>
-                    <li>Chapter 2. <i>Web Programming Step by Step (Second edition)</i> M. Stepp, J. Miller and V. Kirst, Lulu 2012.</li>
-                    <li>Chapter 12, 13. <i>Interact with Web Standards. A Holistic Approach to Web Design.</i> E. Anderson , V. DeVolt et al., New Riders 2010.</li>
-                  </ul>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td scope="row" style="white-space:nowrap">Lecture 11: Tu. 7/10</td>
-              <td><strong>HTML 5.</strong>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print" data-toggle="collapse" data-target="#mod5-3-learn">
-                <span class="fa fa-certificate"></span> </button>
-                <button type="button" class="btn btn-default btn-xs" data-toggle="collapse" data-target="#mod5-3-read">
-                <span class="glyphicon glyphicon-book"></span>
-                </button>
-                <a href="http://www.piazza.com/class_profile/get_resource/ip3nhl2dp3z2rc/iu3v7qwo7xsia" target="_new" type="button" class=
-                "btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print">
-                  <span class="fi-clipboard-pencil"></span>
-                </a>
-                <div id="mod5-3-learn" class="collapse epl425-learnout">
-                  <strong>Learning outcome:</strong> Explore the new features brought to HTML with the HTML5.0 standard.
-                </div>
-                <div id="mod5-3-read" class="collapse">
-                  
-                  <strong>Readings and References:</strong> <i class="fa fa-youtube fa-lg" aria-hen="true"></i><a href="https://www.youtube.com/watch?v=siOHh0uzcuY&feature=channel" target="_new">Introduction to HTML5</a> Brad Neuberg,
-                  YouTube's <a href="https://www.youtube.com/channel/UC_x5XG1OV2P6uZZ5FSM9Ttw" target="_new">Google Developpers Channel</a> (2009).
-                </div>
-              </td>
-            </tr>
+    <button type="button" class="btn btn-default btn-xs btn-xs hidden-print" data-toggle="collapse"
+            data-target="#lect9-read">
+      <span class="glyphicon glyphicon-book"></span>
+    </button>
+    <a href="http://www.piazza.com/class_profile/get_resource/j66n84kq5fw63q/j8fxrp08ox42b4" target="_new" type="button"
+       class="btn btn-default btn-xs hidden-print">
+      <span class="fi-clipboard-pencil"></span>
+    </a>
+    <div id="lect9-learn" class="collapse epl425-learnout">
+      <strong>Learning outcome:</strong>
+      <ul>
+        <li>Review the basic principles of Hypertext and its History.</li>
+        <li>Understand the key principles of hypertext (nodes, hyperlinks, navigation) and the properties that hypertext
+          systems need to abide to.
+        </li>
+      </ul>
+    </div>
+    <span id="lect9-read" class="collapse">
+									<strong>Readings:</strong>
+									Chapters 1-5. <i>Multimedia and Hypertext: The Internet and Beyond.</i> J. Nielsen, AP Professional, 1995.
+								</span>
+  </td>
+</tr>
+<! --LECTURE 10 -->
+<tr>
+  <td scope="row" style="white-space:nowrap">Lecture 10: Tu. 10/10</td>
+  <td><strong>Advanced HyperText Concepts.</strong>
 
-<!-- ---MODULE 6 -->
- 
-            <tr>
-              <td class="active" scope="row" style="white-space:nowrap">Precept: Tu. 11/10</td>
-              <td><strong>HTML / CSS Tools and Playgrounds</strong>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print" data-toggle="collapse" data-target="#mod6-p-learn">
-                <span class="fa fa-certificate"></span> </button>
-                <button type="button" class="btn btn-default btn-xs" data-toggle="collapse" data-target="#mod6-p-read">
-                <span class="glyphicon glyphicon-book"></span>
-                </button>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print">
-                <span class="fi-clipboard-pencil"></span>
-                </button>
-                <div id="mod6-p-learn" class="collapse epl425-learnout">
-                  <strong>Learning outcome:</strong> Introduction to HTML/CSS development and
-                  testing using online and offline tools, reusing code and frameworks.
-                </div>
-                <div id="mod6-p-read" class="collapse">
-                  <strong>Readings and References:</strong>
-                  <ul>
-                    
-                    <li><span class="fa fa-youtube fa-lg" aria-hen="true"></span><a href="https://www.youtube.com/watch?v=IooAYw-VAxQ" target="_new">A video introducing HTML5 Boilerplate v5.0</a>.</li>
-                    
-                    <li><span class="fa fa-youtube fa-lg" aria-hen="true"></span><a href="https://www.youtube.com/watch?v=IRkTPNflq_s" target="_new">A video on installing and using HTML5 Boilerplate v5.0</a>.</li>
-                    <li><a href="https://html5boilerplate.com/" target="_new">HTML5 Boilerplate front-end
-                    template</a>.</li>
-                  </ul>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td  class="danger" scope="row" style="white-space:nowrap">Lab 4: We. 12/10</td>
-              <td><strong>HTML / CSS Playgrounds</strong>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print" data-toggle="collapse" data-target="#mod6-l-learn">
-                <span class="fa fa-certificate"></span> </button>
-                
-                <button type="button" class="btn btn-default btn-xs  h<!-- ---MODULE 13 -->en-print" data-toggle="collapse" data-target="#mod6-l-read">
-                <span class="glyphicon glyphicon-book"></span>
-                </button>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print">
-                <span class="fi-clipboard-pencil"></span>
-                </button>
-                <div id="mod6-l-learn" class="collapse epl425-learnout">
-                  <strong>Learning outcomes:</strong> Get practical experience with HTML/CSS development and testing using online and offline tools. Students will:
-                  <ul type="square">
-                    <li>Test their HTML code and CSS (front-end code) straight away through online playgrounds.</li>
-                    <li>Separate functional blocks to different members of their team. Share front-end code and get feedback.</li>
-                    <li>Track down bugs in their code.</li>
-                    <li>Explore the code behind existing webpages and how they are layout using CSS.</li>
-                    <li>Use developer tools to obtain code optimization tips.</li>
-                    <li>Inspect DOM and identify styles.</li>
-                    <li>Use analytics tool to observe and record site loading performance (network & rendering).</li>
-                    <li>Receive insights on which functional blocks need improvement.</li>
-                    <li>Receive actionable recommendation on optimizing your website.</li>
-                  </ul>
-                </div>
-                <div id="mod6-l-read" class="collapse">
-                  <strong>Readings and References:</strong>
-                  <ul>
-                    <li><a href="http://codepen.io/" target="_new">CodePen.io</a></li>
-                    <li><a href="https://developers.google.com/chrome-developer-tools/" target="_new">Google Chrome Developer Tools</a></li>
-                    <li><a href="https://getfirebug.com/whatisfirebug" target="_new">Firefox Firebug</a></li>
-                    <li><a href="https://gtmetrix.com/" target="_new">Website Performance Analysis Tool by GTMetrix.com</a></li>
-                  </ul>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td scope="row" style="white-space:nowrap">Lecture 13: Fri. 14/10</td>
-              <td><strong>More CSS Syntax.</strong>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print" data-toggle="collapse" data-target="#mod6-2-learn">
-                <span class="fa fa-certificate"></span></button>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print" data-toggle="collapse" data-target="#mod6-2-read">
-                <span class="glyphicon glyphicon-book"></span>
-                </button>
-                
-                <a href="http://www.piazza.com/class_profile/get_resource/ip3nhl2dp3z2rc/iudq5ky<!-- ---MODULE 13 -->y6eh" target="_new" 
-                type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print">
-                  <span class="fi-clipboard-pencil"></span>
-                </a>
-                <span id="mod6-2-learn" class="collapse epl425-learnout">
-                  <strong>Learning outcome:</strong> Learning advanced CSS syntax. Linking CSS files with HTML. CSS Shorthand. The Box Model and white space. CSS Measurement Units. Cascading
-                  Rules and Conflict Resolution. Explore how to craft an HTML page, selecting fonts,
-                  colors and targeting elements with IDs and Classes.
-                </span>
-                <span id="mod6-2-read" class="collapse">
-                  <strong>Readings:</strong>
-                  <ul>
-                    <li>Chapter 3. <i>Web Programming Step by Step (Second edition)</i> M. Stepp, J. Miller and V. Kirst, Lulu 2012.</li>
-                    <li>Chapter 11. <i>Interact with Web Standards. A Holistic Approach to Web Design.</i> E. Anderson , V. DeVolt et al., New Riders 2010.</li>
-                    <li><a href="http://www.w3schools.com/css/default.asp" target="_new">CSS Tutorial</a> from w3schools.</li>
-                    <li><a href="https://www.w3.org/wiki/Web_Standards_Curriculum#CSS" target="_new">CSS Tutorial</a> from
-                    <a href="http://www.w3.org" target="_new">W3C</a>.</li>
-                  </ul>
-                </span>
-              </td>
-            </tr>
+    <button type="button" class="btn btn-default btn-xs btn-xs hidden-print" data-toggle="collapse"
+            data-target="#lect10-learn">
+      <span class="fa fa-certificate"></span></button>
 
-<!-- ---MODULE 7 -->
- 
-            <tr>
-              <td  class="danger" scope="row" style="white-space:nowrap">Lab 5: We. 19/10</td>
-              <td><strong>Responsive Web Pages with Bootstrap</strong>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print" data-toggle="collapse" data-target="#modADVHTML-l-learn">
-                <span class="fa fa-certificate"></span> </button>
-                
-                <button type="button" class="btn btn-default btn-xs  h<!-- ---MODULE 13 -->en-print" data-toggle="collapse" data-target="#modADVHTML-l-read">
-                <span class="glyphicon glyphicon-book"></span>
-                </button>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print">
-                <span class="fi-clipboard-pencil"></span>
-                </button>
-                <div id="modADVHTML-l-learn" class="collapse epl425-learnout">
-                  <strong>Learning outcomes:</strong>
-                  Become familiar with developing with Bootstrap, using the Sublime editor. Learn how to resolve questions and explore Bootstrap capabilities using credible online resources, such as <a href="http://stackoverflow.com/" target="_new"><i class="fa fa-stack-overflow"></i>stackoverflow</a>.
-                </div>
-                <div id="modADVHTML-l-read" class="collapse">
-                  <strong>Readings and References:</strong>
-                  <ul>
-                    <li> For an authoritative source on how to start with Bootstrap, check the <a href="http://getbootstrap.com/getting-started/" target="_new">Getting started page</a> of the project.</li>
-                    <li>A <a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_new">nice tutorial on Bootstrap </a> is published
-                    on <a href="http://www.tutorialrepublic.com" target="_new">Tutorial Republic</a> site.</li>
-                    <li><a href="http://stackoverflow.com/" target="_new"><i class="fa fa-stack-overflow"></i>stackoverflow</a> is always a good place to search for answers, if
-                  you know what you are looking for.</li>
-                </ul>
-              </div>
-            </td>
-          </tr>
+    <button type="button" class="btn btn-default btn-xs btn-xs btn-xs hidden-print" data-toggle="collapse"
+            data-target="#lect10-read">
+      <span class="glyphicon glyphicon-book"></span>
+    </button>
+    <a href="http://www.piazza.com/class_profile/get_resource/j66n84kq5fw63q/j8ld3r5o9e0yv" target="_new" type="button"
+       class="btn btn-default btn-xs hidden-print">
+      <span class="fi-clipboard-pencil"></span>
+    </a>
+    <span id="lect10-learn" class="collapse epl425-learnout">
+									<strong>Learning outcome:</strong>
+									<ul>
+										<li>Overview of Usability. Usability of hypertext systems.</li>
+										<li>Understand the notion of information overloading, network disorientation. Definition of information retrieval and information filtering. Navigation support mechanisms: backtracking, bookmarking, history mechanisms, milestones.</li>
+									</ul>
+								</span>
+    <span id="lect10-read" class="collapse">
+									<strong>Readings:</strong>
+									Chapters 8-10. <i>Multimedia and Hypertext: The Internet and Beyond.</i> J. Nielsen, AP Professional, 1995.
+								</span>
+  </td>
+</tr>
+<! -- PRECEPT 5-->
+<tr>
+  <td class="active" scope="row" style="white-space:nowrap">Precept 5: Tue. 10/10</td>
+  <td><strong>Information Overload and the Attention Economy</strong>
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#prec5-learn">
+      <span class="fa fa-certificate"></span></button>
+    <button type="button" class="btn btn-default btn-xs  hidden-print" data-toggle="collapse" data-target="#prec5-read">
+      <span class="glyphicon glyphicon-book"></span>
+    </button>
+    <div id="prec5-learn" class="collapse epl425-learnout">
+      <strong>Learning outcome:</strong> Understand the implications of hypertext principles and evolution to the
+      emergence of the "attention economy."
+    </div>
+    <div id="prec5-read" class="collapse"><strong>Readings:</strong>
+      <ul>
+        <li><a
+          href="https://www.ted.com/talks/tristan_harris_the_manipulative_tricks_tech_companies_use_to_capture_your_attention"
+          target="_new">"How a handful of tech companies control billions of minds every day"</a> A TED Talk by <a
+          href="https://www.ted.com/profiles/7718392">Tristan Harris</a> (2017).
+        </li>
+        <li><a href="https://www.ted.com/talks/tristan_harris_how_better_tech_could_protect_us_from_distraction"
+               target="_new">"How better tech could protect us from distraction"</a> A TED Talk by <a
+          href="https://www.ted.com/profiles/7718392">Tristan Harris</a> (2014).
+        </li>
+        <li>The book "Hooked : How to Build Habit-Forming Products" by Nir Eyal. Penguin (2015), examines the mechanisms
+          behind addiction-based design.
+        </li>
+      </ul>
+    </div>
+  </td>
+</tr>
+<! -- LAB 6 -->
+<tr>
+  <td class="danger" scope="row" style="white-space:nowrap">Lab 6: We. 11/10</td>
+  <td><strong>Processing HTTP traffic.</strong>
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
+            data-target="#lab6-l-learn">
+      <span class="fa fa-certificate"></span></button>
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#lab6-l-read">
+      <span class="glyphicon glyphicon-book"></span>
+    </button>
+    <a href="http://www.piazza.com/class_profile/get_resource/j66n84kq5fw63q/j8mylg5ic41509" target="_new" type="button"
+       class="btn btn-default btn-xs hidden-print">
+      <span class="fi-clipboard-pencil"></span>
+    </a>
+    <div id="lab6-l-learn" class="collapse epl425-learnout">
+      <strong>Learning outcome:</strong> Gain practical experience with monitoring HTTP traffic exchanged with your
+      browser, and with
+      processing HTTP traffic.
+    </div>
+    <div id="lab6-l-read" class="collapse">
+      <strong>Readings and References:</strong>
+      <ul>
+        <li><a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol" target="_new">The HTTP Protocol.</a>
+        </li>
+        <li>"HTTP: The Definitive Guide" by D. Gourney, B. Totty et al., <i>O'Reilly</i>, 2002.</li>
+      </ul>
+    </div>
+  </td>
+</tr>
+<!-- -----------Module 4------------- -->
+<tr class="warning">
+  <th class="lead" colspan="2">Module 4: Introduction to HTML</th>
+</tr>
+<! --LECTURE 11 -->
+<tr>
+  <td scope="row">Lecture 11: Fri. 13/10</td>
+  <td><strong>Introduction to Markup Languages and HTML.</strong>
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
+            data-target="#lect11-learn">
+      <span class="fa fa-certificate"></span></button>
 
-<!-- ---MODULE 8 -->
-            <tr>
-              <td scope="row" style="white-space:nowrap">Lecture 15: Fri. 21/10</td>
-              <td><strong>Writing and Organising Web Content</strong>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print" data-toggle="collapse" data-target="#modWEBDESIGN-1-learn">
-                <span class="fa fa-certificate"></span></button>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print" data-toggle="collapse" data-target="#modWEBDESIGN-1-read">
-                <span class="glyphicon glyphicon-book"></span>
-                </button>
-                <a href="http://www.piazza.com/class_profile/get_resource/ip3nhl2dp3z2rc/iv289m6vcps3mn" target="_new" type="button" class
-                ="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print">
-                  <span class="fi-clipboard-pencil"></span>
-                </a>
-                <span id="modWEBDESIGN-1-learn" class="collapse epl425-learnout">
-                  <strong>Learning outcome:</strong> Understanding the online user experience. Principles of Web writing. Introduction to
-                  the principles of Search Engine Optimisation.
-                </span>
-                <div id="modWEBDESIGN-1-read" class="collapse">
-                  <strong>Readings:</strong>
-                  <ul>
-                    <li>Chapter 5, 6. <i>Interact with Web Standards: A Holistic Approach to Web Design</i> Erin Anderson et al, New Riders 2010.</li>
-                    <li><a href="https://static.googleusercontent.com/media/www.google.com/en//webmasters/docs/search-engine-optimization-starter-guide.pdf" target="_new">SEO Starter Guide</a> from Google.</li>
-                    <li>Chapter 7. <i>Web Programming Step by Step (Second edition)</i> M. Stepp, J. Miller and V. Kirst, Lulu 2012.</li>
-                  </ul>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td scope="row">Lecture 16: Tu. 25/10</td>
-              <td><strong>Web writing Tools and Information Architecture</strong>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print" data-toggle="collapse" data-target="#modWEBDESIGN-2-learn">
-                <span class="fa fa-certificate"></span></button>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print" data-toggle="collapse" data-target="#modWEBDESIGN-2-read">
-                <span class="glyphicon glyphicon-book"></span>
-                </button>
-                <a href="http://www.piazza.com/class_profile/get_resource/ip3nhl2dp3z2rc/iv289m6vcps3mn" target="_new" type="button" class
-                ="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print">
-                  <span class="fi-clipboard-pencil"></span>
-                </a>
-                <span id="modWEBDESIGN-2-learn" class="collapse epl425-learnout">
-                  <strong>Learning outcome:</strong> Learn the main tools for Web content design and management. Introduction
-                  to Information Architecture.
-                </span>
-                <span id="modWEBDESIGN-2-read" class="collapse">
-                  <strong>Readings:</strong> Chapters 7, 8, 9 <i>Interact with Web Standards: A Holistic Approach to Web Design</i> Erin Anderson et al, New Riders 2010.
-                </span>
-              </td>
-            </tr>
-                      <tr>
-              <td scope="row">Lecture 17: Tu. 1/11</td>
-              <td><strong>Site Planning and Content Analysis</strong>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print" data-toggle="collapse" data-target="#modWEBDESIGN-3-learn">
-                <span class="fa fa-certificate"></span></button>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print" data-toggle="collapse" data-target="#modWEBDESIGN-3-read">
-                <span class="glyphicon glyphicon-book"></span>
-                </button>
-                <a href="http://www.piazza.com/class_profile/get_resource/ip3nhl2dp3z2rc/iv289m6vcps3mn" target="_new"   type="button" 
-                class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print">
-                  <span class="fi-clipboard-pencil"></span>
-                </a>
-                <span id="modWEBDESIGN-3-learn" class="collapse epl425-learnout">
-                  <strong>Learning outcome:</strong> Learn the principles of Web design project management, content analysis and user-centered design.
-                </span>
-                <span id="modWEBDESIGN-3-read" class="collapse">
-                  <strong>Readings:</strong> Chapters 7, 8, 9 <i>Interact with Web Standards: A Holistic Approach to Web Design</i> Erin Anderson et al, New Riders 2010.
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <td  class="danger" scope="row" style="white-space:nowrap">Lab 6: We. 2/11</td>
-              <td><strong>Web design lab</strong>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print" data-toggle="collapse" data-target="#modWEBDESIGN-l-learn">
-                <span class="fa fa-certificate"></span> </button>
-                
-                <button type="button" class="btn btn-default btn-xs  h<!-- ---MODULE 13 -->en-print" data-toggle="collapse" data-target="#modWEBDESIGN-l-read">
-                <span class="glyphicon glyphicon-book"></span>
-                </button>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print">
-                <span class="fi-clipboard-pencil"></span>
-                </button>
-                <span id="modWEBDESIGN-l-learn" class="collapse epl425-learnout">
-                <strong>Learning outcomes:</strong>Learn how to use Wireframes to design your Web site.</span>
-                <div id="modWEBDESIGN-l-read" class="collapse">
-                  <strong>Readings and References:</strong>
-                  <ul>
-                    <li>A <a href="https://wireframe.cc/" target="_new">Simple Wireframe sketcher</a> (web-based).</li>
-                    <li>An Advanced <a href="http://wireframesketcher.com/" target="_new">Wireframe sketcher</a> (avail. as stand-alone or Eclipse plugin).</li>
-                    <li>Watch a video from Google Entrepreneurs on <a href="https://youtu.be/RggpMC2kp4k" target="_new">using Omnigraffle to build wireframes</a>.</li>
-                  </ul>
-                </div>
-              </td>
-            </tr>
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#lect11-read">
+      <span class="glyphicon glyphicon-book"></span>
+    </button>
+    <a href="http://www.piazza.com/class_profile/get_resource/j66n84kq5fw63q/j8t6ut39gbv73v" target="_new" type="button"
+       class="btn btn-default btn-xs hidden-print">
+      <span class="fi-clipboard-pencil"></span>
+    </a>
+    <div id="lect11-learn" class="collapse epl425-learnout">
+      <strong>Learning outcome:</strong> Introduction to document structure and markup Languages. Become familiar with
+      main concepts of markup languages, SGML, Document Type Definitions (DTD). Introduction to HTML: History, Syntax.
+      Understand and familiarize with the Structure of HTML Documents.
+    </div>
+    <span id="lect11-read" class="collapse">
+									<strong>Readings:</strong>
+									<ul>
+										<li>Chapter 2. <i>Web Programming Step by Step (Second edition)</i> M. Stepp, J. Miller and V. Kirst, Lulu 2012.</li>
+										<li><a href="http://www.w3.org/wiki/The_basics_of_HTML" target="_new">http://www.w3.org/wiki/The_basics_of_HTML</a></li>
+										<li><a href="http://www.w3.org/wiki/Doctypes_and_markup_styles" target="_new">http://www.w3.org/wiki/Doctypes_and_markup_styles</a></li>
+										<li>Chapter 10. <i>Interact with Web Standards. A Holistic Approach to Web Design.</i> E. Anderson , V. DeVolt et al., New Riders 2010.</li>
+									</ul>
+								</span>
+  </td>
+</tr>
+<! --LECTURE 12 -->
+<tr>
+  <td scope="row">Lecture 12: Tu. 17/10</td>
+  <td><strong>HTML Elements.</strong>
 
-<!-- ---MODULE 9 -->
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
+            data-target="#lect12-learn">
+      <span class="fa fa-certificate"></span></button>
 
-  
-            <tr>
-              <td  class="danger" scope="row" style="white-space:nowrap">Lab 7: We. 9/11</td>
-              <td><strong>Implementation and Deployment of PhP Web application</strong>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print" data-toggle="collapse" data-target="#modPHP-l-learn">
-                <span class="fa fa-certificate"></span> </button>
-                
-                <button type="button" class="btn btn-default btn-xs  h<!-- ---MODULE 13 -->en-print" data-toggle="collapse" data-target="#modPHP-l-read">
-                <span class="glyphicon glyphicon-book"></span>
-                </button>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print">
-                <span class="fi-clipboard-pencil"></span>
-                </button>
-                <span id="modPHP-l-learn" class="collapse epl425-learnout">
-                  <strong>Learning outcomes:</strong>
-                Become familiar with implementing and deploying a PhP application on your LAMP server on Amazon. </span>
-                <div id="modPHP-l-read" class="collapse">
-                  <strong>Readings and References:</strong>
-                  <ul>
-                    <li>Chapter 5. <i>Web Programming Step by Step (Second edition)</i> M. Stepp, J. Miller and V. Kirst, Lulu 2012.</li>
-                    <li><a href="http://php.net/docs.php" target="_new">PhP Documentation</a>.</li>
-                  </ul>
-                </div>
-              </td>
-            </tr>
-            <tr>
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#lect12-read">
+      <span class="glyphicon glyphicon-book"></span>
+    </button>
+    <a href="http://www.piazza.com/class_profile/get_resource/j66n84kq5fw63q/j8zt00eltxp1n7" target="_new" type="button"
+       class="btn btn-default btn-xs hidden-print">
+      <span class="fi-clipboard-pencil"></span>
+    </a>
+    <span id="lect12-learn" class="collapse epl425-learnout">
+									<strong>Learning outcome:</strong> Familiarize with HTML elements, head, anchors, lists, tables, quotations, pre-formattedtext, advanced elements, images.
+								</span>
+    <div id="lect12-read" class="collapse">
+      <strong>Readings:</strong>
+      <ul>
+        <li>Chapter 2. <i>Web Programming Step by Step (Second edition)</i> M. Stepp, J. Miller and V. Kirst, Lulu 2012.
+        </li>
+        <li>Chapter 12, 13. <i>Interact with Web Standards. A Holistic Approach to Web Design.</i> E. Anderson , V.
+          DeVolt et al., New Riders 2010.
+        </li>
+      </ul>
+    </div>
+  </td>
+</tr>
+<! -- PRECEPT 6-->
+<tr>
+  <td class="active" scope="row" style="white-space:nowrap">Precept 6: Tue. 17/10</td>
+  <td><strong>Semantic Web.</strong>
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#prec6-learn">
+      <span class="fa fa-certificate"></span></button>
+    <button type="button" class="btn btn-default btn-xs  hidden-print" data-toggle="collapse" data-target="#prec6-read">
+      <span class="glyphicon glyphicon-book"></span>
+    </button>
+    <a href="http://www.piazza.com/class_profile/get_resource/j66n84kq5fw63q/j8zt00eltxp1n7" target="_new" type="button"
+       class="btn btn-default btn-xs hidden-print">
+      <span class="fi-clipboard-pencil"></span>
+    </a>
+    <div id="prec6-learn" class="collapse epl425-learnout">
+      <strong>Learning outcome:</strong> Understand the concept of semantics and the Semantic Web. Overview of basic
+      principles and syntax of the
+      Resource Description Framework (RDF). Overview of Microformats and RDFa.
+    </div>
+    <div id="prec6-read" class="collapse">
+      <ul>
+        <li><a href="https://www.w3.org/standards/semanticweb/" target="_new">Semantic Web Technologies @ W3C.</a></li>
+        <li><a href="http://microformats.org/wiki/get-started" target="_new">Microformats blog.</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Microformat" target="_new">Wikipedia lemma on Microformats.</li>
+      </ul>
+    </div>
+  </td>
+</tr>
+<! --LAB 7-- -->
+<tr>
+  <td class="danger" scope="row" style="white-space:nowrap">Lab 7: We. 18/10</td>
+  <td><strong>HTML / CSS Playgrounds</strong>
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#lab7-learn">
+      <span class="fa fa-certificate"></span></button>
+    <button type="button" class="btn btn-default btn-xs  hidden-print" data-toggle="collapse" data-target="#lab7-read">
+      <span class="glyphicon glyphicon-book"></span>
+    </button>
+    <button type="button" class="btn btn-default btn-xs hidden-print">
+      <span class="fi-clipboard-pencil"></span>
+    </button>
+    <div id="lab7-learn" class="collapse epl425-learnout">
+      <strong>Learning outcomes:</strong> Get practical experience with HTML/CSS development and testing using online
+      and offline tools. Students will:
+      <ul type="square">
+        <li>Test their HTML code and CSS (front-end code) straight away through online playgrounds.</li>
+        <li>Track down bugs in their code.</li>
+        <li>Explore the code behind existing webpages and how they are layout using CSS.</li>
+        <li>Use developer tools to obtain code optimization tips.</li>
+        <li>Inspect DOM and identify styles.</li>
+        <li>Use analytics tool to observe and record site loading performance (network & rendering).</li>
+        <li>Receive insights on which functional blocks need improvement.</li>
+        <li>Receive actionable recommendation on optimizing your website.</li>
+      </ul>
+    </div>
+    <div id="lab7-read" class="collapse">
+      <strong>Readings and References:</strong>
+      <ul>
+        <li><a href="http://codepen.io/" target="_new">CodePen.io</a></li>
+        <li><a href="https://developers.google.com/chrome-developer-tools/" target="_new">Google Chrome Developer
+          Tools</a></li>
+        <li><a href="https://getfirebug.com/whatisfirebug" target="_new">Firefox Firebug</a></li>
+        <li><a href="https://gtmetrix.com/" target="_new">Website Performance Analysis Tool by GTMetrix.com</a></li>
+      </ul>
+    </div>
+  </td>
+</tr>
+<!-- -----------Module 5------------- -->
+<tr class="warning">
+  <th class="lead" colspan="2">Module 5: Cascading Style Sheets (CSS)</th>
+</tr>
+<! -- LECTURE 13 -->
+<tr>
+  <td scope="row" style="white-space:nowrap">Lecture 13: Fri. 20/10</td>
+  <td><strong>Basic CSS.</strong>
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
+            data-target="#lect13-learn">
+      <span class="fa fa-certificate"></span></button>
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#lect13-read">
+      <span class="glyphicon glyphicon-book"></span>
+    </button>
+    <a href="http://www.piazza.com/class_profile/get_resource/j66n84kq5fw63q/j99zfm77jur3n1" target="_new" type="button"
+       class="btn btn-default btn-xs hidden-print">
+      <span class="fi-clipboard-pencil"></span>
+    </a>
+    <div id="lect13-learn" class="collapse epl425-learnout">
+      <strong>Learning outcome:</strong> Introduction to CSS concept, syntax and properties.
+    </div>
+    <div id="lect13-read" class="collapse">
+      <strong>Readings:</strong>
+      <ul>
+        <li>Chapter 3. <i>Web Programming Step by Step (Second edition)</i> M. Stepp, J. Miller and V. Kirst, Lulu 2012.
+        </li>
+        <li><a href="http://www.w3.org/wiki/CSS_basics" target="_new">http://www.w3.org/wiki/CSS_basics</a></li>
+        <li>Chapter 11. <i>Interact with Web Standards. A Holistic Approach to Web Design.</i> E. Anderson , V. DeVolt
+          et al., New Riders 2010.
+        </li>
+      </ul>
+    </div>
+  </td>
+</tr>
 
-              <td class="active" scope="row" style="white-space:nowrap">Precept: Fri. 11/11</td>
-              <td><strong>Case Study: Word of the Day</strong>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print" data-toggle="collapse" data-target="#modPHP-p-learn">
-                <span class="fa fa-certificate"></span> </button>
-                <button type="button" class="btn btn-default btn-xs" data-toggle="collapse" data-target="#modPHP-p-read">
-                <span class="glyphicon glyphicon-book"></span>
-                </button>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print">
-                <span class="fi-clipboard-pencil"></span>
-                </button>
-                <span id="modPHP-p-learn" class="collapse epl425-learnout">
-                  <strong>Learning outcome:</strong> Use PhP to implement a simple Web application.
-                </span>
-                <span id="modPHP-p-read" class="collapse">
-                  <strong>Readings and References:</strong> Chapter 5.5. <i>Web Programming Step by Step (Second edition)</i> M. Stepp, J. Miller and V. Kirst, Lulu 2012.
-                </span>
-              </td>
-            </tr>
- 
-            <tr>
-              <td  class="danger" scope="row" style="white-space:nowrap">Lab 8: We. 16/11</td>
-              <td><strong>Dynamic Web applications using HTML forms and PhP</strong>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print" data-toggle="collapse" data-target="#modFORMS-l-learn">
-                <span class="fa fa-certificate"></span> </button>
-                
-                <button type="button" class="btn btn-default btn-xs  h<!-- ---MODULE 13 -->en-print" data-toggle="collapse" data-target="#modFORMS-l-read">
-                <span class="glyphicon glyphicon-book"></span>
-                </button>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print">
-                <span class="fi-clipboard-pencil"></span>
-                </button>
-                <span id="modFORMS-l-learn" class="collapse epl425-learnout">
-                  <strong>Learning outcomes:</strong>
-                  Become familiar with implementing and deploying a PhP application processing HTML Forms on your LAMP server. Practice
-                with the Vocabulary Quiz example of the textbook.</span>
-                <div id="modFORMS-l-read" class="collapse">
-                  <strong>Readings and References:</strong>
-                  <ul>
-                    <li>Chapter 6.5. <i>Web Programming Step by Step (Second edition)</i> M. Stepp, J. Miller and V. Kirst, Lulu 2012.</li>
-                    <li><a href="http://php.net/docs.php" target="_new">PhP Documentation</a>.</li>
-                  </ul>
-                </div>
-              </td>
-            </tr>
+<!-- ---- MIDTERM --- -->
+<tr class="epl425-quiz">
+  <td scope="row" colspan="2"><strong>Midterm: </strong>Μodules 1-4.</td>
+</tr>
+<! --- LAB 8 -->
+<tr>
+  <td class="danger" scope="row" style="white-space:nowrap">Lab 8: We. 25/10</td>
+  <td><strong>Responsive Web Pages with Bootstrap</strong>
 
-<!-- ---MODULE 10 -->
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#lab8-learn">
+      <span class="fa fa-certificate"></span></button>
 
- 
- 
-              <td  class="danger" scope="row" style="white-space:nowrap">Lab 9: We. 23/11</td>
-              <td><strong><a href="https://www.cs.ucy.ac.cy/index.php/news/studentscorner/799-23-november-2016-15-00-kod03-room-101-google-on-ucy-campus-bring-questions-build-answers" target="_new">Google Interview Workshop</a></strong>
-              <span id="modJS-l-learn" class="collapse epl425-learnout">
-                <strong>Learning outcomes:</strong> Learn what knowledge and which skills are required from software engineers and IT professionals
-                who wish to join Google. Get familiar with the Google interview process and gain hands-on experience on this process from an experienced
-                Google engineer.
-              </span>
-            </td>
-          </tr>
+    <button type="button" class="btn btn-default btn-xs  hidden-print" data-toggle="collapse" data-target="#lab8-read">
+      <span class="glyphicon glyphicon-book"></span>
+    </button>
+    <a href="https://piazza.com/class_profile/get_resource/j66n84kq5fw63q/j8woreh2bid5g2" target="_new" type="button"
+       class="btn btn-default btn-xs hidden-print">
+      <span class="fi-clipboard-pencil"></span>
+    </a>
 
-<!-- ---MODULE 11 -->
-            <tr>
-              <td scope="row">Lecture 23: Fri. 25/11</td>
-              <td><strong>Event-hadling with Javascript</strong>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print" data-toggle="collapse" data-target="#modJSDOM-2-learn">
-                <span class="fa fa-certificate"></span></button>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print" data-toggle="collapse" data-target="#modJSDOM-2-read">
-                <span class="glyphicon glyphicon-book"></span>
-                </button>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print">
-                <span class="fi-clipboard-pencil"></span>
-                </button>
-                <div id="modJSDOM-2-learn" class="collapse epl425-learnout">
-                  <strong>Learning outcome:</strong>
-                  <ul>
-                    <li>Introduction to event-driven programming and event-hadling with Javascript. XML and JSON</li>
-                    <li>Learn how to exchange semi-structured data over the Web, using the Extensible Markup
-                    Language (XML) or JSON.</li>
-                  </ul>
-                </div>
-                <span id="modJSDOM-2-read" class="collapse">
-                  <strong>Readings:</strong> Chapter 11.1, 12.3-4 <i>Web Programming Step by Step (Second edition)</i>
-                  M. Stepp, J. Miller and V. Kirst, Lulu 2012.
-                </span>
-              </td>
-            </tr>
+    <div id="lab8-learn" class="collapse epl425-learnout">
+      <strong>Learning outcomes:</strong>
+      Become familiar with developing with Bootstrap, using the Sublime editor. Learn how to resolve questions and
+      explore Bootstrap capabilities using credible online resources, such as <a href="http://stackoverflow.com/"
+                                                                                 target="_new"><i
+      class="fa fa-stack-overflow"></i>stackoverflow</a>.
+    </div>
+    <div id="lab8-read" class="collapse">
+      <strong>Readings and References:</strong>
+      <ul>
+        <li> For an authoritative source on how to start with Bootstrap, check the <a
+          href="http://getbootstrap.com/getting-started/" target="_new">Getting started page</a> of the project.
+        </li>
+        <li>A <a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_new">nice tutorial on
+          Bootstrap </a> is published
+          on <a href="http://www.tutorialrepublic.com" target="_new">Tutorial Republic</a> site.
+        </li>
+        <li><a href="http://stackoverflow.com/" target="_new"><i class="fa fa-stack-overflow"></i>stackoverflow</a> is
+          always a good place to search for answers, if you know what you are looking for.
+        </li>
+      </ul>
+    </div>
+  </td>
+</tr>
+<! -- LECTURE 14 -->
+<tr>
+  <td scope="row" style="white-space:nowrap">Lecture 14: Fri. 27/10</td>
+  <td><strong>More CSS Syntax.</strong>
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
+            data-target="#lect14-learn">
+      <span class="fa fa-certificate"></span></button>
 
-<!-- ---MODULE 12 -->
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#lect14-read">
+      <span class="glyphicon glyphicon-book"></span>
+    </button>
+    <a href="http://www.piazza.com/class_profile/get_resource/j66n84kq5fw63q/j99zgquzq514ma" target="_new" type="button"
+       class="btn btn-default btn-xs hidden-print">
+      <span class="fi-clipboard-pencil"></span>
+    </a>
+    <span id="lect14-learn" class="collapse epl425-learnout">
+									<strong>Learning outcome:</strong> Learning advanced CSS syntax. Linking CSS files with HTML.
+								</span>
+    <span id="lect14-read" class="collapse">
+									<strong>Readings:</strong>
+									<ul>
+										<li>Chapter 3. <i>Web Programming Step by Step (Second edition)</i> M. Stepp, J. Miller and V. Kirst, Lulu 2012.</li>
+										<li>Chapter 11. <i>Interact with Web Standards. A Holistic Approach to Web Design.</i> E. Anderson , V. DeVolt et al., New Riders 2010.</li>
+										<li><a href="http://www.w3schools.com/css/default.asp" target="_new">CSS Tutorial</a> from w3schools.</li>
+										<li><a href="https://www.w3.org/wiki/Web_Standards_Curriculum#CSS" target="_new">CSS Tutorial</a> from
+										<a href="http://www.w3.org" target="_new">W3C</a>.</li>
+										<li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS" target="_new">CSS Tutorial</a> from Mozilla Foundation.</li>
+									</ul>
+								</span>
+  </td>
+</tr>
+<! ---LECTURE 15 --->
+<tr>
+  <td scope="row" style="white-space:nowrap">Lecture 15: Tu. 31/10</td>
+  <td><strong>Box Model, Inheritance and Cascading in CSS.</strong>
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
+            data-target="#lect15-learn">
+      <span class="fa fa-certificate"></span></button>
 
-            <tr>
-              <td scope="row" style="white-space:nowrap">Lecture</td>
-              <td><strong>Database concepts review</strong>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print" data-toggle="collapse" data-target="#w13-1-learn">
-                <span class="fa fa-certificate"></span></button>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print" data-toggle="collapse" data-target="#w13-1-read">
-                <span class="glyphicon glyphicon-book"></span>
-                </button>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print">
-                <span class="fi-clipboard-pencil"></span>
-                </button>
-                <span id="w13-1-learn" class="collapse epl425-learnout">
-                  <strong>Learning outcome:</strong> Review the key concepts of Databases and SQL. Review the functionality and
-                  use of MySQL.
-                </span>
-                <div id="w13-1-read" class="collapse">
-                  <strong>Readings:</strong>
-                  <ul>
-                    <li>Chapter 13.1-3 <i>Web Programming Step by Step (Second edition)</i>
-                    M. Stepp, J. Miller and V. Kirst, Lulu 2012.</li>
-                    <li><a href="http://www.w3schools.com/php/php_mysql_intro.asp" target="_new">MySQL Introduction</a> from W3Schools.</li>
-                  </ul>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td scope="row">Lecture</td>
-              <td><strong>Querying a Database with PhP</strong>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print" data-toggle="collapse" data-target="#w13-2-learn">
-                <span class="fa fa-certificate"></span></button>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print" data-toggle="collapse" data-target="#w13-2-read">
-                <span class="glyphicon glyphicon-book"></span>
-                </button>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print">
-                <span class="fi-clipboard-pencil"></span>
-                </button>
-                <span id="w13-2-learn" class="collapse epl425-learnout">
-                  <strong>Learning outcome:</strong> Learn how to connect and query a MySQL from a Web application written in PhP.
-                </span>
-                <span id="w13-2-read" class="collapse">
-                  <strong>Readings:</strong> Chapter 13.4 <i>Web Programming Step by Step (Second edition)</i>
-                  M. Stepp, J. Miller and V. Kirst, Lulu 2012.
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <td class="active" scope="row" style="white-space:nowrap">Precept</td>
-              <td><strong>Case study with Web application using MySQL database</strong>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print" data-toggle="collapse" data-target="#w13-p-learn">
-                <span class="fa fa-certificate"></span> </button>
-                <button type="button" class="btn btn-default btn-xs" data-toggle="collapse" data-target="#w13-p-read">
-                <span class="glyphicon glyphicon-book"></span>
-                </button>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print">
-                <span class="fi-clipboard-pencil"></span>
-                </button>
-                <span id="w13-p-learn" class="collapse epl425-learnout">
-                  <strong>Learning outcome:</strong> Gain practical experience with Web databases.
-                </span>
-                <span id="w13-p-read" class="collapse">
-                  <strong>Readings and References:</strong>
-                  Chapter 13.5 <i>Web Programming Step by Step (Second edition)</i>
-                  M. Stepp, J. Miller and V. Kirst, Lulu 2012.
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <td  class="danger" scope="row" style="white-space:nowrap">Lab</td>
-              <td><strong>Web database programming lab</strong>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print" data-toggle="collapse" data-target="#w12-l-learn">
-                <span class="fa fa-certificate"></span> </button>
-                
-                <button type="button" class="btn btn-default btn-xs  h<!-- ---MODULE 13 -->en-print" data-toggle="collapse" data-target="#w12-l-read">
-                <span class="glyphicon glyphicon-book"></span>
-                </button>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print">
-                <span class="fi-clipboard-pencil"></span>
-                </button>
-                <span id="w12-l-learn" class="collapse epl425-learnout">
-                  <strong>Learning outcomes:</strong> Gain hands-on experience with Web databases. Learn how to deploy and use a
-                  Web database on your virtual server.
-                </span>
-                <div id="w12-l-read" class="collapse">
-                  <strong>Readings and References:</strong>
-                  Chapter 13.5 <i>Web Programming Step by Step (Second edition)</i>
-                  M. Stepp, J. Miller and V. Kirst, Lulu 2012.
-                </div>
-              </td>
-            </tr>
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#lect15-read">
+      <span class="glyphicon glyphicon-book"></span>
+    </button>
+    <a href="http://www.piazza.com/class_profile/get_resource/j66n84kq5fw63q/j99zj4t8n0a5t0" target="_new" type="button"
+       class="btn btn-default btn-xs hidden-print">
+      <span class="fi-clipboard-pencil"></span>
+    </a>
+    <span id="lect15-learn" class="collapse epl425-learnout">
+									<strong>Learning outcome:</strong> CSS Shorthand. The Box Model and white space. CSS Measurement Units. Cascading
+									Rules and Conflict Resolution. Explore how to craft an HTML page, selecting fonts,
+									colors and targeting elements with IDs and Classes.
+								</span>
+    <span id="lect15-read" class="collapse">
+									<strong>Readings:</strong>
+									<ul>
+										<li>Chapter 4. <i>Web Programming Step by Step (Second edition)</i> M. Stepp, J. Miller and V. Kirst, Lulu 2012.</li>
+										<li>Chapter 11, 14. <i>Interact with Web Standards. A Holistic Approach to Web Design.</i> E. Anderson , V. DeVolt et al., New Riders 2010.</li>
+										<li><a href="http://www.w3schools.com/css/default.asp" target="_new">CSS Tutorial</a> from w3schools.</li>
+										<li><a href="https://www.w3.org/wiki/Web_Standards_Curriculum#CSS" target="_new">CSS Tutorial</a> from <a
+                      href="http://www.w3.org" target="_new">W3C</a>.</li>
+									</ul>
+								</span>
+  </td>
+</tr>
+<! -- PRECEPT 7-->
+<tr>
+  <td class="active" scope="row" style="white-space:nowrap">Precept 7: Tue. 31/10</td>
+  <td><strong>CSS Examples.</strong>
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#prec7-learn">
+      <span class="fa fa-certificate"></span></button>
+    <button type="button" class="btn btn-default btn-xs  hidden-print" data-toggle="collapse" data-target="#prec7-read">
+      <span class="glyphicon glyphicon-book"></span>
+    </button>
+    <div id="prec7-learn" class="collapse epl425-learnout">
+      <strong>Learning outcome:</strong> Review of CSS examples.
+    </div>
+    <div id="prec7-read" class="collapse">
+      <ul>
+        <li><a href="https://www.w3schools.com/css/css3_intro.asp" target="_new">CSS3 Tutorial and W3Schools.</a></li>
+        <li><a href="https://www.tutorialrepublic.com/css-examples.php" target="_new">CSS Examples.</a></li>
+      </ul>
+    </div>
+  </td>
+</tr>
 
-<!-- ---MODULE 13 -->
-            <tr>
-              <td scope="row" style="white-space:nowrap">Lecture</td>
-              <td><strong>Introduction to Cookies</strong>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print" data-toggle="collapse" data-target="#w12-1-learn">
-                <span class="fa fa-certificate"></span></button>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print" data-toggle="collapse" data-target="#w12-1-read">
-                <span class="glyphicon glyphicon-book"></span>
-                </button>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print">
-                <span class="fi-clipboard-pencil"></span>
-                </button>
-                <span id="w12-1-learn" class="collapse epl425-learnout">
-                  <strong>Learning outcome:</strong> Understand the concepts of Cookies and Web programming with Cookies.
-                </span>
-                <div id="w12-1-read" class="collapse">
-                  <strong>Readings:</strong>
-                  <ul>
-                    <li>Chapter 14.1-2 <i>Web Programming Step by Step (Second edition)</i>
-                    M. Stepp, J. Miller and V. Kirst, Lulu 2012.</li>
-                    <li><a href="http://www.w3schools.com/php/php_mysql_intro.asp" target="_new">MySQL Introduction</a> from W3Schools.</li>
-                  </ul>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td scope="row">Lecture</td>
-              <td><strong>Introduction to Sessions</strong>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print" data-toggle="collapse" data-target="#w12-2-learn">
-                <span class="fa fa-certificate"></span></button>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print" data-toggle="collapse" data-target="#w12-2-read">
-                <span class="glyphicon glyphicon-book"></span>
-                </button>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print">
-                <span class="fi-clipboard-pencil"></span>
-                </button>
-                <span id="w12-2-learn" class="collapse epl425-learnout">
-                  <strong>Learning outcome:</strong> Learn how to use cookies to manage Web sessions.
-                </span>
-                <span id="w12-2-read" class="collapse">
-                  Chapter 14.3 <i>Web Programming Step by Step (Second edition)</i>
-                  M. Stepp, J. Miller and V. Kirst, Lulu 2012.
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <td class="active" scope="row" style="white-space:nowrap">Precept</td>
-              <td><strong>Case study: User Login System using cookies</strong>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print" data-toggle="collapse" data-target="#w12-p-learn">
-                <span class="fa fa-certificate"></span> </button>
-                <button type="button" class="btn btn-default btn-xs" data-toggle="collapse" data-target="#w12-p-read">
-                <span class="glyphicon glyphicon-book"></span>
-                </button>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print">
-                <span class="fi-clipboard-pencil"></span>
-                </button>
-                <span id="w12-p-learn" class="collapse epl425-learnout">
-                  <strong>Learning outcome:</strong> Gain practical experience with cookies' applications.
-                </span>
-                <span id="w12-p-read" class="collapse">
-                  <strong>Readings:</strong>
-                  Chapter 14.4 <i>Web Programming Step by Step (Second edition)</i>
-                  M. Stepp, J. Miller and V. Kirst, Lulu 2012.
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <td  class="danger" scope="row" style="white-space:nowrap">Lab</td>
-              <td><strong>Web database programming lab</strong>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print" data-toggle="collapse" data-target="#w12-l-learn">
-                <span class="fa fa-certificate"></span> </button>
-                
-                <button type="button" class="btn btn-default btn-xs  h<!-- ---MODULE 13 -->en-print" data-toggle="collapse" data-target="#w12-l-read">
-                <span class="glyphicon glyphicon-book"></span>
-                </button>
-                
-                <button type="button" class="btn btn-default btn-xs h<!-- ---MODULE 13 -->en-print">
-                <span class="fi-clipboard-pencil"></span>
-                </button>
-                <span id="w12-l-learn" class="collapse epl425-learnout">
-                  <strong>Learning outcomes:</strong> Gain hands-on experience with Web application development using cookies
-                </span>
-                <div id="w12-l-read" class="collapse">
-                  <strong>Readings:</strong>
-                  Chapter 14.4 <i>Web Programming Step by Step (Second edition)</i>
-                  M. Stepp, J. Miller and V. Kirst, Lulu 2012.
-                </div>
-              </td>
-            </tr>
-            -->
+<! --- LAB 9 -->
+<tr>
+  <td class="danger" scope="row" style="white-space:nowrap">Lab 9: We. 1/11</td>
+  <td><strong>CSS Examples</strong>
 
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#lab9-learn">
+      <span class="fa fa-certificate"></span></button>
+
+    <button type="button" class="btn btn-default btn-xs  hidden-print" data-toggle="collapse" data-target="#lab9-read">
+      <span class="glyphicon glyphicon-book"></span></button>
+    <a href="https://piazza.com/class_profile/get_resource/j66n84kq5fw63q/j9gx2p3zgta4vz" target="_new" type="button"
+       class="btn btn-default btn-xs hidden-print">
+      <span class="fi-clipboard-pencil"></span>
+    </a>
+    <div id="lab9-learn" class="collapse epl425-learnout">
+      <strong>Learning outcomes:</strong> Become familiar with using CSS to float and position HTML elements.</a>.
+    </div>
+    <div id="lab9-read" class="collapse">
+      <strong>Readings and References:</strong>
+      <ul>
+        <li>Chapter 4. <i>Web Programming Step by Step (Second edition)</i> M. Stepp, J. Miller and V. Kirst, Lulu 2012.
+        </li>
+      </ul>
+    </div>
+  </td>
+</tr>
+
+<! ---LECTURE 16 --->
+<tr>
+  <td scope="row" style="white-space:nowrap">Lecture 16: Fri. 3/11</td>
+  <td><strong>Page Layout, Floating and Positioning.</strong>
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
+            data-target="#lect16-learn">
+      <span class="fa fa-certificate"></span></button>
+
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#lect16-read">
+      <span class="glyphicon glyphicon-book"></span>
+    </button>
+    <a href="http://www.piazza.com/class_profile/get_resource/j66n84kq5fw63q/j9ml3ww8e3573" target="_new" type="button"
+       class="btn btn-default btn-xs hidden-print">
+      <span class="fi-clipboard-pencil"></span>
+    </a>
+    <span id="lect16-learn" class="collapse epl425-learnout">
+								<strong>Learning outcome:</strong> 	Learn how to combine HTML with CSS to style page sections. Become familiar with the principles of HTML layout using CSS. Using the Box Model. Learn how to float and position HTML elements using CSS.
+								Introduction to other CSS tricks. Explore styling pages, sections, floating elements,
+								positioning and sizing in practice.
+							</span>
+    <span id="lect16-read" class="collapse">
+								<strong>Readings:</strong>
+								<ul>
+									<li>Chapter 4. <i>Web Programming Step by Step (Second edition)</i> M. Stepp, J. Miller and V. Kirst, Lulu 2012.</li>
+									<li>Chapter 20, 21. <i>Interact with Web Standards. A Holistic Approach to Web Design.</i> E. Anderson , V. DeVolt et al., New Riders 2010.</li>
+									<li><a href="http://www.w3schools.com/css/default.asp" target="_new">CSS Tutorial</a> from w3schools.</li>
+									<li><a href="https://www.w3.org/wiki/Web_Standards_Curriculum#CSS" target="_new">CSS Tutorial</a> from <a
+                    href="http://www.w3.org" target="_new">W3C</a>.</li>
+								</ul>
+							</span>
+  </td>
+</tr>
+<! ------Module 6-------- -->
+<tr class="warning">
+  <th class="lead" colspan="2">Module 6: Server-side Programming through PHP and HTML Forms</th>
+</tr>
+<! ---LECTURE 17 --->
+<tr>
+  <td scope="row" style="white-space:nowrap">Lecture 17: Tue. 7/11</td>
+  <td><strong>Introduction to PHP.</strong>
+
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
+            data-target="#lect17-learn">
+      <span class="fa fa-certificate"></span></button>
+
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#lect17-read">
+      <span class="glyphicon glyphicon-book"></span>
+    </button>
+    <a href="http://www.piazza.com/class_profile/get_resource/j66n84kq5fw63q/j9pfwkbl4qnmy" target="_new" type="button"
+       class="btn btn-default btn-xs hidden-print">
+      <span class="fi-clipboard-pencil"></span>
+    </a>
+    <div id="lect17-learn" class="collapse epl425-learnout">
+      <strong>Learning outcome:</strong> Introduction to PhP. Revisit the lifecycle of a Web request. Gain familiarity
+      with PhP structure and syntax. Gain a working knowledge of the PhP scripting language. Learn how to combine PhP
+      with HTML, using embedded PhP.
+    </div>
+    <div id="lect17-read" class="collapse">
+      <strong>Readings:</strong>
+      <ul>
+        <li>Chapter 5. <i>Web Programming Step by Step (Second edition)</i> M. Stepp, J. Miller and V. Kirst, Lulu 2012.
+        </li>
+        <li><a href="http://www.w3schools.com/php/" target="_new">PhP tutorials</a>.</li>
+      </ul>
+    </div>
+  </td>
+</tr>
+
+<! -- PRECEPT 8-->
+<tr>
+  <td class="active" scope="row" style="white-space:nowrap">Precept 8: Tue. 7/11</td>
+  <td><strong>Advanced PhP Syntax and Examples.</strong>
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#prec8-learn">
+      <span class="fa fa-certificate"></span></button>
+    <button type="button" class="btn btn-default btn-xs  hidden-print" data-toggle="collapse" data-target="#prec8-read">
+      <span class="glyphicon glyphicon-book"></span>
+    </button>
+    <div id="prec8-learn" class="collapse epl425-learnout">
+      <strong>Learning outcome:</strong> Overview of PhP functions, I/O, classes and objects. Case Study: Word of the
+      Day.
+    </div>
+    <div id="prec8-read" class="collapse"><strong>Readings:</strong>
+      <ul>
+        <li><a href="http://www.w3schools.com/php/" target="_new">PhP tutorials</a>.</li>
+        <li><a href="https://laravel.com/" target="_new">The Laravel Framework</a>.</li>
+      </ul>
+    </div>
+  </td>
+</tr>
+<! ---LECTURE 18 --->
+<tr>
+  <td scope="row" style="white-space:nowrap">Lecture 18: We. 8/11</td>
+  <td><strong>HTML Forms processing</strong>
+
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
+            data-target="#lect18-learn">
+      <span class="fa fa-certificate"></span></button>
+
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#lect18-read">
+      <span class="glyphicon glyphicon-book"></span>
+    </button>
+    <a href="http://www.piazza.com/class_profile/get_resource/j66n84kq5fw63q/j9t0z4rhmnn1uh" target="_new" type="button"
+       class="btn btn-default btn-xs hidden-print">
+      <span class="fi-clipboard-pencil"></span>
+    </a>
+    <div id="lect18-learn" class="collapse epl425-learnout">
+      <strong>Learning outcome:</strong> Master the Syntax, Functionality and Control of HTML Forms. Understand how
+      HTML Forms are used to submit data to server-side programs.
+    </div>
+    <div id="lect18-read" class="collapse">
+      <strong>Readings:</strong>
+      Chapter 6<i> <i>Web Programming Step by Step (Second edition)</i> M. Stepp, J. Miller and V. Kirst, Lulu 2012.
+    </div>
+  </td>
+</tr>
+<!-- ----MODULE 7----- -->
+<tr class="warning">
+  <th class="lead" colspan="2">Module 7: Introduction to Javascript</th>
+</tr>
+<! -- Lecture 19 -->
+<tr>
+  <td scope="row" style="white-space:nowrap">Lecture 19: Fri. 10/11</td>
+  <td><strong>Introduction to Javascript</strong>
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
+            data-target="#lect19-learn">
+      <span class="fa fa-certificate"></span></button>
+
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#lect19-read">
+      <span class="glyphicon glyphicon-book"></span>
+    </button>
+    <a href="http://www.piazza.com/class_profile/get_resource/j66n84kq5fw63q/j9t17rhrpp378l" target=_new" type="button"
+       class="btn btn-default btn-xs hidden-print">
+      <span class="fi-clipboard-pencil"></span>
+    </a>
+    <span id="lect19-learn" class="collapse epl425-learnout">
+								<strong>Learning outcome:</strong> Learn the basic concepts of Javascript programming and syntax.
+								Introduction to working the Document Object Model (DOM) with Javascript.
+							</span>
+    <span id="lect19-read" class="collapse">
+								<strong>Readings:</strong>
+								Chapter 8 <i>Web Programming Step by Step (Second edition)</i>
+								M. Stepp, J. Miller and V. Kirst, Lulu 2012.
+							</span>
+  </td>
+</tr>
+<! -- Lecture 20 -->
+<tr>
+  <td scope="row" style="white-space:nowrap">Lecture 20: Tue. 14/11</td>
+  <td><strong>Advanced Javascript: Objects and the Document Object Model</strong>
+
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
+            data-target="#lect20-learn">
+      <span class="fa fa-certificate"></span></button>
+
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#lect20-read">
+      <span class="glyphicon glyphicon-book"></span>
+    </button>
+    <a href="http://www.piazza.com/class_profile/get_resource/j66n84kq5fw63q/j9zlo8767at687" target="_new" type="button"
+       class="btn btn-default btn-xs hidden-print">
+      <span class="fi-clipboard-pencil"></span>
+    </a>
+    <span id="lect20-learn" class="collapse epl425-learnout">
+								<strong>Learning outcome:</strong> Gain further exposure to advanced Javascript syntax and program logic (functions and
+								objects). Object Prototypes. Unobtrusive JavaScript. Learn how to process DOM Objects and how to traverse programmatically the DOM tree with Javascript.
+							</span>
+    <div id="lect20-read" class="collapse">
+      <strong>Readings:</strong>
+      <ul>
+        <li> Chapter 8. <i>Web Programming Step by Step (Second edition)</i>
+          M. Stepp, J. Miller and V. Kirst, Lulu 2012.
+        </li>
+        <li>Chapter 9. <i>Web Programming Step by Step (Second edition)</i>
+          M. Stepp, J. Miller and V. Kirst, Lulu 2012.
+        </li>
+      </ul>
+    </div>
+  </td>
+</tr>
+<! -- PRECEPT 9-->
+<tr>
+  <td class="active" scope="row" style="white-space:nowrap">Precept 9: Tue. 14/11</td>
+  <td><strong>JavaScript Examples.</strong>
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#prec9-learn">
+      <span class="fa fa-certificate"></span></button>
+    <button type="button" class="btn btn-default btn-xs  hidden-print" data-toggle="collapse" data-target="#prec9-read">
+      <span class="glyphicon glyphicon-book"></span>
+    </button>
+    <div id="prec9-learn" class="collapse epl425-learnout">
+      <strong>Learning outcome:</strong> Simple JavaScript Examples.
+    </div>
+    <div id="prec9-read" class="collapse"><strong>Readings:</strong>
+      <ul>
+        <li> Chapter 8. <i>Web Programming Step by Step (Second edition)</i>
+          M. Stepp, J. Miller and V. Kirst, Lulu 2012.
+        </li>
+        <li>Chapter 9. <i>Web Programming Step by Step (Second edition)</i>
+          M. Stepp, J. Miller and V. Kirst, Lulu 2012.
+        </li>
+      </ul>
+    </div>
+  </td>
+</tr>
+<! --- LAB 10 -->
+<tr>
+  <td class="danger" scope="row" style="white-space:nowrap">Lab 10: We. 17/11</td>
+  <td><strong>PhP Review</strong>
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#lab10-learn">
+      <span class="fa fa-certificate"></span></button>
+    <button type="button" class="btn btn-default btn-xs  hidden-print" data-toggle="collapse" data-target="#lab10-read">
+      <span class="glyphicon glyphicon-book"></span>
+    </button>
+    <div id="lab10-learn" class="collapse epl425-learnout">
+      <strong>Learning outcomes:</strong> Survey of PhP programming examples.
+    </div>
+    <div id="lab10-read" class="collapse">
+      <strong>Readings and References:</strong>
+      <ul>
+        <li>Chapter 5. <i>Web Programming Step by Step (Second edition)</i> M. Stepp, J. Miller and V. Kirst, Lulu 2012.
+        </li>
+      </ul>
+    </div>
+  </td>
+</tr>
+
+<! --- LAB 11 -->
+<tr>
+  <td class="danger" scope="row" style="white-space:nowrap">Lab 11: We. 22/11</td>
+  <td><strong>Javascript Review</strong>
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#lab11-learn">
+      <span class="fa fa-certificate"></span></button>
+    <button type="button" class="btn btn-default btn-xs  hidden-print" data-toggle="collapse" data-target="#lab11-read">
+      <span class="glyphicon glyphicon-book"></span>
+    </button>
+    <div id="lab11-learn" class="collapse epl425-learnout">
+      <strong>Learning outcomes:</strong> Survey of DOM Manipulation techniques, using Javascript.
+    </div>
+    <div id="lab11-read" class="collapse">
+      <strong>Readings and References:</strong>
+      <ul>
+        <li> Chapter 8. <i>Web Programming Step by Step (Second edition)</i>
+          M. Stepp, J. Miller and V. Kirst, Lulu 2012.
+        </li>
+        <li>Chapter 9. <i>Web Programming Step by Step (Second edition)</i>
+          M. Stepp, J. Miller and V. Kirst, Lulu 2012.
+        </li>
+      </ul>
+    </div>
+  </td>
+</tr>
+
+<! ----------Module 8------------- -->
+<tr class="warning">
+  <th class="lead" colspan="2">Module 8: Principles of Web Design</th>
+</tr>
+<! ---LECT 21 -->
+<tr>
+  <td scope="row" style="white-space:nowrap">Lecture 21: Thu. 23/11</td>
+  <td><strong>Writing and Organising Web Content</strong>
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
+            data-target="#lect21-learn">
+      <span class="fa fa-certificate"></span></button>
+
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#lect21-read">
+      <span class="glyphicon glyphicon-book"></span>
+    </button>
+    <a href="http://www.piazza.com/class_profile/get_resource/j66n84kq5fw63q/jaycqzbi4jp436" target="_new" type="button"
+       class="btn btn-default btn-xs hidden-print">
+      <span class="fi-clipboard-pencil"></span>
+    </a>
+    <span id="lect21-learn" class="collapse epl425-learnout">
+								<strong>Learning outcome:</strong> Understand the online user experience. Explore the principles of Web writing. Overview of
+								Information Design. Understand the basics of Search Engine Optimisation.
+							</span>
+    <span id="lect21-read" class="collapse">
+								<strong>Readings:</strong>
+								<ul>
+									<li>Chapter 5. <i>Interact with Web Standards: A Holistic Approach to Web Design</i> Erin Anderson et al, New Riders 2010.</li>
+									<li>Chapter 7. <i>Web Programming Step by Step (Second edition)</i> M. Stepp, J. Miller and V. Kirst, Lulu 2012.</li>
+								</ul>
+							</span>
+  </td>
+</tr>
+<! -- LECT 22 -->
+<tr>
+  <td scope="row">Lecture 22: Fri. 24/11</td>
+  <td><strong>Web writing Tools</strong>
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
+            data-target="#lect22-learn">
+      <span class="fa fa-certificate"></span></button>
+
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#lect22-read">
+      <span class="glyphicon glyphicon-book"></span>
+    </button>
+    <a href="http://www.piazza.com/class_profile/get_resource/j66n84kq5fw63q/jaycqzbi4jp436" target="_new" type="button"
+       class
+         ="btn btn-default btn-xs hidden-print">
+      <span class="fi-clipboard-pencil"></span>
+    </a>
+    <span id="lect22-learn" class="collapse epl425-learnout">
+								<strong>Learning outcome:</strong> Explore and understand the main tools for Web content design and management.
+							</span>
+    <div id="lect22-read" class="collapse">
+      <strong>Readings:</strong>
+      <ul>
+        <li>Chapters 6, 7, 8, 9 <i>Interact with Web Standards: A Holistic Approach to Web Design</i> Erin Anderson et
+          al, New Riders 2010.
+        </li>
+        <li><a
+          href="https://static.googleusercontent.com/media/www.google.com/en//webmasters/docs/search-engine-optimization-starter-guide.pdf"
+          target="_new">SEO Starter Guide</a> from Google.
+        </li>
+      </ul>
+    </div>
+  </td>
+</tr>
+
+
+<! --- LAB 12 -->
+<tr>
+  <td class="danger" scope="row" style="white-space:nowrap">Lab 12: We. 29/11</td>
+  <td><strong>Project Review</strong>
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#lab12-learn">
+      <span class="fa fa-certificate"></span></button>
+    <button type="button" class="btn btn-default btn-xs  hidden-print" data-toggle="collapse" data-target="#lab12-read">
+      <span class="glyphicon glyphicon-book"></span>
+    </button>
+    <div id="lab12-learn" class="collapse epl425-learnout">
+      <strong>Learning outcomes:</strong> Review and questions on semester project.
+    </div>
+  </td>
+</tr>
+
+<! -- LECT 23 -->
+<tr>
+  <td scope="row">Lecture 23: Fri. 1/12</td>
+  <td><strong>Information Architecture</strong>
+
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
+            data-target="#lect23-learn">
+      <span class="fa fa-certificate"></span></button>
+
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#lect23-read">
+      <span class="glyphicon glyphicon-book"></span>
+    </button>
+    <a href="http://www.piazza.com/class_profile/get_resource/j66n84kq5fw63q/jaycqzbi4jp436" target="_new" type="button"
+       class="btn btn-default btn-xs hidden-print">
+      <span class="fi-clipboard-pencil"></span>
+    </a>
+    <span id="lect23-learn" class="collapse epl425-learnout">
+								<strong>Learning outcome:</strong> Become familiar of practical principles of Web content. Explore the concept of Information
+								Architecture and its tools.
+							</span>
+    <span id="lect23-read" class="collapse">
+								<strong>Readings:</strong> Chapter 7 <i>Interact with Web Standards: A Holistic Approach to Web Design</i> Erin Anderson et al, New Riders 2010.
+							</span>
+  </td>
+</tr>
+<! -- LECT 24 -->
+<tr>
+  <td scope="row">Lecture 24: Tu. 5/11</td>
+  <td><strong>Site Planning and Content Analysis</strong>
+
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
+            data-target="#lect24-learn">
+      <span class="fa fa-certificate"></span></button>
+
+    <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#lect24-read">
+      <span class="glyphicon glyphicon-book"></span>
+    </button>
+    <a href="http://www.piazza.com/class_profile/get_resource/ip3nhl2dp3z2rc/iv289m6vcps3mn" target="_new" type="button"
+       class="btn btn-default btn-xs hidden-print">
+      <span class="fi-clipboard-pencil"></span>
+    </a>
+    <span id="lect24-learn" class="collapse epl425-learnout">
+								<strong>Learning outcome:</strong> Learn the principles of Web design project management, content analysis and user-centered design.
+							</span>
+    <span id="lect24-read" class="collapse">
+								<strong>Readings:</strong> Chapters 8, 9 <i>Interact with Web Standards: A Holistic Approach to Web Design</i> Erin Anderson et al, New Riders 2010.
+							</span>
+  </td>
+</tr>
+<! -- PRECEPT 10-->
+<tr>
+  <td class="active" scope="row" style="white-space:nowrap">Precept 10: Tu. 5/11</td>
+  <td><strong>Semester Project Presentations</strong>
+  </td>
+</tr>
