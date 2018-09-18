@@ -432,7 +432,8 @@
         </button>
         <div id="prec2-learn" class="collapse epl425-learnout">
           <strong>Learning outcome:</strong> Understand how the Web concept evolves, and how Web application development is different
-          from traditional software development. Review what is Web Science and key concepts of Web analysis.
+          from traditional software development. Review what is Web Science and key concepts of Web analysis. Introduction to the concept of network effects and
+          "Metcalf's Law."
         </div>
         <div id="prec2-read" class="collapse">
           <strong>Readings:</strong>
@@ -440,6 +441,8 @@
             <li><a href="https://cacm.acm.org/magazines/2008/7/5366-web-science/fulltext" target="_blank">Web Science: An
               Interdisciplinary Approach to Understanding the Web.</a> James  Hendler, Nigel Shadbolt, Wendy Hall, Tim Berners-Lee, and Daniel Weitzner.
                 Communications of the ACM. Vol. 51, No. 7, July 2008. pp. 60-69.
+            </li>
+            <li><a href="https://en.wikipedia.org/wiki/Metcalfe%27s_law" target="_blank">Metcalf's Law</a>
             </li>
           </ul>
         </div>
@@ -449,7 +452,7 @@
     <! -- LECTURE 5-->
     <tr>
       <td scope="row" style="white-space:nowrap">Lecture 5: Tue. 18/9</td>
-      <td><strong>Names on the Internet and the Web: DNS and URIs.</strong>
+      <td><strong>Names on the Internet: The Domain Name Service</strong>
         <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
                 data-target="#lect5-learn">
           <span class="fa fa-certificate"></span></button>
@@ -465,9 +468,6 @@
           <ul>
             <li>Introduction to the concept of Naming Services.</li>
             <li>Overview of the Domain Name System (DNS) and its operation.</li>
-            <li>Understand the principles of naming for the Web,the function of Naming Services and the Domain Name
-              Service.
-            </li>
             <li>Understand the concept of Autonomous Systems.
             </li>
           </ul>
@@ -480,6 +480,42 @@
             </li>
             <li><a href="http://www.w3.org/Addressing/" target="_blank">Naming and Addressing</a>, an overview of W3C
               materials related to Addressing.
+            </li>
+          </ul>
+        </div>
+      </td>
+    </tr>
+
+    <! -- LAB 3 -->
+    <tr>
+      <td class="danger" scope="row" style="white-space:nowrap">Lab 3: Tu. 18/9</td>
+      <td><strong>Client-Server Programming in JAVA.</strong>
+        <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
+                data-target="#lab3-learn">
+          <span class="fa fa-certificate"></span></button>
+        <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#lab3-read">
+          <span class="glyphicon glyphicon-book"></span>
+        </button>
+        <button type="button" class="btn btn-default btn-xs hidden-print">
+          <span class="fi-clipboard-pencil"></span>
+        </button>
+        <div id="lab3-learn" class="collapse epl425-learnout">
+          <strong>Learning outcome:</strong>
+          <ul>
+            <li>Learn how to write a simple multithreaded server and a simple client program in JAVA.</li>
+            <li>Learn how to implement client-server communication through TCP sockets.</li>
+            <li>Deploy a simple Java-based server program on the Cloud and interact with it through a client program.</li>
+          </ul>
+        </div>
+        <div id="lab3-read" class="collapse">
+          <strong>Readings and References:</strong>
+          <ul>
+            <li><a href="https://docs.oracle.com/javase/tutorial/essential/concurrency/" target="_blank">Java Concurrency
+              and
+              Multithreading Tutorial</a>.
+            </li>
+            <li><a href="https://docs.oracle.com/javase/tutorial/networking/sockets/index.html" target="_blank">Java Socket
+              Programming Tutorial</a>.
             </li>
           </ul>
         </div>
@@ -549,25 +585,65 @@
             <li><a href="http://eur-lex.europa.eu/legal-content/EL/TXT/HTML/?uri=CELEX:52011DC0222&from=EN"
                    target="_blank">Open Internet and Net Neutrality in Europe</a> European Commission (2011).
             </li>
-            <li><i class="fa fi-video fa-lg" aria-hidden="true"></i><a
-              href="https://citp.princeton.edu/event/net-neutrality-2/" _blank"> Net Neutrality: What Does
-              the Future Hold?</a>
-              Video of a 2018 workshop at the Center for Information Technology Policy, Princeton University.
+            <li><i class="fa fi-video fa-lg" aria-hidden="true"></i>
+              <a href="https://citp.princeton.edu/event/net-neutrality-2/" target="_blank">Net Neutrality: What Does the Future Hold?</a>Video of a 2018 workshop at the Center for Information Technology Policy, Princeton University.
             </li>
-            <li><i class="fa fi-video fa-lg" aria-hidden="true"></i> Professor Nicholas Economides of NYU Stern School
-              of
-              Business <a
-                href="http://www.stern.nyu.edu/experience-stern/faculty-research/economides-net-neutrality-hearing"
+            <li><i class="fa fi-video fa-lg" aria-hidden="true"></i>Professor Nicholas Economides of NYU Stern School
+              of Business <a href="http://www.stern.nyu.edu/experience-stern/faculty-research/economides-net-neutrality-hearing"
                 target="_blank">testimony before Congress on Net Neutrality</a> (5min video and text).
             </li>
             <li><a href="https://www.wired.com/story/why-net-neutrality-matters-even-in-the-age-of-oligopoly"
-                   target="_blank">"Why Net Neutrality matters even in the age of oligopoly"</a>, Klint Finley. <i>WIRED,
-              22/6/2017</i>.
+                   target="_blank">"Why Net Neutrality matters even in the age of oligopoly"</a>, Klint Finley. <i>WIRED, 22/6/2017</i>.
             </li>
           </ul>
         </div>
       </td>
     </tr>
+
+    <! -- LECTURE 7-->
+    <tr>
+      <td scope="row" style="white-space:nowrap">Lecture 7: Tu. 25/9</td>
+      <td><strong>Client-Server Architecture and the Web.</strong>
+        <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#lect7-learn">
+          <span class="fa fa-certificate"></span></button>
+        <button type="button" class="btn btn-default btn-xs" data-toggle="collapse" data-target="#lect7-read">
+          <span class="glyphicon glyphicon-book"></span>
+        </button>
+        <a href="" target="_blank" type="button" class="btn btn-default btn-xs hidden-print">
+          <span class="fi-clipboard-pencil"></span>
+        </a>
+        <div id="lect7-learn" class="collapse epl425-learnout">
+          <strong>Learning outcome:</strong>
+          <ul>
+            <li>Introduce the principles of the Client-Server computing model.</li>
+            <li>Overview of the Web system architecture.</li>
+            <li>Web servers, web clients, three-tier Web-site architecture.</li>
+            <li>Understand the concept and principles of Web caching.</li>
+            <li>Review the concepts of <i><a href="https://en.wikipedia.org/wiki/Latency_(engineering)" target="_blank">latency</a></i>,
+              <i> <a href="https://en.wikipedia.org/wiki/Bandwidth_(computing)" target="_blank">bandwidth</a></i> and <i><a
+                href="https://en.wikipedia.org/wiki/Load_balancing_(computing)" target="_blank">load banacing</a></i>.
+            </li>
+          </ul>
+        </div>
+        <div id="lect7-read" class="collapse">
+          <strong>Readings:</strong>
+          <ul>
+            <li><a href="http://dl.acm.org/citation.cfm?id=253236" target="_blank">"Designing distributed applications with
+              mobile code paradigms"</a> by A. Carzaniga, G. Pietro Picco and G. Vigna, <i>Proceeding ICSE '97 Proceedings
+              of the 19th international conference on Software engineering</i>, 1997.
+            </li>
+            <li>The <a href="https://en.wikipedia.org/wiki/Client%E2%80%93server_model" target="_blank">Client-Server
+              Model</a> (Wikipedia).
+            </li>
+            <li><a href="http://people.eecs.berkeley.edu/~brewer/papers/GiantScale-IEEE.pdf" target="_blank">"Lessons from
+              Giant-Scale Services"</a> by Eric Brewer, <i>IEEE Internet Computing</i> (July/August 2001) (available in pdf
+              from author's web site).
+            </li>
+          </ul>
+        </div>
+      </td>
+    </tr>
+
 
     <!-- -----------Module 3------------- -->
     <tr class="warning">
