@@ -10,7 +10,7 @@
         integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link rel="stylesheet" href="epl425.css">
   <link rel="stylesheet" href="foundation-icons/foundation-icons.css">
-  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -21,15 +21,15 @@
   <![endif]-->
   <script>
     $(document).ready(function () {
-      $(".btn-primary").click(function () {
+      /*$(".btn-primary").click(function () {
         $(".collapse").collapse('toggle');
-      });
+      });*/
       $(".btn-success").click(function () {
-        $(".collapse").collapse('show');
+        $("table .collapse").collapse('toggle');
       });
-      $(".btn-warning").click(function () {
+      /*$(".btn-warning").click(function () {
         $(".collapse").collapse('hide');
-      });
+      });*/
     });
   </script>
   <style>
@@ -48,6 +48,10 @@
 
     .nav-tabs {
       margin-bottom: 0;
+    }
+    
+    .btn-success:hover{
+      background-color: #449d44;
     }
   </style>
 </head>
@@ -109,7 +113,7 @@
 
   <h3>Course Schedule and Learning Outcomes
     <a target="_blank"
-       class="btn btn-primary btn-success small">&raquo;</a></h3>
+       class="btn btn-success small">&raquo;</a></h3>
   <table class="table table-responsive table-condensed table-hover"
          style="border-top:solid;border-bottom:solid 1px grey">
     <thead>
@@ -164,7 +168,7 @@
       </td>
     </tr>
 
-    <! -------------- LAB 1 ---------------------->
+    <!-- LAB 1  -->
 
     <tr>
       <td class="danger" scope="row" style="white-space:nowrap">Lab 1: Tu. 4/9</td>
@@ -321,7 +325,7 @@
       </td>
     </tr>
 
-    <! -- LAB 2 --->
+    <!-- LAB 2 -->
     <tr>
       <td class="danger" scope="row" style="white-space:nowrap">Lab 2: Tu. 11/9</td>
       <td><strong>Cloud Computing and the Amazon Elastic Compute Cloud</strong>
@@ -490,7 +494,7 @@
       </td>
     </tr>
 
-    <! -- LAB 3 -->
+    <!-- LAB 3 -->
     <tr>
       <td class="danger" scope="row" style="white-space:nowrap">Lab 3: Tu. 18/9</td>
       <td><strong>Client-Server Programming in JAVA</strong>
@@ -640,7 +644,7 @@
       </td>
     </tr>
 
-    <! -- LAB 4 -->
+    <!-- LAB 4 -->
     <tr>
       <td class="danger" scope="row" style="white-space:nowrap">Lab 4: Tu. 25/9</td>
       <td><strong>Install and Running Web Servers on AWS</strong>
@@ -778,7 +782,7 @@
       </td>
     </tr>
 
-    <! -- LAB 5 -->
+    <!-- LAB 5 -->
     <tr>
       <td class="danger" scope="row" style="white-space:nowrap">Lab 5: Tu. 02/10</td>
       <td><strong>Software Revision with Git</strong>
@@ -933,7 +937,7 @@
       </td>
     </tr>
     
-    <! -- LAB 6 -->
+    <!-- LAB 6 -->
     <tr>
       <td class="danger" scope="row" style="white-space:nowrap">Lab 6: Tu. 09/10</td>
       <td><strong>HTTP Requests and Traffic</strong>
@@ -1024,6 +1028,54 @@
     <!-- ---- MIDTERM --- -->
     <tr class="epl425-quiz">
       <td scope="row" colspan="2"><strong>Midterm 16/10: </strong>Μodules 1-2.</td>
+    </tr>
+    
+    <!-- LAB 7 -->
+    <tr>
+      <td class="danger" scope="row" style="white-space:nowrap">Lab 7: Tu. 16/10</td>
+      <td><strong>HTML (Hyper Text Markup Language</strong>
+        <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
+                data-target="#lab7-learn">
+          <span class="fa fa-certificate"></span></button>
+        <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse" data-target="#lab7-read">
+          <span class="glyphicon glyphicon-book"></span>
+        </button>
+        <a class="btn btn-default btn-xs hidden-print" href="https://piazza-resources.s3.amazonaws.com/jlc7oxftmmp5yu/jnbp378puej3ps/Lab7__HTML.pdf" target="_blank">
+          <span class="fi-clipboard-pencil"></span>
+        </a>
+        <div id="lab7-learn" class="collapse epl425-learnout">
+          <strong>Learning outcome:</strong>
+          <ul>
+            <li>What is HTML</li>
+            <li>HTML Building Blocks</li>
+            <li>A quick overview of the most used HTML elements</li>
+            <li>HTML DOM (Document Object Model)</li>
+            <li>What are some of the new HTML5 elements</li>
+            <li>What are some of the new HTML5 API’s</li>
+            <li>Hands-on practice: Start creating a Portfolio page!</li>
+          </ul>
+        </div>
+        <div id="lab7-read" class="collapse">
+          <strong>Readings and References:</strong>
+          <ul>
+            <li>
+                <a href="https://www.youtube.com/watch?v=UB1O30fR-EE" target="_blank">HTML Crash Course For Absolute Beginners</a>
+            </li>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/HTML" target="_blank">HTML Wiki</a>
+            </li>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/HTML5" target="_blank">HTML5 Wiki</a>
+            </li>
+            <li>
+              <a href="https://www.w3schools.com/html/html_basic.asp" target="_blank">HTML W3Schools</a>
+            </li>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/Document_Object_Model" target="_blank">HTML DOM</a>
+            </li>
+          </ul>
+        </div>
+      </td>
     </tr>
 
     <! --LECTURE 13 -->
