@@ -8,6 +8,10 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
           integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <link rel="stylesheet" href=
+            "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+
     <link rel="stylesheet" href="epl425.css">
     <link rel="stylesheet" href="foundation-icons/foundation-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -31,7 +35,6 @@
         $(".collapse").collapse('hide');
       });*/
     });
-
 
     </script>
     <style>
@@ -136,7 +139,7 @@
             <td style="width: 100%"><strong>Introduction to CS425</strong>
                 <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
                         data-target="#lect1-learn">
-                    <span class="fa fa-bullseye"></span> Learning Objectives
+                    <span class="fa fa-crosshairs"></span> Learning Objectives
                 </button>
                 <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
                         data-target="#lect1-read">
@@ -153,8 +156,10 @@
                         <li>Become familiar with the CS425 syllabus, structure, contract and expectations.</li>
                         <li>Understand what to do and what to avoid while attending the class and studying.</li>
                         <li>Understand the implications of the Internet on cognitive capabilities and social
-                            practices of humans. How are human learning and focus affected in the Internet era.</li>
+                            practices of humans. How are human learning and focus affected in the Internet era.
+                        </li>
                         <li>Understand and explain what is the Internet and how it has evolved.</li>
+                        <li>Understand and explain the concept of network effects and "Metcalf's Law."</li>
                     </ul>
                 </div>
                 <div id="lect1-read" class="collapse">
@@ -171,14 +176,16 @@
                                     href="https://archive.org/details/ComputerNetworks_TheHeraldsOfResourceSharing"
                                     target="_blank">Computer Networks - The Heralds Of Resource Sharing (Arpanet,
                                 1972)</a></li>
-                        <li><a href="https://www.theatlantic.com/magazine/archive/2017/09/has-the-smartphone-destroyed-a-generation/534198/"
-                                target="_blank">"Have Smartphones Destroyed a Generation?"</a><i> The Atlantic,
-                            September 2017</i>, Jean
-                            Twenge.
+                        <li>
+                            <a href="https://www.theatlantic.com/magazine/archive/2017/09/has-the-smartphone-destroyed-a-generation/534198/"
+                               target="_blank">"Have Smartphones Destroyed a Generation?"</a><i> The Atlantic,
+                            September 2017</i>, Jean Twenge.
                         </li>
                         <li><a href="http://www.chronicle.com/article/The-Benefits-of-No-Tech-Note/228089"
-                               target="_blank">"The Benefits of No-Tech Note Taking."</a> <i>The Chronicle of Higher Education, 4/3/2015</i>,
-                               Carol Holstead.
+                               target="_blank">"The Benefits of No-Tech Note Taking."</a> <i>The Chronicle of Higher
+                            Education, 4/3/2015</i>, Carol Holstead.
+                        </li>
+                        <li><a href="https://en.wikipedia.org/wiki/Metcalfe%27s_law" target="_blank">Metcalf's Law</a>
                         </li>
                     </ul>
                 </div>
@@ -192,7 +199,7 @@
             <td><strong>Internet Protocols</strong>
                 <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
                         data-target="#lect2-learn">
-                    <span class="fa fa-bullseye"></span>
+                    <span class="fa fa-crosshairs"></span>
                 </button>
                 <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
                         data-target="#lect2-read">
@@ -217,7 +224,8 @@
                     <ul>
                         <li>Chapter 1. <i>"Web Programming"</i>, Step, Miller & Kirst.</li>
                         <li><i class="fa fi-video fa-lg" aria-hidden="true"></i><a href="https://youtu.be/AYdF7b3nMto"
-                               target="_blank"> The Internet: Packets, Routing & Reliability</a> A 6:25min video.
+                                                                                   target="_blank"> The Internet:
+                            Packets, Routing & Reliability</a> A 6:25min video.
                         </li>
                     </ul>
                 </div>
@@ -231,7 +239,7 @@
             <td><strong>End-to-end principles and Net Neutrality</strong>
                 <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
                         data-target="#lect3-learn">
-                    <span class="fa fa-bullseye"></span>
+                    <span class="fa fa-crosshairs"></span>
                 </button>
                 <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
                         data-target="#lect3-read">
@@ -260,8 +268,8 @@
                     <ul>
                         <li>Chapter 1. <i>"Web Programming"</i>, Step, Miller & Kirst.</li>
                         <li>Internet Society's Policy Brief on
-                            <a  href="http://www.internetsociety.org/policybriefs/networkneutrality?gclid=Cj0KEQjw-YO7BRDwi6Stp7T296ABEiQAD6iWMY2JLhirWIE3HGvMOEXvlOpyaA3lVYWKz2otN3K1JqgaAixB8P8HAQ"
-                                target="_blank">Net Neutrality</a>.
+                            <a href="http://www.internetsociety.org/policybriefs/networkneutrality"
+                               target="_blank">Net Neutrality</a>.
                         </li>
                         <li><a href="https://ec.europa.eu/digital-single-market/en/open-internet-net-neutrality"
                                target="_blank">The
@@ -299,11 +307,11 @@
 
         <! -- LECTURE 4 -->
         <tr>
-            <td scope="row" style="white-space:nowrap">Lecture 4: </td>
+            <td scope="row" style="white-space:nowrap">Lecture 4:</td>
             <td><strong>IP Addresses, DNS and Autonomous Systems</strong>
                 <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
                         data-target="#lect4-learn">
-                    <span class="fa fa-bullseye"></span></button>
+                    <span class="fa fa-crosshairs"></span></button>
                 <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
                         data-target="#lect4-read">
                     <span class="glyphicon glyphicon-book"></span>
@@ -338,11 +346,11 @@
 
         <! -- LECTURE 5 -->
         <tr>
-            <td scope="row" style="white-space:nowrap">Lecture 5: </td>
-            <td><strong>World-Wide Web: History and Evolution</strong>
+            <td scope="row" style="white-space:nowrap">Lecture 5:</td>
+            <td><strong>From Hypertext to the World-Wide Web</strong>
                 <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
                         data-target="#lect5-learn">
-                    <span class="fa fa-bullseye"></span></button>
+                    <span class="fa fa-crosshairs"></span></button>
                 <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
                         data-target="#lect5-read">
                     <span class="glyphicon glyphicon-book"></span>
@@ -361,28 +369,35 @@
                         <li>Get acquainted with the Definition, History, Evolution, Impact and Key Ideas behind the
                             World-Wide Web.
                         </li>
-                        <li>Understand and describe how are the main people behind the development of the Web.</li>
                         <li>Understand and explain the main elements of the Web.</li>
                         <li>Understand and explain how the Web concept evolves, and how Web application
-                            development is different  from traditional software development.</li>
+                            development is different from traditional software development.
+                        </li>
+                        <li>Understand,explain and apply the concepts of URI, URL and URN, information resource, name
+                            resolution, dereference, and retrieval.
+                        </li>
+                        <li>Become familiar with different URI schemes.</li>
                         <li>Review what is Web Science and key concepts of Web analysis.</li>
-                        <li>Understand and explain the concept of network effects and
-                            "Metcalf's Law."</li>
                     </ul>
                 </div>
                 <div id="lect5-read" class="collapse">
                     <strong>Readings:</strong>
                     <ul>
+                        <li>"Multimedia and Hypertext: The Internet and Beyond." J. Nielsen. AP Professional, 1995.</li>
                         <li>Chapter 1. <i>"Web Programming"</i>, Step, Miller & Kirst.</li>
-                        <li><a href="http://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/"
-                               target="_blank">"As we may think,"</a> by Vannevar Bush, <i>The Atlantic</i> (July 1945).
+                        <li>The <a href="https://tools.ietf.org/html/rfc3986" target="_blank">Uniform Resource
+                            Identifier (URI): Generic Syntax</a> (IETF).
                         </li>
                         <li><a href="https://cacm.acm.org/magazines/2008/7/5366-web-science/fulltext" target="_blank">Web
-                            Science: An Interdisciplinary Approach to Understanding the Web.</a> James Hendler, Nigel Shadbolt,
-                            Wendy Hall, Tim Berners-Lee, and Daniel Weitzner.
+                            Science: An Interdisciplinary Approach to Understanding the Web.</a> James Hendler, Nigel
+                            Shadbolt, Wendy Hall, Tim Berners-Lee, and Daniel Weitzner.
                             Communications of the ACM. Vol. 51, No. 7, July 2008. pp. 60-69.
                         </li>
-                        <li><a href="https://en.wikipedia.org/wiki/Metcalfe%27s_law" target="_blank">Metcalf's Law</a>
+                    </ul>
+                    <strong>Additional Readings:</strong>
+                    <ul>
+                        <li><a href="http://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/"
+                               target="_blank">"As we may think,"</a> by Vannevar Bush, <i>The Atlantic</i> (July 1945).
                         </li>
                     </ul>
                 </div>
@@ -390,7 +405,8 @@
                     <strong>Videos:</strong>
                     <ul>
                         <li><i class="fa fi-video fa-lg" aria-hidden="true"></i> <a href="https://youtu.be/bpdDtK5bVKk"
-                                   target="_blank">"First thought, best thought.”</a> J. Lanier talks about Ted Nelson at
+                                                                                    target="_blank">"First thought, best
+                            thought.”</a> J. Lanier talks about Ted Nelson at
                             Chapman University, 2014.
                         </li>
                     </ul>
@@ -409,11 +425,11 @@
 
         <! -- LECTURE 6-->
         <tr>
-            <td scope="row" style="white-space:nowrap">Lecture 6: </td>
+            <td scope="row" style="white-space:nowrap">Lecture 6:</td>
             <td><strong>Distributed Computing Models</strong>
                 <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
                         data-target="#lect6-learn">
-                    <span class="fa fa-bullseye"></span></button>
+                    <span class="fa fa-crosshairs"></span></button>
                 <button type="button" class="btn btn-default btn-xs" data-toggle="collapse" data-target="#lect6-read">
                     <span class="glyphicon glyphicon-book"></span>
                 </button>
@@ -425,16 +441,21 @@
                     <strong>Learning Objectives:</strong>
                     <ul>
                         <li>Understand and explain the Client-Server computing and other distributed computing
-                            models.</li>
+                            models.
+                        </li>
                         <li>Understand, explain and identify the role and location of clients, servers, proxies, and
-                        load balancers.</li>
+                            load balancers.
+                        </li>
                         <li>Describe the Web system architecture and explain the components of three-tier Web-site
-                            architecture and their role.</li>
-                        <li>Understand, explain and apply the concepts of <i><a href="https://en.wikipedia.org/wiki/Latency_(engineering)"
-                                                         target="_blank">latency</a></i>,
+                            architecture and their role.
+                        </li>
+                        <li>Understand, explain and apply the concepts of <i><a
+                                href="https://en.wikipedia.org/wiki/Latency_(engineering)"
+                                target="_blank">latency</a></i>,
                             <i> <a href="https://en.wikipedia.org/wiki/Bandwidth_(computing)"
                                    target="_blank">bandwidth</a></i> and <i><a
-                                    href="https://en.wikipedia.org/wiki/Load_balancing_(computing)" target="_blank">load  balacing</a></i>.
+                                    href="https://en.wikipedia.org/wiki/Load_balancing_(computing)" target="_blank">load
+                                balacing</a></i>.
                         </li>
                         <li>Understand and explain the concept of Web Intermediaries and their functionality.</li>
                         <li>Understand, explain and analyze Web caching and its impact on Web performance.</li>
@@ -444,10 +465,12 @@
                     <strong>Readings:</strong>
                     <ul>
                         <li><a href="http://dl.acm.org/citation.cfm?id=253236" target="_blank">"Designing distributed
-                            applications with mobile code paradigms"</a> by A. Carzaniga, G. Pietro Picco and G. Vigna, <i>Proceeding ICSE
-                            '97 Proceedings of the 19th international conference on Software engineering</i>, 1997.
+                            applications with mobile code paradigms"</a> by A. Carzaniga, G. Pietro Picco and G. Vigna,
+                            <i>Proceeding ICSE
+                                '97 Proceedings of the 19th international conference on Software engineering</i>, 1997.
                         </li>
-                        <li>The <a href="https://en.wikipedia.org/wiki/Client%E2%80%93server_model" target="_blank">Client-Server Model</a> (Wikipedia).
+                        <li>The <a href="https://en.wikipedia.org/wiki/Client%E2%80%93server_model" target="_blank">Client-Server
+                            Model</a> (Wikipedia).
                         </li>
                     </ul>
                 </div>
@@ -456,11 +479,14 @@
 
         <! -- LECTURE 7-->
         <tr>
-            <td scope="row" style="white-space:nowrap">Lecture 7: </td>
-            <td><strong>Cloud Computing: History and Evolution</strong>
+            <td scope="row" style="white-space:nowrap">Lecture 7:</td>
+            <td><strong>Cloud Computing: History, Evolution and Key Elements</strong>
                 <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
                         data-target="#lect7-learn">
-                    <span class="fa fa-bullseye"></span></button>
+                    <span class="fa fa-crosshairs"></span></button>
+                <button type="button" class="btn btn-default btn-xs" data-toggle="collapse" data-target="#lect7-read">
+                    <span class="glyphicon glyphicon-book"></span>
+                </button>
                 <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
                         data-target="#lect7-video">
                     <span class="fa fa-youtube-square"></span>
@@ -475,12 +501,32 @@
                     <ul>
                         <li>Understand and describe the history of Cloud Computing emergence.</li>
                         <li>Understand the concept of locality and explain its meaning.</li>
+                        <li>Understand and explain the definition of Cloud Computing.</li>
+                        <li>Understand, explain and apply the main Cloud Computing delivery models.</li>
+                        <li>Understand and explain the concepts of Utility Computing, Elasticity.</li>
+                        <li>Understand, explain, and design the components of a Cluster and a Warehouse Scale Computer.
+                        </li>
+                    </ul>
+                </div>
+                <div id="lect7-read" class="collapse">
+                    <strong>Readings:</strong>
+                    <ul>
+                        <li> M. Armbrust et al.,<a href="https://doi.org/10.1145/1721654.1721672" target="_blank">"A
+                            view of cloud
+                            computing."</a> Communications of the ACM, vol. 53, no. 4, p. 50, 2010.
+                        </li>
+                        <li>Chapters 1,2. Peterson, Baker, Bavier, Williams and Davie.
+                            <a href="https://ops.systemsapproach.org" target="_blank">"Edge Cloud Operations:
+                                Operations: A Systems Approach."</a>
+                        </li>
                     </ul>
                 </div>
                 <div id="lect7-video" class="collapse">
                     <strong>Video:</strong>
                     <ul>
-                        <li><a href="https://www.youtube.com/watch?v=MXoMWC6xPUw" target="_blank">Computing in the Cloud</a> by Ed Felten (2008).</li>
+                        <li><a href="https://www.youtube.com/watch?v=MXoMWC6xPUw" target="_blank">Computing in the
+                            Cloud</a> by Ed Felten (2008).
+                        </li>
                     </ul>
                 </div>
             </td>
@@ -488,51 +534,59 @@
 
 
         <! -- LECTURE 8 -->
+
         <tr>
-            <td scope="row" style="white-space:nowrap">Lecture 8: </td>
-            <td><strong>Elements of Cloud Computing</strong>
+            <td scope="row">Lecture 8:</td>
+            <td><strong>The HTTP Protocol: Basic Elements</strong>
                 <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
                         data-target="#lect8-learn">
-                    <span class="fa fa-bullseye"></span></button>
-                <button type="button" class="btn btn-default btn-xs" data-toggle="collapse" data-target="#lect8-read">
+                    <span class="fa fa-crosshairs"></span></button>
+                <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
+                        data-target="#lect8-read">
                     <span class="glyphicon glyphicon-book"></span>
                 </button>
                 <a href="" target="_blank"
-                   type="button" class="btn btn-default btn-xs hidden-print">
+                   type="button"
+                   class="btn btn-default btn-xs hidden-print">
                     <span class="fi-clipboard-pencil"></span>
                 </a>
                 <div id="lect8-learn" class="collapse epl425-learnout">
                     <strong>Learning outcome:</strong>
                     <ul>
-                        <li>Understand and explain the definition of Cloud Computing.</li>
-                        <li>Understand, explain and apply the main Cloud Computing delivery models.</li>
-                        <li>Understand and explain the concepts of Utility Computing, Elasticity.</li>
-                        <li>Understand, explain, and design the components of a Cluster and a Warehouse Scale Computer.</li>
+                        <li>Learn, describe and explain the key elements of HTTP.</li>
+                        <li>Demonstrate basic familiarity with the HTTP Protocol, its functionality and syntax.</li>
+                        <li>Understand and explain the key concepts of HTTP: statelessness, headers, caching support,
+                            pipelining.
+                        </li>
                     </ul>
                 </div>
                 <div id="lect8-read" class="collapse">
                     <strong>Readings:</strong>
                     <ul>
-                        <li> M. Armbrust et al.,
-                            <a href="https://doi.org/10.1145/1721654.1721672" target="_blank">"A view of cloud computing."</a>
-                            Communications of the ACM, vol. 53, no. 4, p. 50, 2010.
+                        <li><a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol" target="_blank">The HTTP
+                            Protocol.</a></li>
+                        <li>
+                            <a href="https://github.com/pangpang834/pybook/blob/master/O%27Reilly%20-%20HTTP%20-%20The%20Definitive%20Guide.pdf"
+                               target="_new">"HTTP: The Definitive Guide."</a> David Gourly and Brian Totty. O'Reilly,
+                            2002.
                         </li>
-                        <li>Chapters 1,2. Peterson, Baker, Bavier, Williams and Davie.
-                            <a href="https://ops.systemsapproach.org" target="_blank">"Edge Cloud Operations: Operations: A Systems Approach."</a>
+                        <li>Lucian Popa, Patrick Wendell, Ali Ghodsi, Ion Stoica.
+                            <a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2012/EECS-2012-5.pdf" target="_blank">"HTTP:
+                                An Evolvable Narrow Waist for the Future Internet."</a> Technical Report No.
+                            UCB/EECS-2012-5, UC Berkeley, 2012.
                         </li>
                     </ul>
                 </div>
             </td>
         </tr>
 
-
-        <! -- LECTURE 9-->
+        <! -- LECTURE 9 -->
         <tr>
-            <td scope="row">Lecture 9: </td>
-            <td><strong>The HTTP Protocol</strong>
+            <td scope="row">Lecture 9:</td>
+            <td><strong>The HTTP Protocol: Advanced Topics</strong>
                 <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
                         data-target="#lect9-learn">
-                    <span class="fa fa-bullseye"></span></button>
+                    <span class="fa fa-crosshairs"></span></button>
                 <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
                         data-target="#lect9-read">
                     <span class="glyphicon glyphicon-book"></span>
@@ -545,9 +599,8 @@
                 <div id="lect9-learn" class="collapse epl425-learnout">
                     <strong>Learning outcome:</strong>
                     <ul>
-                        <li>History and Overview of the HTTP Protocol.</li>
-                        <li>Gain basic familiarity of the HTTP Protocol, its functionality and syntax.</li>
-                        <li>Understand the key concepts of HTTP: statelessness, headers, caching support, pipelining.</li>
+                        <li>Discuss the main changes brought by SPDY and HTTP/2.</li>
+                        <li>Understand the concept of multiplexing and server push.</li>
                     </ul>
                 </div>
                 <div id="lect9-read" class="collapse">
@@ -556,56 +609,31 @@
                         <li><a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol" target="_blank">The HTTP
                             Protocol.</a>
                         </li>
-                        <li>"HTTP: The Definitive Guide" by D. Gourney, B. Totty et al., <i>O'Reilly</i>, 2002.</li>
+                        <li>
+                            <a href="https://github.com/pangpang834/pybook/blob/master/O%27Reilly%20-%20HTTP%20-%20The%20Definitive%20Guide.pdf"
+                               target="_new">"HTTP: The
+                                Definitive Guide."</a> David Gourly and Brian Totty. O'Reilly, 2002.
+                        </li>
                         <li>Lucian Popa, Patrick Wendell, Ali Ghodsi, Ion Stoica.
-                        <a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2012/EECS-2012-5.pdf"target="_blank">"HTTP: An Evolvable
-                            Narrow Waist for the Future Internet."</a> Technical Report No. UCB/EECS-2012-5, UC Berkeley, 2012.
+                            <a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2012/EECS-2012-5.pdf" target="_blank">"HTTP:
+                                An Evolvable
+                                Narrow Waist for the Future Internet."</a> Technical Report No. UCB/EECS-2012-5, UC
+                            Berkeley, 2012.
                         </li>
                     </ul>
                 </div>
             </td>
         </tr>
 
-        <! -- PRECEPT 5 -->
+        <! -- LECTURE 10 -->
         <tr>
-            <td class="active" scope="row" style="white-space:nowrap">Precept 5: Tu. 9/10</td>
-            <td><strong>From SPDY to HTTP/2</strong>
-                <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
-                        data-target="#prec5-learn">
-                    <span class="fa fa-bullseye"></span>
-                </button>
-                <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
-                        data-target="#prec5-read">
-                    <span class="glyphicon glyphicon-book"></span>
-                </button>
-                <a href="http://www.piazza.com/class_profile/get_resource/jlc7oxftmmp5yu/jn0lk3g09xs1ze" target="_blank"
-                   type="button"
-                   class="btn btn-default btn-xs hidden-print">
-                    <span class="fi-clipboard-pencil"></span>
-                </a>
-                <div id="prec5-learn" class="collapse epl425-learnout">
-                    <strong>Learning outcome:</strong>
-                    <ul>
-                        <li>Discuss the main changes brought by SPDY and HTTP/2.</li>
-                        <li>Understand the concept of multiplexing and server push.</li>
-                    </ul>
-                </div>
-                <div id="prec5-read" class="collapse">
-                    <strong>Readings:</strong>
-                    "SPDYing up the Web" by Bryce Thomas, Raja Jurdak, and Ian Atkinson, Communications of the ACM, Dec.
-                    2012.
-                </div>
-            </td>
-        </tr>
-
-        <! -- LECTURE 9-->
-        <tr>
-            <td scope="row" style="white-space:nowrap">Lecture 9: </td>
-            <td><strong>Web Infrastructure Metrics</strong>
+            <td scope="row">Lecture 10:</td>
+            <td><strong>Representational State Transfer (REST)</strong>
                 <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
                         data-target="#lect10-learn">
-                    <span class="fa fa-bullseye"></span></button>
-                <button type="button" class="btn btn-default btn-xs" data-toggle="collapse" data-target="#lect10-read">
+                    <span class="fa fa-crosshairs"></span></button>
+                <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
+                        data-target="#lect10-read">
                     <span class="glyphicon glyphicon-book"></span>
                 </button>
                 <a href="" target="_blank"
@@ -614,85 +642,35 @@
                     <span class="fi-clipboard-pencil"></span>
                 </a>
                 <div id="lect10-learn" class="collapse epl425-learnout">
-                    <strong>Learning outcome:</strong>
+                    <strong>Learning Objectives:</strong>
                     <ul>
-                        <li>Analysis of availability metrics: uptime, yield, harvest, DQ and their relative merits.</li>
-                        <li>Understand the concepts of workload and read/write queries.</li>
-                        <li>Understand the concepts of replication and partitioning, and their effect on availability
-                            metrics.
+                        <li>Understand, explain, and apply the REST principles in Web services design and
+                            implementation.
+                        </li>
+                        <li>Understand, explain, and apply REST principles for naming Web resources.</li>
+                        <li>Understand, describe, and apply the Microservices architectural paradigm for the design and
+                            implementation of Web services and applications.
                         </li>
                     </ul>
                 </div>
                 <div id="lect10-read" class="collapse">
                     <strong>Readings:</strong>
                     <ul>
-                        <li><a href="http://people.eecs.berkeley.edu/~brewer/papers/GiantScale-IEEE.pdf"
-                               target="_blank">"Lessons from
-                            Giant-Scale Services"</a> by Eric Brewer, <i>IEEE Internet Computing</i> (July/August 2001)
-                            (available in pdf from author's web site).
+                        <li><a href="https://en.wikipedia.org/wiki/Representational_state_transfer" target="_blank">Representational
+                            state transfer</a> (Wikipedia).
                         </li>
-                    </ul>
-                </div>
-            </td>
-        </tr>
-
-
-
-
-
-
-
-        <! -- LAB 6 -->
-        <tr>
-            <td class="danger" scope="row" style="white-space:nowrap">Lab 6: Tu. 09/10</td>
-            <td><strong>HTTP Requests and Traffic</strong>
-                <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
-                        data-target="#lab6-learn">
-                    <span class="fa fa-bullseye"></span></button>
-                <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
-                        data-target="#lab6-read">
-                    <span class="glyphicon glyphicon-book"></span>
-                </button>
-                <a class="btn btn-default btn-xs hidden-print"
-                   href="https://piazza-resources.s3.amazonaws.com/jlc7oxftmmp5yu/jn1rrvrj5es36r/Lab6__HTTP_Requests_and_Traffic.pdf"
-                   target="_blank">
-                    <span class="fi-clipboard-pencil"></span>
-                </a>
-                <div id="lab6-learn" class="collapse epl425-learnout">
-                    <strong>Learning outcome:</strong>
-                    <ul>
-                        <li>What’s the OSI model?</li>
-                        <li>Introduction to HTTP (Hypertext Transfer Protocol)</li>
-                        <li>HTTP Requests/Responses</li>
-                        <li>HTTP handling with Java</li>
-                        <li>Introduction to HTTP2</li>
-                        <li>Monitoring HTTP Traffic</li>
-                    </ul>
-                </div>
-                <div id="lab6-read" class="collapse">
-                    <strong>Readings and References:</strong>
-                    <ul>
-                        <li>
-                            <a href="https://en.wikipedia.org/wiki/OSI_model" target="_blank">OSI Model</a>
+                        <li><a href="https://www.nngroup.com/articles/url-as-ui/" target="_blank">URL as UI.</a>
+                        </li>
+                        <li><a href="https://martinfowler.com/articles/microservices.html"
+                               target="_blank">Microservices</a> (2014) M. Fowler and J. Lewis.
+                        </li>
+                        <li><a href="https://www.infoq.com/articles/microservices-intro/" target="_blank">Microservices:
+                            Decomposing Applications for Deployability and Scalability</a> (2014) C. Richardson, Infoq.
                         </li>
                         <li>
-                            <a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol" target="_blank">HTTP
-                                (Hypertext Transfer Protocol)</a>
-                        </li>
-                        <li>
-                            <a href="https://www.w3schools.com/tags/ref_httpmethods.asp" target="_blank">HTTP Request
-                                Methods</a>
-                        </li>
-                        <li>
-                            <a href="https://blog.restcase.com/http2-benefits-for-rest-apis/" target="_blank">Benefits
-                                For REST APIs with HTTP/2</a>
-                        </li>
-                        <li>
-                            <a href="https://developer.mozilla.org/en-US/docs/Tools/Tools_Toolbox" target="_blank">Firefox
-                                Developer Tools</a>
-                        </li>
-                        <li>
-                            <a href="https://www.getpostman.com/" target="_blank">PostMan</a>
+                            <a href="https://github.com/pangpang834/pybook/blob/master/O%27Reilly%20-%20HTTP%20-%20The%20Definitive%20Guide.pdf"
+                               target="_new">"HTTP: The Definitive Guide."</a> David Gourly and Brian Totty. O'Reilly,
+                            2002.
                         </li>
                     </ul>
                 </div>
@@ -701,35 +679,39 @@
 
         <!-- -----------Module 3------------- -->
         <tr class="warning">
-            <th class="lead" colspan="2">Module 3: Hypertext and the Hypertext Markup Language (HTML)</th>
+            <th class="lead" colspan="2">Module 3: Web Content Encoding</th>
         </tr>
 
-        <! --LECTURE 12 -->
+        <! --LECTURE 11 -->
         <tr>
-            <td scope="row" style="white-space:nowrap">Lecture 12: Fri. 12/10</td>
+            <td scope="row" style="white-space:nowrap">Lecture 11:</td>
             <td><strong>Introduction to Markup Languages and HTML.</strong>
                 <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
-                        data-target="#lect12-learn">
-                    <span class="fa fa-bullseye"></span></button>
+                        data-target="#lect11-learn">
+                    <span class="fa fa-crosshairs"></span></button>
 
                 <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
-                        data-target="#lect12-read">
+                        data-target="#lect11-read">
                     <span class="glyphicon glyphicon-book"></span>
                 </button>
-                <a href="http://www.piazza.com/class_profile/get_resource/jlc7oxftmmp5yu/jn5x54eers62fd" target="_blank"
+                <a href="" target="_blank"
                    type="button"
                    class="btn btn-default btn-xs hidden-print">
                     <span class="fi-clipboard-pencil"></span>
                 </a>
-                <div id="lect12-learn" class="collapse epl425-learnout">
-                    <strong>Learning outcome:</strong> Introduction to document structure and markup Languages. Become
-                    familiar with
-                    main concepts of markup languages, SGML, Document Type Definitions (DTD). Introduction to HTML:
-                    History, Syntax.
-                    Understand and familiarize with the tree structure of HTML documents and the Document Object Model
-                    (DOM).
+                <div id="lect11-learn" class="collapse epl425-learnout">
+                    <strong>Learning Objectives:</strong>
+                    <ul>
+                        <li>Understand, explain, and use the concepts of document structure and markup Languages.</li>
+                        <li>Understand, explain and apply the concepts and syntax of HTML and XML to design and publish
+                            Web content.
+                        </li>
+                        <li>Understand and familiarize with the tree structure of HTML documents and the Document Object
+                            Model (DOM).
+                        </li>
+                    </ul>
                 </div>
-                <div id="lect12-read" class="collapse"><strong>Readings:</strong>
+                <div id="lect11-read" class="collapse"><strong>Readings:</strong>
                     <ul>
                         <li>Chapter 2. <i>Web Programming Step by Step (Second edition)</i> M. Stepp, J. Miller and V.
                             Kirst, Lulu 2012.
@@ -746,56 +728,35 @@
             </td>
         </tr>
 
-        <!-- ---- MIDTERM --- -->
-        <tr class="epl425-quiz">
-            <td scope="row" colspan="2"><strong>Midterm 16/10: </strong>Μodules 1-2.</td>
-        </tr>
-
-        <!-- LAB 7 -->
+        <! --LECTURE 12 -->
         <tr>
-            <td class="danger" scope="row" style="white-space:nowrap">Lab 7: Tu. 16/10</td>
-            <td><strong>HTML (Hyper Text Markup Language</strong>
+            <td scope="row">Lecture 12:</td>
+            <td><strong>HTML Elements.</strong>
                 <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
-                        data-target="#lab7-learn">
-                    <span class="fa fa-bullseye"></span></button>
+                        data-target="#lect12-learn">
+                    <span class="fa fa-crosshairs"></span></button>
+
                 <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
-                        data-target="#lab7-read">
+                        data-target="#lect12-read">
                     <span class="glyphicon glyphicon-book"></span>
                 </button>
-                <a class="btn btn-default btn-xs hidden-print"
-                   href="https://piazza-resources.s3.amazonaws.com/jlc7oxftmmp5yu/jnbp378puej3ps/Lab7__HTML.pdf"
-                   target="_blank">
+                <a href="" target="_blank"
+                   type="button"
+                   class="btn btn-default btn-xs hidden-print">
                     <span class="fi-clipboard-pencil"></span>
                 </a>
-                <div id="lab7-learn" class="collapse epl425-learnout">
-                    <strong>Learning outcome:</strong>
+                <span id="lect12-learn" class="collapse epl425-learnout">
+                    <strong>Learning outcome:</strong> Familiarize with HTML elements, head, anchors, lists, tables, quotations,
+                    pre-formattedtext, advanced elements, images.
+                </span>
+                <div id="lect12-read" class="collapse">
+                    <strong>Readings:</strong>
                     <ul>
-                        <li>What is HTML</li>
-                        <li>HTML Building Blocks</li>
-                        <li>A quick overview of the most used HTML elements</li>
-                        <li>HTML DOM (Document Object Model)</li>
-                        <li>What are some of the new HTML5 elements</li>
-                        <li>What are some of the new HTML5 API’s</li>
-                        <li>Hands-on practice: Start creating a Portfolio page!</li>
-                    </ul>
-                </div>
-                <div id="lab7-read" class="collapse"><strong>Readings and References:</strong>
-                    <ul>
-                        <li>
-                            <a href="https://www.youtube.com/watch?v=UB1O30fR-EE" target="_blank">[Video] HTML Crash
-                                Course For Absolute Beginners</a>
+                        <li>Chapter 2. <i>Web Programming Step by Step (Second edition)</i> M. Stepp, J. Miller and V.
+                            Kirst, Lulu 2012.
                         </li>
-                        <li>
-                            <a href="https://en.wikipedia.org/wiki/HTML" target="_blank">HTML Wiki</a>
-                        </li>
-                        <li>
-                            <a href="https://en.wikipedia.org/wiki/HTML5" target="_blank">HTML5 Wiki</a>
-                        </li>
-                        <li>
-                            <a href="https://www.w3schools.com/html/html_basic.asp" target="_blank">HTML W3Schools</a>
-                        </li>
-                        <li>
-                            <a href="https://en.wikipedia.org/wiki/Document_Object_Model" target="_blank">HTML DOM</a>
+                        <li>Chapter 12, 13. <i>Interact with Web Standards. A Holistic Approach to Web Design.</i> E.
+                            Anderson , V. DeVolt et al., New Riders 2010.
                         </li>
                     </ul>
                 </div>
@@ -804,101 +765,26 @@
 
         <! --LECTURE 13 -->
         <tr>
-            <td class="active" scope="row">Lecture 13: Fri. 19/10</td>
-            <td><strong>Information Overload and the Attention Economy</strong>
+            <td class="active" scope="row">Lecture 13:</td>
+            <td><strong>Web Semantics</strong>
                 <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
                         data-target="#lect13-learn">
-                    <span class="fa fa-bullseye"></span></button>
+                    <span class="fa fa-crosshairs"></span></button>
                 <button type="button" class="btn btn-default btn-xs  hidden-print" data-toggle="collapse"
                         data-target="#lect13-read">
                     <span class="glyphicon glyphicon-book"></span>
                 </button>
                 <div id="lect13-learn" class="collapse epl425-learnout">
-                    <strong>Learning outcome:</strong> Understand the implications of hypertext principles and evolution
-                    to the
-                    emergence of the "attention economy."
+                    <strong>Learning Objective:</strong>
+                    <ul>
+                        <li>Understand, explain, and apply the concept of semantics and the Semantic Web.</li>
+                        <li>Understand and explain the basic principles and syntax of the Resource Description Framework
+                            (RDF).
+                        </li>
+                        <li>Understand, explain, and apply Microformats and RDFa.</li>
+                    </ul>
                 </div>
                 <div id="lect13-read" class="collapse"><strong>Readings:</strong>
-                    <ul>
-                        <li><a
-                                href="https://www.ted.com/talks/tristan_harris_the_manipulative_tricks_tech_companies_use_to_capture_your_attention"
-                                target="_blank">"How a handful of tech companies control billions of minds every
-                            day"</a> A TED Talk by <a
-                                href="https://www.ted.com/profiles/7718392">Tristan Harris</a> (2017).
-                        </li>
-                        <li>
-                            <a href="https://www.ted.com/talks/tristan_harris_how_better_tech_could_protect_us_from_distraction"
-                               target="_blank">"How better tech could protect us from distraction"</a> A TED Talk by <a
-                                href="https://www.ted.com/profiles/7718392">Tristan Harris</a> (2014).
-                        </li>
-                        <li>The book "Hooked : How to Build Habit-Forming Products" by Nir Eyal. Penguin (2015),
-                            examines the mechanisms
-                            behind addiction-based design.
-                        </li>
-                    </ul>
-                </div>
-            </td>
-        </tr>
-
-        <! --LECTURE 14 -->
-        <tr>
-            <td scope="row">Lecture 14: Tu. 23/10</td>
-            <td><strong>HTML Elements.</strong>
-
-                <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
-                        data-target="#lect14-learn">
-                    <span class="fa fa-bullseye"></span></button>
-
-                <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
-                        data-target="#lect14-read">
-                    <span class="glyphicon glyphicon-book"></span>
-                </button>
-                <a href="http://www.piazza.com/class_profile/get_resource/jlc7oxftmmp5yu/jnq4271qf785uo" target="_blank"
-                   type="button"
-                   class="btn btn-default btn-xs hidden-print">
-                    <span class="fi-clipboard-pencil"></span>
-                </a>
-                <span id="lect14-learn" class="collapse epl425-learnout">
-									<strong>Learning outcome:</strong> Familiarize with HTML elements, head, anchors, lists, tables, quotations, pre-formattedtext, advanced elements, images.
-								</span>
-                <div id="lect14-read" class="collapse">
-                    <strong>Readings:</strong>
-                    <ul>
-                        <li>Chapter 2. <i>Web Programming Step by Step (Second edition)</i> M. Stepp, J. Miller and V.
-                            Kirst, Lulu 2012.
-                        </li>
-                        <li>Chapter 12, 13. <i>Interact with Web Standards. A Holistic Approach to Web Design.</i> E.
-                            Anderson , V.
-                            DeVolt et al., New Riders 2010.
-                        </li>
-                    </ul>
-                </div>
-            </td>
-        </tr>
-
-        <! -- PRECEPT 6-->
-        <tr>
-            <td class="active" scope="row" style="white-space:nowrap">Precept 6: Tue. 17/10</td>
-            <td><strong>Semantic Web Elements</strong>
-                <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
-                        data-target="#prec6-learn">
-                    <span class="fa fa-bullseye"></span></button>
-                <button type="button" class="btn btn-default btn-xs  hidden-print" data-toggle="collapse"
-                        data-target="#prec6-read">
-                    <span class="glyphicon glyphicon-book"></span>
-                </button>
-                <a href="http://www.piazza.com/class_profile/get_resource/jlc7oxftmmp5yu/jnq43mj0gbx6od" target="_blank"
-                   type="button"
-                   class="btn btn-default btn-xs hidden-print">
-                    <span class="fi-clipboard-pencil"></span>
-                </a>
-                <div id="prec6-learn" class="collapse epl425-learnout">
-                    <strong>Learning outcome:</strong> Understand the concept of semantics and the Semantic Web.
-                    Overview of basic
-                    principles and syntax of the Resource Description Framework (RDF). Overview of Microformats and
-                    RDFa.
-                </div>
-                <div id="prec6-read" class="collapse">
                     <ul>
                         <li><a href="https://www.w3.org/standards/semanticweb/" target="_blank">Semantic Web
                             Technologies @ W3C.</a></li>
@@ -911,84 +797,27 @@
             </td>
         </tr>
 
-        <!-- -----------Module 4------------- -->
-        <tr class="warning">
-            <th class="lead" colspan="2">Module 4: Cascading Style Sheets (CSS)</th>
-        </tr>
 
-        <!-- LAB 8 -->
+        <! -- LECTURE 14 -->
         <tr>
-            <td class="danger" scope="row" style="white-space:nowrap">Lab 8: Tu. 23/10</td>
-            <td><strong>CSS (Cascading Style Sheets)</strong>
-                <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
-                        data-target="#lab8-learn">
-                    <span class="fa fa-bullseye"></span></button>
-                <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
-                        data-target="#lab8-read">
-                    <span class="glyphicon glyphicon-book"></span>
-                </button>
-                <a class="btn btn-default btn-xs hidden-print"
-                   href="https://piazza-resources.s3.amazonaws.com/jlc7oxftmmp5yu/jnlpkvjb50i1i3/Lab8__CSS3_Cascading_Style_Sheets.pdf"
-                   target="_blank">
-                    <span class="fi-clipboard-pencil"></span>
-                </a>
-                <div id="lab8-learn" class="collapse epl425-learnout">
-                    <strong>Learning outcome:</strong>
-                    <ul>
-                        <li>What is CSS (Cascading Style Sheets)</li>
-                        <li>How to use CSS in an HTML document</li>
-                        <li>CSS Syntax</li>
-                        <li>CSS Selectors</li>
-                        <li>CSS Text, Fonts, Icons, Links</li>
-                        <li>CSS Colors, Background, Gradients</li>
-                        <li>CSS Box Model</li>
-                        <li>CSS Shadow Effects</li>
-                        <li>CSS Layout, Float</li>
-                        <li>CSS Pseudo-classes</li>
-                        <li>CSS Units</li>
-                        <li>CSS Responsive</li>
-                        <li>Hands-on Practice</li>
-                    </ul>
-                </div>
-                <div id="lab8-read" class="collapse">
-                    <strong>Readings and References:</strong>
-                    <ul>
-                        <li>
-                            <a href="https://www.youtube.com/watch?v=yfoY53QXEnI" target="_blank">[Video] CSS Crash
-                                Course For Absolute Beginners</a>
-                        </li>
-                        <li>
-                            <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank">CSS Wiki</a>
-                        </li>
-                        <li>
-                            <a href="https://www.w3schools.com/css/" target="_blank">CSS W3Schools</a>
-                        </li>
-                    </ul>
-                </div>
-            </td>
-        </tr>
-
-
-        <! -- LECTURE 15 -->
-        <tr>
-            <td scope="row" style="white-space:nowrap">Lecture 15: Fri. 26/10</td>
+            <td scope="row" style="white-space:nowrap">Lecture 14:</td>
             <td><strong>Basic CSS.</strong>
                 <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
-                        data-target="#lect15-learn">
-                    <span class="fa fa-bullseye"></span></button>
+                        data-target="#lect14-learn">
+                    <span class="fa fa-crosshairs"></span></button>
                 <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
-                        data-target="#lect15-read">
+                        data-target="#lect14-read">
                     <span class="glyphicon glyphicon-book"></span>
                 </button>
-                <a href="http://www.piazza.com/class_profile/get_resource/jlc7oxftmmp5yu/jnq46i1maoc12m" target="_blank"
+                <a href="" target="_blank"
                    type="button"
                    class="btn btn-default btn-xs hidden-print">
                     <span class="fi-clipboard-pencil"></span>
                 </a>
-                <div id="lect15-learn" class="collapse epl425-learnout">
-                    <strong>Learning outcome:</strong> Introduction to CSS concept, syntax and properties.
+                <div id="lect14-learn" class="collapse epl425-learnout">
+                    <strong>Learning Objectives:</strong> Learn, explain, and apply CSS concept, syntax and properties.
                 </div>
-                <div id="lect15-read" class="collapse">
+                <div id="lect14-read" class="collapse">
                     <strong>Readings:</strong>
                     <ul>
                         <li>Chapter 3. <i>Web Programming Step by Step (Second edition)</i> M. Stepp, J. Miller and V.
@@ -1005,80 +834,41 @@
             </td>
         </tr>
 
-        <! ---LECTURE 16 --->
+        <! ---LECTURE 15 --->
         <tr>
-            <td scope="row" style="white-space:nowrap">Lecture 16: Tu. 30/10</td>
+            <td scope="row" style="white-space:nowrap">Lecture 15:</td>
             <td><strong>Box Model, Inheritance and Cascading in CSS.</strong>
                 <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
-                        data-target="#lect16-learn">
-                    <span class="fa fa-bullseye"></span></button>
+                        data-target="#lect15-learn">
+                    <span class="fa-solid fa-crosshairs-arrow"></span></button>
                 <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
-                        data-target="#lect16-read">
+                        data-target="#lect15-read">
                     <span class="glyphicon glyphicon-book"></span>
                 </button>
-                <a href="http://www.piazza.com/class_profile/get_resource/jlc7oxftmmp5yu/jnvocu5xd2x5gg" target="_blank"
+                <a href="" target="_blank"
                    type="button"
                    class="btn btn-default btn-xs hidden-print">
                     <span class="fi-clipboard-pencil"></span>
                 </a>
-                <span id="lect16-learn" class="collapse epl425-learnout">
-									<strong>Learning outcome:</strong> CSS Shorthand. The Box Model and white space. CSS Measurement Units. Cascading
-									Rules and Conflict Resolution. Explore how to craft an HTML page, selecting fonts,
-									colors and targeting elements with IDs and Classes.
-								</span>
-                <span id="lect16-read" class="collapse">
-									<strong>Readings:</strong>
-									<ul>
-										<li>Chapter 4. <i>Web Programming Step by Step (Second edition)</i> M. Stepp, J. Miller and V. Kirst, Lulu 2012.</li>
-										<li>Chapter 11, 14. <i>Interact with Web Standards. A Holistic Approach to Web Design.</i> E. Anderson , V. DeVolt et al., New Riders 2010.</li>
-										<li><a href="http://www.w3schools.com/css/default.asp" target="_blank">CSS Tutorial</a> from w3schools.</li>
-										<li><a href="https://www.w3.org/wiki/Web_Standards_Curriculum#CSS"
-                                               target="_blank">CSS Tutorial</a> from <a
-                                                href="http://www.w3.org" target="_blank">W3C</a>.</li>
-									</ul>
-								</span>
-            </td>
-        </tr>
-
-        <!-- LAB 9 -->
-        <tr>
-            <td class="danger" scope="row" style="white-space:nowrap">Lab 9: Tu. 30/10</td>
-            <td><strong>Bootstrap 4</strong>
-                <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
-                        data-target="#lab9-learn">
-                    <span class="fa fa-bullseye"></span>
-                </button>
-                <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
-                        data-target="#lab9-read">
-                    <span class="glyphicon glyphicon-book"></span>
-                </button>
-                <a class="btn btn-default btn-xs hidden-print"
-                   href="https://piazza-resources.s3.amazonaws.com/jlc7oxftmmp5yu/jnvrowpg9ew4yn/Lab9__Bootstrap_4.pdf"
-                   target="_blank">
-                    <span class="fi-clipboard-pencil"></span>
-                </a>
-                <div id="lab9-learn" class="collapse epl425-learnout">
-                    <strong>Learning outcome:</strong>
+                <span id="lect15-learn" class="collapse epl425-learnout">
+                    <strong>Learning Objectives:</strong>
                     <ul>
-                        <li>What is Bootstrap</li>
-                        <li>How to use it</li>
-                        <li>Bootstrap Documentation</li>
-                        <li>Hands-on Practice</li>
+                        <li>Become familiar, explain and apply: CSS Shorthand, the Box Model and white space,CSS Measurement Units.</li>
+                        <li>Understand, describe and use: Cascading Rules and Conflict Resolution.</li>
+                        <li>Craft HTML pages, select fonts, colors and target elements with IDs and Classes.</li>
                     </ul>
-                </div>
-                <div id="lab9-read" class="collapse">
-                    <strong>Readings and References:</strong>
-                    <ul>
-                        <li>
-                            <a href="http://getbootstrap.com/docs/4.1/getting-started/introduction/" target="_blank">Official
-                                Bootstrap Docs</a>
-                        </li>
-                        <li>
-                            <a href="https://www.youtube.com/watch?v=5GcQtLDGXy8&list=PLillGF-RfqbZ7b9ytQhLqLvWO2Q_3Ph7S"
-                               target="_blank">[Video] Bootstrap Tutorial Playlist</a>
-                        </li>
-                    </ul>
-                </div>
+                </span>
+                <span id="lect15-read" class="collapse">
+                    <strong>Readings:</strong>
+							<ul>
+								<li>Chapter 4. <i>Web Programming Step by Step (Second edition)</i> M. Stepp, J. Miller and V. Kirst, Lulu 2012.</li>
+								<li>Chapter 11, 14. <i>Interact with Web Standards. A Holistic Approach to Web Design.</i> E. Anderson , V. DeVolt et al., New Riders 2010.</li>
+								<li><a href="http://www.w3schools.com/css/default.asp" target="_blank">CSS Tutorial</a> from w3schools.</li>
+								<li><a href="https://www.w3.org/wiki/Web_Standards_Curriculum#CSS"
+                                       target="_blank">CSS Tutorial</a> from <a
+                                        href="http://www.w3.org" target="_blank">W3C</a>.</li>
+                            </ul>
+                </span>
             </td>
         </tr>
 
@@ -1093,7 +883,7 @@
             <td><strong>Introduction to PHP.</strong>
                 <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
                         data-target="#lect17-learn">
-                    <span class="fa fa-bullseye"></span></button>
+                    <span class="fa fa-crosshairs"></span></button>
                 <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
                         data-target="#lect17-read">
                     <span class="glyphicon glyphicon-book"></span>
@@ -1129,7 +919,7 @@
 
                 <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
                         data-target="#lect18-learn">
-                    <span class="fa fa-bullseye"></span></button>
+                    <span class="fa fa-crosshairs"></span></button>
 
                 <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
                         data-target="#lect18-read">
@@ -1159,7 +949,7 @@
             <td><strong>PHP (Part 1)</strong>
                 <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
                         data-target="#lab10-learn">
-                    <span class="fa fa-bullseye"></span>
+                    <span class="fa fa-crosshairs"></span>
                 </button>
                 <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
                         data-target="#lab10-read">
@@ -1211,7 +1001,7 @@
             <td><strong>Page Layout, Floating and Positioning.</strong>
                 <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
                         data-target="#lect19-learn">
-                    <span class="fa fa-bullseye"></span></button>
+                    <span class="fa fa-crosshairs"></span></button>
 
                 <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
                         data-target="#lect19-read">
@@ -1255,7 +1045,7 @@
             <td><strong>Introduction to Javascript</strong>
                 <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
                         data-target="#lect20-learn">
-                    <span class="fa fa-bullseye"></span></button>
+                    <span class="fa fa-crosshairs"></span></button>
 
                 <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
                         data-target="#lect20-read">
@@ -1284,7 +1074,7 @@
             <td><strong>Javascript examples</strong>
                 <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
                         data-target="#prec7-learn">
-                    <span class="fa fa-bullseye"></span></button>
+                    <span class="fa fa-crosshairs"></span></button>
                 <a href="http://www.piazza.com/class_profile/get_resource/jlc7oxftmmp5yu/joefn5yverx6m8" target="_blank"
                    type="button"
                    class="btn btn-default btn-xs hidden-print">
@@ -1303,7 +1093,7 @@
             <td><strong>JavaScript & jQuery</strong>
                 <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
                         data-target="#lab11-learn">
-                    <span class="fa fa-bullseye"></span>
+                    <span class="fa fa-crosshairs"></span>
                 </button>
                 <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
                         data-target="#lab11-read">
@@ -1365,7 +1155,7 @@
 
                 <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
                         data-target="#lect21-learn">
-                    <span class="fa fa-bullseye"></span></button>
+                    <span class="fa fa-crosshairs"></span></button>
 
                 <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
                         data-target="#lect21-read">
@@ -1400,7 +1190,7 @@
             <td><strong>A review of DOM. Introduction to Prototype</strong>
                 <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
                         data-target="#prec8-learn">
-                    <span class="fa fa-bullseye"></span>
+                    <span class="fa fa-crosshairs"></span>
                 </button>
                 <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
                         data-target="#prec8-read">
@@ -1435,7 +1225,7 @@
             <td><strong>Javascript Events and AJAX</strong>
                 <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
                         data-target="#lect22-learn">
-                    <span class="fa fa-bullseye"></span>
+                    <span class="fa fa-crosshairs"></span>
                 </button>
                 <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
                         data-target="#lect22-read">
@@ -1462,7 +1252,7 @@
             <td><strong>PHP (Part 2) + AJAX</strong>
                 <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
                         data-target="#lab12-learn">
-                    <span class="fa fa-bullseye"></span>
+                    <span class="fa fa-crosshairs"></span>
                 </button>
                 <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
                         data-target="#lab12-read">
@@ -1512,7 +1302,7 @@
             <td><strong>XML and JSON</strong>
                 <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
                         data-target="#lect23-learn">
-                    <span class="fa fa-bullseye"></span>
+                    <span class="fa fa-crosshairs"></span>
                 </button>
                 <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
                         data-target="#lect23-read">
@@ -1543,7 +1333,7 @@
             <td><strong>Writing and Organising Web Content</strong>
                 <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
                         data-target="#lect24-learn">
-                    <span class="fa fa-bullseye"></span></button>
+                    <span class="fa fa-crosshairs"></span></button>
 
                 <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
                         data-target="#lect24-read">
@@ -1585,7 +1375,7 @@
             <td><strong>Password Security & User Auth</strong>
                 <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
                         data-target="#lab13-learn">
-                    <span class="fa fa-bullseye"></span>
+                    <span class="fa fa-crosshairs"></span>
                 </button>
                 <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
                         data-target="#lab13-read">
@@ -1646,7 +1436,7 @@
             <td><strong>State management over HTTP: Cookies and Sessions</strong>
                 <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
                         data-target="#lect25-learn">
-                    <span class="fa fa-bullseye"></span></button>
+                    <span class="fa fa-crosshairs"></span></button>
 
                 <button type="button" class="btn btn-default btn-xs hidden-print" data-toggle="collapse"
                         data-target="#lect25-read">
